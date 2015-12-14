@@ -1,0 +1,268 @@
+<html>
+<head>
+<title>Jokes for Mathematicians</title>
+<style>
+<!--
+   a {text-decoration:none;}
+   table {cell-spacing:0; cell-padding:0;}
+-->
+</style>
+</head>
+<body background="/~danielw/images/blue_strip.gif" bgcolor=#ffffec text='#000000' link='#336699' vlink='#336699' alink='#336699'>
+
+
+<div ID="movable" STYLE="position:absolute; top:100; left:100; width:150; height:150; z-index:2;">
+<a href="javascript:vanish();">
+<IMG name="floatPic" SRC="spacer.gif" alt="click to close" border=0 width=150 height=150></a>
+</div>
+
+<div id="pagebg" STYLE="position:absolute; top:100; left:100; width:200; height:200; z-index:1;">
+<IMG name="backdrop" SRC="spacer.gif" border=0 width=200 height=200></a>
+</div>
+
+
+<a name="page_top">
+
+<table width=600 height=100% border=0>
+
+<tr valign=top>
+
+<td valign=top><img src="/~danielw/images/spacer.gif" width=130 height=1 vspacing=0 border=0> 
+<img src="/~danielw/images/spacer.gif" width=1 height=80 vspacing=0 border=0>
+</td>
+<td colspan=2 width=100%>
+<br><br><br>
+<a href=/~danielw>DBW</a> &gt; <a href=/~danielw/gallery.html>images</a> &gt; <a href=/~danielw/images/silly.htm>silly</a> &gt;
+<h3>Jokes for Mathematicians</h3><br>
+
+</td></tr>
+
+<tr bgcolor=336699 height=5 valign=top><td colspan=3 bgcolor=336699 height=5>
+<img src="/~danielw/images/spacer.gif" width=10 height=5 vspacing=0 border=0>
+</td></tr>
+
+<tr height=100%>
+
+<td width=100><img src="/~danielw/images/spacer.gif" width=100 height=500 vspacing=0> </td>
+
+<td width=100% valign=top>
+<br><br>
+
+
+
+<table border=4><tr><td>
+
+<table border=0 cellpadding=0 cellspacing=0 bgcolor=white><tr>
+<td colspan=2><img src=chaos_title.small.gif></td>
+</tr>
+<tr>
+<td>
+
+     <MAP name="alisonsHead">
+        <AREA shape="circle" coords="90,120,35" href="javascript:switch_pic('alison');">
+        </MAP>
+
+<img src=chaos1.small.gif name="alison" usemap="#alisonsHead" border=0 height=377>
+</a>
+</td>
+
+<td>
+
+
+<map name=books>
+<area shape="rect" coords="193,116,212,173" href="javascript:place_div('Noel',190,110);">
+<area shape="rect" coords="169, 78,193, 137" href="javascript:place_div('Ian',160,70);">
+<area shape="rect" coords="168, 148,196, 208" href="javascript:place_div('Seth',160,140);">
+<area shape="rect" coords="106, 136,148, 212" href="javascript:place_div('Paul',100,130);">
+<area shape="rect" coords="42, 123,88, 210" href="javascript:place_div('Felix',40,120);">
+<area shape="rect" coords="582, 126,616, 217" href="javascript:place_div('Timm',580,120);">
+<area shape="rect" coords="542, 100,569, 220" href="javascript:place_div('Dan',540,100);">
+<area shape="rect" coords="496, 153,528, 217" href="javascript:place_div('Alison',490,150);">
+<area shape="rect" coords="454, 145,487, 219" href="javascript:place_div('Marcus',450,140);">
+<area shape="rect" coords="404, 134,435, 227" href="javascript:place_div('Fiona',400,130);">
+<area shape="rect" coords="284, 124,349, 222" href="javascript:place_div('Andrew',280,120);">
+<area shape="rect" coords="237, 140,267, 214" href="javascript:place_div('Seb',230,130);">
+</map>
+
+
+
+<img src=chaos2.small.gif usemap="#books" border=0 height=377 width=640>
+</a></td>
+
+</tr>
+<tr>
+
+<td colspan=2 valign=top><center>
+<img src=chaos_tagline.small.gif border=0 valign=top>
+</center>
+</td>
+
+</tr>
+</table>
+
+</td></tr></table>
+
+<script>
+// <!--
+
+var mie=false;
+var afinal=false;
+var aframe=0;
+
+if(navigator.appName.indexOf("Microsoft")!=-1)
+  {mie=true; }
+
+       spacer = new Image(1,1);
+       spacer.src = "spacer.gif";
+
+       book2 = new Image(150,150);
+       book2.src = "animbook.gif";
+       book1 = new Image(150,150);
+       book1.src = "book3.gif";
+       book0 = new Image(150,150);
+       book0.src = "book5.gif";
+
+       page0 = new Image(200,200);
+       page0.src = "page.jpg";
+       page1 = new Image(200,200);
+       page1.src = "page2.jpg";
+       page2 = new Image(200,200);
+       page2.src = "page4.jpg";
+
+       Paul = new Image(150,150);
+       Paul.src = "paul-crook.jpg";
+       Fiona = new Image(150,150);
+       Fiona.src = "fiona-mcneill.jpg";
+       Timm = new Image(150,150);
+       Timm.src = "timm-zwickel.jpg";
+       Noel = new Image(150,150);
+       Noel.src = "noel-welsh.jpg";
+       Felix = new Image(150,150);
+       Felix.src = "felix-agakov.jpg";
+       Marcus = new Image(150,150);
+       Marcus.src = "marcus-pearce.jpg";
+       Dan = new Image(150,150);
+       Dan.src = "dan-winterstein.jpg";
+       Seb = new Image(150,150);
+       Seb.src = "seb-mhatre.jpg";
+       Andrew = new Image(150,150);
+       Andrew.src = "andrew-mullis.jpg";
+       Ian = new Image(150,150);
+       Ian.src = "ian-glover.jpg";
+       Seth = new Image(150,150);
+       Seth.src = "seth-golub.jpg";
+       Alison = new Image(150,150);
+       Alison.src = "alison_meditating.jpg";
+
+function place_div(pic,x,y) {
+   vanish();
+   afinal = pic;
+   aframe = 2;
+   x = x + 300;
+   y = y + 250;
+   if (mie) {
+      document.all.movable.style.pixelTop = y;
+      document.all.movable.style.pixelLeft = x;
+      document.all.pagebg.style.pixelTop = y - 25;
+      document.all.pagebg.style.pixelLeft = x -25;
+   } else { 
+      document.movable.left = x;
+      document.movable.top = y;   
+      document.pagebg.left = x -25;
+      document.pagebg.top = y -25;   
+   }
+
+   imageON = eval("book" + 2 + ".src");
+   document.movable.document.floatPic.src = imageON;
+
+   tid = setTimeout('animate()',200);
+}
+
+function animate() {
+   if (aframe > 0) {
+      aframe = aframe - 1;
+      imageON = eval("book" + aframe + ".src");
+      document.movable.document.floatPic.src = imageON;
+      tid = setTimeout('animate()',200);
+   } else {
+      imageON = eval(afinal + ".src");
+      document.movable.document.floatPic.src = imageON;
+      r = Math.floor(Math.random()*3);
+      pageON = eval("page" + r + ".src");
+      document.pagebg.document.backdrop.src = pageON;
+   }
+}
+
+function vanish() {
+  document.movable.document.floatPic.src = spacer.src;
+  document.pagebg.document.backdrop.src = spacer.src;
+   if (mie) {
+      document.all.movable.style.pixelTop = 1;
+      document.all.movable.style.pixelLeft = 1;
+      document.all.pagebg.style.pixelTop = 1;
+      document.all.pagebg.style.pixelLeft = 1;
+   } else { 
+      document.movable.left = 1;
+      document.movable.top = 1;   
+      document.pagebg.left = 1;
+      document.pagebg.top = 1;   
+   }
+ 
+}
+
+
+       alison1 = new Image(317,377);
+       alison1.src = "chaos1b.small.gif";
+       alison0 = new Image(317,377);
+       alison0.src = "chaos1.small.gif";
+
+       aswitch = 1;
+
+  function switch_pic(n){
+
+     if (aswitch == 1) {
+            imageON = eval(n + "1.src");
+            document [n].src = imageON;
+	    aswitch = 0;
+     } else {
+	    imageOFF = eval(n + "0.src");
+	    document [n].src = imageOFF;
+	    aswitch = 1;
+     }
+  }
+
+  // -->
+</script>
+
+<br>
+Things To Do: click on Alison's head and the different books.
+<br><center>
+<prev>&nbsp;&nbsp;<a href="#page_top">top</a>&nbsp;&nbsp;<next>
+</center>
+<br><hr>
+<font size=-1>&copy;That nice chap Mr Paul Crook, 2001</font>
+</td><td valign=top>
+<br><br>
+
+
+
+</td>
+</tr></table>
+
+
+<img src=http://dyce.dai.ed.ac.uk:8080/cgi-bin/dan/counter.cgi height=1 width=1>
+
+<SCRIPT LANGUAGE="javascript">
+//<!--
+
+rf=escape(document.referrer)+"";
+
+if((rf=="undefined") || (rf=="")) {rf="bookmark";}
+
+
+document.write("<img width=1 height=1 src='http://dyce.dai.ed.ac.uk:8080/cgi-bin/dan/refs.cgi?ref=" + rf + "' > ");
+
+//-->
+</SCRIPT>
+
+</body>

@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Functions</title>
+  <style>
+  .box {
+    border: 1px solid blue; margin: 10px; padding: 10px; 
+    -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; 
+    -moz-border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px;    
+    }
+    
+  </style>  
+</head>
+<body>
+<h1>Functions</h1>
+Functions let you re-use code. You can write it once, then use it many
+times.
+They also organise your code. We'll use them to take some gnarly bits
+of code, and wrap them up so that they're easier to use.
+<ol>
+  <li> Defining a Function </li>
+  <li> Returning a value </li>
+  <li> Magic Functions
+    <ul>
+      <li> Choosing Randomly </li>
+      <li> Date: Getting the Time and Date </li>
+      <li> setTimeout: Animating a Clock </li>
+    </ul>
+  </li>
+  <li> Re-using functions between web-pages </li>
+</ol>
+<h2>Defining a Function</h2>
+To define a function, you use the keyword <b>function</b>, followed by
+a name, a list of variables, and a block of code enclosed in curly
+brackets (which can <b>return</b> a value, although it doesn't have
+to). It looks something like this:<br>
+<code><br>
+function myFunction(myvar1, myvar2) {<br>
+&nbsp;&nbsp;&nbsp; // the function's code <br>
+&nbsp;&nbsp;&nbsp; sum = myvar1 + myvar2;<br>
+&nbsp;&nbsp;&nbsp; document.write(sum);<br>
+&nbsp;&nbsp;&nbsp; return sum;<br>
+}<br>
+</code><br>
+This doesn't do anything at first. You have to call the function before
+the code is run. But once you've defined a function, you can call it
+from any piece of JavaScript like this:<br>
+<code><br>
+answer = myFunction(10, 5);
+</code><br>
+<h3>Returning a value</h3>
+The variable <code>answer</code> in the example above will catch the
+object returned by myFunction (which in this case will be the number
+15). Note the keyword <code>return</code> in the function. Return
+means: leave the function now, returning this object. You can have
+several returns in a function. E.g:<br>
+<code><br>
+// Convert numbers into words<br>
+function anotherFunction(myvar) {<br>
+&nbsp;&nbsp;&nbsp; if (myvar == 1) {<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return "One";<br>
+&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; if (myvar == 2) {<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return "Two";<br>
+&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp; return "I can't count that high";<br>
+&nbsp;&nbsp;&nbsp; // Any code below here would never be run.<br>
+}<br>
+</code><br>
+Return ends the function. Whichever return is reached first will end
+the function then and there.
+<h2>Magic Functions</h2>
+<b>This section will grow as we meet more of these</b>
+The following functions are very useful. They draw on some aspects of
+JavaScript that we won't cover in this course. However you don't have
+to understand how they work in order to use them.
+<h3>Choosing Randomly</h3>
+<code><br>
+// This function takes an array as input, and returns a randomly chosen
+element.<br>
+function pickRandom(myarray) {<br>
+&nbsp;&nbsp;&nbsp; x=Math.floor( Math.random() * myarray.length);<br>
+&nbsp;&nbsp;&nbsp; return myarray[x];<br>
+}<br>
+</code><br>
+Example of using it:<br>
+<br>
+<code>
+// Create an array of quotes about computing<br>
+a=["To err is human, but to really foul things up you need a computer.
+(Paul Ehrlich)",<br>
+"Just remember: you're not a 'dummy', no matter what those computer
+books claim. The real dummies are the people who, though technically
+expert, couldn't design hardware and software that's usable by normal
+consumers if their lives depended upon it. (Walter Mossberg)",<br>
+"For a long time it puzzled me how something so expensive, so leading
+edge, could be so useless, and then it occurred to me that a computer
+is a stupid machine with the ability to do incredibly smart things,
+while computer programmers are smart people with the ability to do
+incredibly stupid things. They are, in short, a perfect match. (Bill
+Bryson)",<br>
+"Computer Science: 1. A study akin to numerology and astrology, but
+lacking the precision of the former and the success of the latter. 2.
+The boring art of coping with a large number of trivialities. (Stan
+Kelly-Bootle)",<br>
+"Man is the best computer we can put aboard a spacecraft...and the only
+one that can be mass produced with unskilled labor. (Wernher von
+Braun)",<br>
+"If there's one thing that computers do well, it's to make the same
+mistake uncountable times at inhuman speed. (Peter Coffee)"]; <br>
+<br>
+// Pick one <br>
+quote = pickRandom(a);<br>
+<br>
+// Display it <br>
+document.write(quote);<br>
+</code>
+<br>
+This produces a random quote:<br>
+<div
+ style="border: 1px solid blue; margin: 10px; padding: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px;">
+<script>
+function pickRandom(myarray) {
+    x=Math.floor( Math.random() * myarray.length);
+    return myarray[x];
+}
+
+a=["I think computer viruses should count as life. I think it says something about human nature that the only form of life we have created so far is purely destructive. We've created life in our own image. (Stephen Hawking)",
+   "To err is human, but to really foul things up you need a computer. (Paul Ehrlich)",
+   "It's ridiculous to live 100 years and only be able to remember 30 million bytes. You know less than a compact disc. The human condition is really becoming more obsolete every minute. (Marvin Minsky)",
+   "For a long time it puzzled me how something so expensive, so leading edge, could be so useless, and then it occurred to me that a computer is a stupid machine with the ability to do incredibly smart things, while computer programmers are smart people with the ability to do incredibly stupid things. They are, in short, a perfect match. (Bill Bryson)",
+   "Just remember: you're not a 'dummy', no matter what those computer books claim. The real dummies are the people who, though technically expert, couldn't design hardware and software that's usable by normal consumers if their lives depended upon it. (Walter Mossberg)",
+   "Computer Science: 1. A study akin to numerology and astrology, but lacking the precision of the former and the success of the latter. 2. The boring art of coping with a large number of trivialities. (Stan Kelly-Bootle)",
+"Man is the best computer we can put aboard a spacecraft...and the only one that can be mass produced with unskilled labor. (Wernher von Braun)",
+"If there's one thing that computers do well, it's to make the same mistake uncountable times at inhuman speed. (Peter Coffee)",
+"The real danger is not that machines will come to think like men, but that men will come to think like machines."
+]; 
+quote = pickRandom(a);
+document.write("<p><i>"+quote+"</i></p>");
+</script></div>
+Reload the page and you'll get a different one.
+
+<h3>Getting the Date</h3>
+To get the date, we need to create a Date object. This is an aspect of
+JavaScript that we haven't seen yet (and won't use again on this
+course). So far, we have created either 'basic' objects (numbers,
+strings, and arrays) or used Html to create objects (e.g. images using
+the &lt;img&gt; tag). There is also another way, using the <span
+ style="font-weight: bold;">new</span> keyword, which we use here:<br>
+<br>
+<code>
+function getDateString() {<br>
+&nbsp;&nbsp;&nbsp; now = new Date();<br>
+&nbsp;&nbsp;&nbsp; bits = now.toString().split(" ");<br>
+&nbsp;&nbsp;&nbsp; // Arrays, which we use to convert numbers from the
+date object into strings<br>
+&nbsp;&nbsp;&nbsp; days = ["Monday", "Tuesday", "Wednesday",
+"Thursday", "Friday", "Saturday", "Sunday"];<br>
+&nbsp;&nbsp;&nbsp; months =
+["January","February","March","April","May","June","July","August","September","October","November","December"];<br>
+&nbsp;&nbsp;&nbsp; mystring = days[now.getDay()-1] + ", " +
+now.getDate() + " " + months[now.getMonth()];<br>
+&nbsp;&nbsp;&nbsp; return mystring;<br>
+}<br>
+</code>
+<br>
+We can now use this as follows:<br>
+<br>
+<code>
+document.write( getDateString() );<br>
+</code>
+<br>
+<div
+ style="border: 1px solid blue; margin: 10px; padding: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px;">
+Today's date is
+<script>
+function getDateString() {
+now = new Date();
+bits = now.toString().split(" ");
+days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+mystring = days[now.getDay()-1] + ", " + now.getDate() + " " + months[now.getMonth()];
+return mystring;
+}
+
+document.write(getDateString());
+</script></div>
+<p>
+Warning: There are a couple of eccentricities in how Date works. 
+The days run from 1 to 7 (i.e. they don't start at 0). However the months run from 0 to 11.
+The year starts from 1900 (so this year is 105) - just add 1900 to get the correct year. 
+
+
+<h3>setTimeout: Animating a Clock</h3>
+
+Normally JavaScript either runs (a) when the web-page loads, or (b) in response to an event such as a MouseOver.
+However we can also get JavaScript to run after a fixed delay. 
+This lets us make features that update regularly (e.g. clocks and stock-tickers) 
+or perfrom animation.
+
+We do this by using the special function setTimeout("javascript code", interval).
+"javascript code" gives some code to execute (normally calling a function).
+interval gives a period in milliseconds to wait before doing so. So the line:<br>
+<code>
+setTimeout("alert('Hello')", 5000);
+</code><br>
+would wait 5 seconds, then pop up an alert box saying 'Hello'.
+<p>
+By repeatedly calling setTimeout(), we can make continuing updates or animations. 
+The example below shows how to write a javascript clock:
+<p>
+<code>
+First create a display for the clock. We use a dummy form with a text element that we can get hold of by id.
+<br>
+&lt;form&gt; <br>
+&lt;input id="Clock" type="text" size="8" &gt; <br>
+&lt;/form&gt; <br>
+&lt;script&gt; <br>
+// Now define a function to update the clock<br>
+function setClock() { <br>
+&nbsp;&nbsp;&nbsp;&nbsp; theDate = new Date(); <br>
+&nbsp;&nbsp;&nbsp;&nbsp; theTime = theDate.getHours() + ":" + theDate.getMinutes() + ":" + theDate.getSeconds(); <br>
+&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("Clock").value = theTime; <br>
+&nbsp;&nbsp;&nbsp;&nbsp; // By calling setTimeout again, this function will run every 1/2 a second.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; setTimeout("setClock()",500); <br>
+} <br>
+// Now start the clock going...<br>
+setClock(); <br>
+&lt;/script&gt; <br>
+</code>
+
+<form>
+<input id="Clock" type="text" size="8" class="box" style="text-align:center; font-weight: bold;" />
+</form>
+<script>
+function setClock() {
+     theDate = new Date();
+     theTime = theDate.getHours() + ":" + theDate.getMinutes() + ":" + theDate.getSeconds();
+     document.getElementById("Clock").value = theTime;
+     setTimeout("setClock()",500);
+}
+setClock();
+
+</script>
+<br>
+<b>Warning:</b> You can't use document.write() with setTimeout(). 
+Technically, you shouldn't use document.write() with any code that gets run after the page is loaded. 
+Some JavaScript functions let you get away with it, but some are fussier. setTimeout is one of the fussy ones.
+<p>
+In the clock example above, we get round this by 
+using a 'dummy' form with a text element. By setting the value of the text element, we can display changing text to the viewer.
+
+
+<h2>Re-using functions between web-pages</h2>
+You can place your functions in a separate file, which you then use in
+different pages. To do this, you create a pure JavaScript file (e.g.
+myJavaScriptFunctions.js), which you include using<br>
+<code>&lt;script src="myJavaScriptFunctions.js"&gt;&lt;/script&gt;</code><br>
+See the page on <i>Embedding: How JavaScript fits into Html</i> when I
+write it...
+</body>
+</html>

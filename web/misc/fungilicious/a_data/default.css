@@ -1,0 +1,40 @@
+/* CSS Document */
+
+body {margin: 0px; padding: 0px; background-color:#F3E7EB; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1em; text-align:center;}
+
+body > #container{width: 772px;}
+#container {position: relative; width: 770px; margin: auto; text-align:left; }
+
+
+#nav {position: relative; padding-top: 1px; font-size:0.9em;}
+#nav_list li{display: inline; padding: 0px 5px;}
+#nav_list a{ background-image:url(../images/layout/dot.gif); background-repeat: no-repeat; background-position: left center; padding: 0px 0px 0px 10px; text-decoration: none; color:#571F24;}
+
+#banner{position: relative; border: 1px solid #990033; background-color:#FFF; padding: 0px; height:133px; z-index:100;}
+
+#body_container{float: left; postion: relative; height: 100%; margin-top:-1px; background-color: #FFF; border: 1px solid #990033; width:772px; background-image: url(../images/layout/faux.gif); background-repeat: repeat-y; background-position: right 160px;}
+#container > #body_container {width: 770px;}
+
+#right_panel{position: relative; float: right; height: 100%; width: 269px; background-color:#990033; color: #fff; line-height: 1.4em; font-size:0.85em; margin-top: 1px solid #fff;}
+#right_panel p {margin-left: 10px; font-style:italic;}
+#image_holder {width: 269px; text-align:center; position:relative; left: 1px;}
+#top_align_image_holder {width: 269px; text-align:center; position:relative; left: 1px; display:inline;}
+
+
+
+#left_content{ line-height:1.7em; color:#666; position: relative; float: left; height: 100%; width: 501px; background-color:#fff; padding: 20px 20px 20px 20px; overflow:auto;}
+#body_container > #left_content {width: 461px; height: 100%;}
+.berry_delicious { vertical-align: middle;}
+
+#footer {float: left; width: 772px; padding:5px 20px ; background-color: #903; color: #fff; border-top: 1px solid #fff;}
+#container > #footer {width: 732px;}
+#footer a{font-weight:bold; color:#fff;}
+#footer a:hover{text-decoration: none;}
+
+.emphasis {font-size: 1.4em; color:#903; font-style: italic;}
+h1 {font-size: 1.4em; color:#903; font-style: italic; font-weight:normal; display:inline;}
+
+
+
+a {color: #990033;}
+a:hover {text-decoration: none;}

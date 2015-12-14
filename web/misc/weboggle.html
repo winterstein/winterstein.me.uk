@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+table.board {
+	border: solid black 1px;
+}
+table.board td {
+	width:50px;
+	height:50px;
+	font-size: 24pt;
+	border: solid black 1px;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<center>
+<table class='board'>
+<tr><td id='c00'></td><td id='c01'></td><td id='c02'></td><td id='c03'></td></tr>
+<tr><td id='c10'></td><td id='c11'></td><td id='c12'></td><td id='c13'></td></tr>
+<tr><td id='c20'></td><td id='c21'></td><td id='c22'></td><td id='c23'></td></tr>
+<tr><td id='c30'></td><td id='c31'></td><td id='c32'></td><td id='c33'></td></tr>
+</table>
+<div id='timer'></div>
+<button onclick='pickLetters();'>Restart!</button>
+</center>
+<script>
+
+// Create dice face arrays
+var dice = [
+["T", "O", "E", "S", "S", "I"],
+["A", "S", "P", "F", "F", "K"],
+["N", "U", "I", "H", "M", "Qu"],
+["O", "B", "J", "O", "A", "B"],
+["L", "N", "H", "N", "R", "Z"],
+["A", "H", "S", "P", "C", "O"],
+["R", "Y", "V", "D", "E", "L"],
+["I", "O", "T", "M", "U", "C"],
+["L", "R", "E", "I", "X", "D"],
+["T", "E", "R", "W", "H", "V"],
+["T", "S", "T", "I", "Y", "D"],
+["W", "N", "G", "E", "E", "H"],
+["E", "R", "T", "T", "Y", "L"],
+["O", "W", "T", "O", "A", "T"],
+["A", "E", "A", "N", "E", "G"],
+["E", "I", "U", "N", "E", "S"],
+];
+
+function pickLetters() {
+ var letters = [];
+ for(var i=0; i<16; i++) {
+	var r = Math.floor(Math.random() * 6);
+	letters[letters.length] = dice[i][r];
+ }
+ var letters2 = [];
+ while(letters.length != 0) {
+	var r = Math.floor(Math.random() * letters.length);
+	var a = letters[r];
+	letters2[letters2.length] = a;
+	len1 = letters.length;
+	letters.splice(r,1);
+	len2 = letters.length;
+ }
+ for(var i=0; i<4; i++) {
+	for(var j=0; j<4; j++) {
+		var cell = document.getElementById('c'+i+j);
+		cell.innerHTML = letters2[i*4 + j];
+	}
+ }
+ startTimer();
+}
+
+
+var startTime;
+var timer = document.getElementById('timer');
+function startTimer() {
+	startTime = new Date().getTime();
+	setTimeout("runTimer();", 100);
+}
+function runTimer() {
+	var timeLeft = 3*60*1000 - (new Date().getTime()) + startTime;
+	timer.innerHTML = Math.floor(timeLeft/1000)+"s";
+	if (timeLeft>0) setTimeout("runTimer();", 100);
+	else timer.innerHTML = 'TIME UP';
+}
+
+pickLetters();
+</script>
+
+</body>
+</html>

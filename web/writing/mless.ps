@@ -1,0 +1,2375 @@
+%-12345X@PJL JOB
+@PJL ENTER LANGUAGE=POSTSCRIPT
+%!PS-Adobe-3.0
+%%Title: mless.sxw
+%%Creator: PScript5.dll Version 5.2
+%%CreationDate: 7/21/2003 13:41:35
+%%For: Administrator
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%Orientation: Portrait
+%%PageOrder: Special
+%%DocumentNeededResources: (atend)
+%%DocumentSuppliedResources: (atend)
+%%DocumentData: Clean7Bit
+%%TargetDevice: (HP Color LaserJet) (2013.114) 4
+%%LanguageLevel: 2
+%%EndComments
+
+%%BeginDefaults
+%%PageBoundingBox: 11 13 601 780
+%%ViewingOrientation: 1 0 0 1
+%%EndDefaults
+
+
+%%BeginProlog
+%%BeginResource: file Pscript_WinNT_ErrorHandler 5.0 0
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop false
+setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type/stringtype
+ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def currentpoint/toy exch
+def/tox exch def 1 setgray newpath tox toy 2 sub moveto 0 ty rlineto tx 0
+rlineto 0 ty neg rlineto closepath fill tox toy moveto 0 setgray show}bind def
+/nl{currentpoint exch pop lmargin exch moveto 0 -10 rmoveto}def/=={/cp 0 def
+typeprint nl}def/typeprint{dup type exec}readonly def/lmargin 72 def/rmargin 72
+def/tprint{dup length cp add rmargin gt{nl/cp 0 def}if dup length cp add/cp
+exch def prnt}readonly def/cvsprint{=string cvs tprint( )tprint}readonly def
+/integertype{cvsprint}readonly def/realtype{cvsprint}readonly def/booleantype
+{cvsprint}readonly def/operatortype{(--)tprint =string cvs tprint(-- )tprint}
+readonly def/marktype{pop(-mark- )tprint}readonly def/dicttype{pop
+(-dictionary- )tprint}readonly def/nulltype{pop(-null- )tprint}readonly def
+/filetype{pop(-filestream- )tprint}readonly def/savetype{pop(-savelevel- )
+tprint}readonly def/fonttype{pop(-fontid- )tprint}readonly def/nametype{dup
+xcheck not{(/)tprint}if cvsprint}readonly def/stringtype{dup rcheck{(\()tprint
+tprint(\))tprint}{pop(-string- )tprint}ifelse}readonly def/arraytype{dup rcheck
+{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}forall(])
+tprint}ifelse}{pop(-array- )tprint}ifelse}readonly def/packedarraytype{dup
+rcheck{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}
+forall(])tprint}ifelse}{pop(-packedarray- )tprint}ifelse}readonly def/courier
+/Courier findfont 10 scalefont def end errordict/handleerror{systemdict begin
+$error begin $brkpage begin newerror{/newerror false store vmstatus pop pop 0
+ne{grestoreall}if errorname(VMerror)ne{showpage}if initgraphics courier setfont
+lmargin 720 moveto errorname(VMerror)eq{userdict/ehsave known{clear userdict
+/ehsave get restore 2 vmreclaim}if vmstatus exch pop exch pop PrtVMMsg}{
+(ERROR: )prnt errorname prnt nl(OFFENDING COMMAND: )prnt/command load prnt
+$error/ostack known{nl nl(STACK:)prnt nl nl $error/ostack get aload length{==}
+repeat}if}ifelse systemdict/showpage get exec(%%[ Error: )print errorname
+=print(; OffendingCommand: )print/command load =print( ]%%)= flush}if end end
+end}dup 0 systemdict put dup 4 $brkpage put bind readonly put/currentpacking
+where{pop/setpacking where{pop oldpack setpacking}if}if
+%%EndResource
+userdict /Pscript_WinNT_Incr 230 dict dup begin put
+%%BeginResource: file Pscript_FatalError 5.0 0
+userdict begin/FatalErrorIf{{initgraphics findfont 1 index 0 eq{exch pop}{dup
+length dict begin{1 index/FID ne{def}{pop pop}ifelse}forall/Encoding
+{ISOLatin1Encoding}stopped{StandardEncoding}if def currentdict end
+/ErrFont-Latin1 exch definefont}ifelse exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def end
+%%EndResource
+userdict begin/PrtVMMsg{vmstatus exch sub exch pop gt{[
+(This job requires more memory than is available in this printer.)100 500
+(Try one or more of the following, and then print again:)100 485
+(For the output format, choose Optimize For Portability.)115 470
+(In the Device Settings page, make sure the Available PostScript Memory is accurate.)
+115 455(Reduce the number of fonts in the document.)115 440
+(Print the document in parts.)115 425 12/Times-Roman showpage
+(%%[ PrinterError: Low Printer VM ]%%)= true FatalErrorIf}if}bind def end
+version cvi 2016 ge{/VM?{pop}bind def}{/VM? userdict/PrtVMMsg get def}ifelse
+105000 VM?
+%%BeginResource: file Pscript_Win_Basic 5.0 0
+/d/def load def/,/load load d/~/exch , d/?/ifelse , d/!/pop , d/`/begin , d/^
+/index , d/@/dup , d/+/translate , d/$/roll , d/U/userdict , d/M/moveto , d/-
+/rlineto , d/&/currentdict , d/:/gsave , d/;/grestore , d/F/false , d/T/true ,
+d/N/newpath , d/E/end , d/Ac/arc , d/An/arcn , d/A/ashow , d/D/awidthshow , d/C
+/closepath , d/V/div , d/O/eofill , d/L/fill , d/I/lineto , d/-c/curveto , d/-M
+/rmoveto , d/+S/scale , d/Ji/setfont , d/Lc/setlinecap , d/Lj/setlinejoin , d
+/Lw/setlinewidth , d/Lm/setmiterlimit , d/sd/setdash , d/S/show , d/LH/showpage
+, d/K/stroke , d/W/widthshow , d/R/rotate , d/L2? false/languagelevel where{pop
+languagelevel 2 ge{pop true}if}if d L2?{/xS/xshow , d/yS/yshow , d/zS/xyshow ,
+d}if/b{bind d}bind d/bd{bind d}bind d/xd{~ d}bd/ld{, d}bd/bn/bind ld/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/ADO_mxRot null d/self & d/OrgMx matrix
+currentmatrix d/reinitialize{: OrgMx setmatrix[/TextInit/GraphInit/UtilsInit
+counttomark{@ where{self eq}{F}?{cvx exec}{!}?}repeat cleartomark ;}b
+/initialize{`{/Pscript_Win_Data where{!}{U/Pscript_Win_Data & put}?/ADO_mxRot ~
+d/TextInitialised? F d reinitialize E}{U/Pscript_Win_Data 230 dict @ ` put
+/ADO_mxRot ~ d/TextInitialised? F d reinitialize}?}b/terminate{!{& self eq
+{exit}{E}?}loop E}b/suspend/terminate , d/resume{` Pscript_Win_Data `}b U `
+/lucas 21690 d/featurebegin{countdictstack lucas[}b/featurecleanup{stopped
+{cleartomark @ lucas eq{! exit}if}loop countdictstack ~ sub @ 0 gt{{E}repeat}
+{!}?}b E/snap{transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~
+itransform}b/dsnap{dtransform round ~ round ~ idtransform}b/nonzero_round{@ 0.5
+ge{round}{@ -0.5 lt{round}{0 ge{1}{-1}?}?}?}b/nonzero_dsnap{dtransform
+nonzero_round ~ nonzero_round ~ idtransform}b U<04>cvn{}put/rr{1 ^ 0 - 0 ~ -
+neg 0 - C}b/irp{4 -2 $ + +S fx 4 2 $ M 1 ^ 0 - 0 ~ - neg 0 -}b/rp{4 2 $ M 1 ^ 0
+- 0 ~ - neg 0 -}b/solid{[]0 sd}b/g{@ not{U/DefIf_save save put}if U/DefIf_bool
+2 ^ put}b/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e
+{DefIf_El !}b/UDF{L2?{undefinefont}{!}?}b/UDR{L2?{undefineresource}{! !}?}b
+/freeVM{/Courier findfont[40 0 0 -40 0 0]makefont Ji 2 vmreclaim}b/hfRedefFont
+{findfont @ length dict `{1 ^/FID ne{d}{! !}?}forall & E @ ` ~{/CharStrings 1
+dict `/.notdef 0 d & E d}if/Encoding 256 array 0 1 255{1 ^ ~/.notdef put}for d
+E definefont !}bind d/hfMkCIDFont{/CIDFont findresource @ length 2 add dict `{1
+^ @/FID eq ~ @/XUID eq ~/UIDBase eq or or{! !}{d}?}forall/CDevProc ~ d/Metrics2
+16 dict d/CIDFontName 1 ^ d & E 1 ^ ~/CIDFont defineresource ![~]composefont !}
+bind d
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L2 5.0 0
+/rf/rectfill , d/fx{1 1 dtransform @ 0 ge{1 sub 0.5}{1 add -0.5}? 3 -1 $ @ 0 ge
+{1 sub 0.5}{1 add -0.5}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{4 -2 $
+snap + +S fx rf}b/rs/rectstroke , d/rc/rectclip , d/UtilsInit{currentglobal{F
+setglobal}if}b/scol{! setcolor}b/colspA/DeviceGray d/colspABC/DeviceRGB d
+/colspRefresh{colspABC setcolorspace}b/SetColSpace{colspABC setcolorspace}b
+/resourcestatus where{!/ColorRendering/ProcSet resourcestatus{! ! T}{F}?}{F}?
+not{/ColorRendering<</GetHalftoneName{currenthalftone @/HalftoneName known{
+/HalftoneName get}{!/none}?}bn/GetPageDeviceName{currentpagedevice @
+/PageDeviceName known{/PageDeviceName get @ null eq{!/none}if}{!/none}?}bn
+/GetSubstituteCRD{!/DefaultColorRendering/ColorRendering resourcestatus{! !
+/DefaultColorRendering}{(DefaultColorRendering*){cvn exit}127 string
+/ColorRendering resourceforall}?}bn>>/defineresource where{!/ProcSet
+defineresource !}{! !}?}if/buildcrdname{/ColorRendering/ProcSet findresource `
+mark GetHalftoneName @ type @/nametype ne ~/stringtype ne and{!/none}if(.)
+GetPageDeviceName @ type @/nametype ne ~/stringtype ne and{!/none}if(.)5 ^ 0 5
+-1 1{^ length add}for string 6 1 $ 5 ^ 5{~ 1 ^ cvs length 1 ^ length 1 ^ sub
+getinterval}repeat ! cvn 3 1 $ ! ! E}b/definecolorrendering{~ buildcrdname ~
+/ColorRendering defineresource !}b/findcolorrendering where{!}{
+/findcolorrendering{buildcrdname @/ColorRendering resourcestatus{! ! T}{
+/ColorRendering/ProcSet findresource ` GetSubstituteCRD E F}?}b}?
+/selectcolorrendering{findcolorrendering !/ColorRendering findresource
+setcolorrendering}b/G2UBegin{findresource/FontInfo get/GlyphNames2Unicode get
+`}bind d/G2CCBegin{findresource/FontInfo get/GlyphNames2HostCode get `}bind d
+/G2UEnd{E}bind d/AddFontInfoBegin{/FontInfo 8 dict @ `}bind d/AddFontInfo{
+/GlyphNames2Unicode 16 dict d/GlyphNames2HostCode 16 dict d}bind d
+/AddFontInfoEnd{E d}bind d/T0AddCFFMtx2{/CIDFont findresource/Metrics2 get ` d
+E}bind d
+%%EndResource
+end
+%%EndProlog
+
+%%BeginSetup
+statusdict begin (%%[ ProductName: ) print product print ( ]%%)= flush end
+[ 1 0 0 1 0 0 ] false Pscript_WinNT_Incr dup /initialize get exec
+featurebegin{
+%%BeginNonPPDFeature: JobTimeout 0
+0 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/JobTimeout  4 -1 roll put setuserparams}{statusdict/setjobtimeout get exec}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginNonPPDFeature: WaitTimeout 300
+300 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginFeature: *HPHalftone Cluster
+
+	<</Install 
+	{/ClusterHalftone /Halftone findresource sethalftone {} settransfer
+	false setstrokeadjust /ClusterCRD /ColorRendering findresource setcolorrendering
+	} 
+	>> setpagedevice
+    	/ClusterHalftone /Halftone findresource sethalftone 
+   	/ClusterCRD /ColorRendering findresource setcolorrendering    
+
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *HPColorModel Color
+
+	<</ProcessColorModel /DeviceCMY>> setpagedevice
+
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *MediaType Plain
+
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *PageSize Letter
+
+	<</DeferredMediaSelection true>> setpagedevice
+    2 dict dup /PageSize [612 792] put dup /ImagingBBox null put setpagedevice
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *OutputBin Upper
+1 dict dup /OutputFaceUp false put setpagedevice
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *HPPantone False
+
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *Smoothing Medium
+2 dict
+	dup /PostRenderingEnhance true put
+	dup /PostRenderingEnhanceDetails
+	2 dict dup /REValue 2 put dup /Type 8 put put
+	setpagedevice
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *Resolution 300dpi
+
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *Option1 False
+
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *InstalledMemory 8Meg
+
+%%EndFeature
+}featurecleanup
+1 setlinecap 1 setlinejoin
+/mysetup [ 72 300 V 0 0 -72 300 V 11.00125 780.00097 ] def 
+%%EndSetup
+
+userdict begin /ehsave save def end
+%%Page: 1 1
+%%PageBoundingBox: 11 13 601 780
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+/DeviceCMYK dup setcolorspace /colspABC exch def
+0.832 0.813 0.777 0.594 3 scol Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Text 5.0 0
+/TextInit{TextInitialised? not{/Pscript_Windows_Font & d/TextInitialised? T d
+/fM[1 0 0 1 0 0]d/mFM matrix d/iMat[1 0 0.212557 1 0 0]d}if}b/copyfont{1 ^
+length add dict `{1 ^/FID ne{d}{! !}?}forall & E}b/EncodeDict 11 dict d/bullets
+{{/bullet}repeat}b/rF{3 copyfont @ ` ~ EncodeDict ~ get/Encoding ~ 3 ^/0 eq{&
+/CharStrings known{CharStrings/Eth known not{! EncodeDict/ANSIEncodingOld get}
+if}if}if d E}b/mF{@ 7 1 $ findfont ~{@/Encoding get @ StandardEncoding eq{! T}{
+{ISOLatin1Encoding}stopped{! F}{eq}?{T}{@ ` T 32 1 127{Encoding 1 ^ get
+StandardEncoding 3 -1 $ get eq and}for E}?}?}{F}?{1 ^ ~ rF}{0 copyfont}? 6 -2 $
+! ! ~ !/pd_charset @ where{~ get 128 eq{@ FDV 2 copy get @ length array copy
+put pd_CoverFCRange}if}{!}? 2 ^ ~ definefont fM 5 4 -1 $ put fM 4 0 put fM
+makefont Pscript_Windows_Font 3 1 $ put}b/sLT{: Lw -M currentpoint snap M 0 - 0
+Lc K ;}b/xUP null d/yUP null d/uW null d/xSP null d/ySP null d/sW null d/sSU{N
+/uW ~ d/yUP ~ d/xUP ~ d}b/sU{xUP yUP uW sLT}b/sST{N/sW ~ d/ySP ~ d/xSP ~ d}b/sT
+{xSP ySP sW sLT}b/sR{: + R 0 0 M}b/sRxy{: matrix astore concat 0 0 M}b/eR/; , d
+/AddOrigFP{{&/FontInfo known{&/FontInfo get length 6 add}{6}? dict `
+/WinPitchAndFamily ~ d/WinCharSet ~ d/OrigFontType ~ d/OrigFontStyle ~ d
+/OrigFontName ~ d & E/FontInfo ~ d}{! ! ! ! !}?}b/mFS{makefont
+Pscript_Windows_Font 3 1 $ put}b/mF42D{0 copyfont `/FontName ~ d 2 copy ~ sub 1
+add dict `/.notdef 0 d 2 copy 1 ~{@ 3 ^ sub Encoding ~ get ~ d}for & E
+/CharStrings ~ d ! ! & @ E/FontName get ~ definefont}b/mF42{15 dict ` @ 4 1 $
+FontName ~ d/FontType 0 d/FMapType 2 d/FontMatrix[1 0 0 1 0 0]d 1 ^ 254 add 255
+idiv @ array/Encoding ~ d 0 1 3 -1 $ 1 sub{@ Encoding 3 1 $ put}for/FDepVector
+Encoding length array d/CharStrings 2 dict `/.notdef 0 d & E d 0 1 Encoding
+length 1 sub{@ @ 10 lt{! FontName length 1 add string}{100 lt{FontName length 2
+add string}{FontName length 3 add string}?}? @ 0 FontName @ length string cvs
+putinterval @ 3 -1 $ @ 4 1 $ 3 string cvs FontName length ~ putinterval cvn 1 ^
+256 mul @ 255 add 3 -1 $ 4 ^ findfont mF42D FDepVector 3 1 $ put}for & @ E
+/FontName get ~ definefont ! ! ! mF}b/mF_OTF_V{~ ! ~ ! 4 -1 $ ! findfont 2 ^ ~
+definefont fM @ @ 4 6 -1 $ neg put 5 0 put 90 matrix R matrix concatmatrix
+makefont Pscript_Windows_Font 3 1 $ put}b/mF_TTF_V{3{~ !}repeat 3 -1 $ !
+findfont 1 ^ ~ definefont Pscript_Windows_Font 3 1 $ put}b/UmF{L2?
+{Pscript_Windows_Font ~ undef}{!}?}b/UmF42{@ findfont/FDepVector get{/FontName
+get undefinefont}forall undefinefont}b
+%%EndResource
+end reinitialize
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Encoding256 5.0 0
+/CharCol256Encoding[/.notdef/breve/caron/dotaccent/dotlessi/fi/fl/fraction
+/hungarumlaut/Lslash/lslash/minus/ogonek/ring/Zcaron/zcaron/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl/numbersign
+/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk/plus/comma
+/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon
+/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S
+/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore/grave
+/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright
+/asciitilde/.notdef/Euro/.notdef/quotesinglbase/florin/quotedblbase/ellipsis
+/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/.notdef
+/.notdef/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet
+/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/.notdef/.notdef
+/Ydieresis/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section
+/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/.notdef/registered
+/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph
+/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter
+/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis
+/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute
+/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve
+/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex
+/udieresis/yacute/thorn/ydieresis]def EncodeDict/256 CharCol256Encoding put
+%%EndResource
+end reinitialize
+
+%%IncludeResource: font Times-Bold
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Win_Euro_L2 5.0 0
+/UseT3EuroFont{/currentdistillerparams where{pop currentdistillerparams
+/CoreDistVersion get 4000 le}{false}ifelse}bind def/NewEuroT3Font?{dup/FontType
+get 3 eq{dup/EuroFont known exch/BaseFont known and}{pop false}ifelse}bind def
+/T1FontHasEuro{dup/CharStrings known not{dup NewEuroT3Font?{dup/EuroGlyphName
+get exch/EuroFont get/CharStrings get exch known{true}{false}ifelse}{pop false}
+ifelse}{dup/FontType get 1 eq{/CharStrings get/Euro known}{dup/InfoDict known{
+/InfoDict get/Euro known}{/CharStrings get/Euro known}ifelse}ifelse}ifelse}bind
+def/FontHasEuro{findfont dup/Blend known{pop true}{T1FontHasEuro}ifelse}bind
+def/EuroEncodingIdx 1 def/EuroFontHdr{12 dict begin/FontInfo 10 dict dup begin
+/version(001.000)readonly def/Notice(Copyright (c)1999 Adobe Systems
+Incorporated. All Rights Reserved.)readonly def/FullName(Euro)readonly def
+/FamilyName(Euro)readonly def/Weight(Regular)readonly def/isFixedPitch false
+def/ItalicAngle 0 def/UnderlinePosition -100 def/UnderlineThickness 50 def end
+readonly def/FontName/Euro def/Encoding 256 array 0 1 255{1 index exch/.notdef
+put}for def/PaintType 0 def/FontType 1 def/FontMatrix[0.001 0 0 0.001 0 0]def
+/FontBBox{-25 -23 1500 804}readonly def currentdict end dup/Private 20 dict dup
+begin/ND{def}def/NP{put}def/lenIV -1 def/RD{string currentfile exch
+readhexstring pop}def/-|{string currentfile exch readstring pop}executeonly def
+/|-{def}executeonly def/|{put}executeonly def/BlueValues[-20 0 706 736 547 572]
+|-/OtherBlues[-211 -203]|-/BlueScale 0.0312917 def/MinFeature{16 16}|-/StdHW
+[60]|-/StdVW[71]|-/ForceBold false def/password 5839 def/Erode{8.5 dup 3 -1
+roll 0.1 mul exch 0.5 sub mul cvi sub dup mul 71 0 dtransform dup mul exch dup
+mul add le{pop pop 1.0 1.0}{pop pop 0.0 1.5}ifelse}def/OtherSubrs[{}{}{}
+{systemdict/internaldict known not{pop 3}{1183615869 systemdict/internaldict
+get exec dup/startlock known{/startlock get exec}{dup/strtlck known{/strtlck
+get exec}{pop 3}ifelse}ifelse}ifelse}executeonly]|-/Subrs 5 array dup 0
+<8E8B0C100C110C110C210B>put dup 1<8B8C0C100B>put dup 2<8B8D0C100B>put dup 3<0B>
+put dup 4<8E8C8E0C100C110A0B>put |- 2 index/CharStrings 256 dict dup begin
+/.notdef<8b8b0d0e>def end end put put dup/FontName get exch definefont pop}bind
+def/AddEuroGlyph{2 index exch EuroEncodingIdx 1 eq{EuroFontHdr}if systemdict
+begin/Euro findfont dup dup/Encoding get 5 1 roll/Private get begin/CharStrings
+get dup 3 index known{pop pop pop pop end end}{begin 1 index exch def end end
+end EuroEncodingIdx dup 1 add/EuroEncodingIdx exch def exch put}ifelse}bind def
+/GetNewXUID{currentdict/XUID known{[7 XUID aload pop]true}{currentdict/UniqueID
+known{[7 UniqueID]true}{false}ifelse}ifelse}bind def/BuildT3EuroFont{exch 16
+dict begin dup/FontName exch def findfont dup/Encoding get/Encoding exch def
+dup length 1 add dict copy dup/FID undef begin dup dup/FontName exch def
+/Encoding 256 array 0 1 255{1 index exch/.notdef put}for def GetNewXUID{/XUID
+exch def}if currentdict end definefont pop/BaseFont exch findfont 1000
+scalefont def/EuroFont exch findfont 1000 scalefont def pop/EuroGlyphName exch
+def/FontType 3 def/FontMatrix[.001 0 0 .001 0 0]def/FontBBox BaseFont/FontBBox
+get def/Char 1 string def/BuildChar{exch dup begin/Encoding get 1 index get
+/Euro eq{BaseFont T1FontHasEuro{false}{true}ifelse}{false}ifelse{EuroFont
+setfont pop userdict/Idx 0 put EuroFont/Encoding get{EuroGlyphName eq{exit}
+{userdict/Idx Idx 1 add put}ifelse}forall userdict/Idx get}{dup dup Encoding
+exch get BaseFont/Encoding get 3 1 roll put BaseFont setfont}ifelse Char 0 3 -1
+roll put Char stringwidth newpath 0 0 moveto Char true charpath flattenpath
+pathbbox setcachedevice 0 0 moveto Char show end}bind def currentdict end dup
+/FontName get exch definefont pop}bind def/AddEuroToT1Font{dup findfont dup
+length 10 add dict copy dup/FID undef begin/EuroFont 3 -1 roll findfont 1000
+scalefont def CharStrings dup length 1 add dict copy begin/Euro{EuroFont
+setfont pop EuroGBBox aload pop setcachedevice 0 0 moveto EuroGName glyphshow}
+bind def currentdict end/CharStrings exch def GetNewXUID{/XUID exch def}if 3 1
+roll/EuroGBBox exch def/EuroGName exch def currentdict end definefont pop}bind
+def/BuildNewFont{UseT3EuroFont{BuildT3EuroFont}{pop AddEuroToT1Font}ifelse}bind
+def/UseObliqueEuro{findfont/FontMatrix get dup 2 get 0 eq exch dup 0 get exch 3
+get eq and UseT3EuroFont or}bind def
+%%EndResource
+end reinitialize
+7500 VM?
+/Times-Bold FontHasEuro not
+{
+/Euro.Times-Bold
+ [500 0 19 -13 492 688 ] 
+<9EF8880DF84CA6037EA701F791C801F7FFC801F928A7018F0AC3F73203F852A6037EA701
+F791C801F7FFC801F928A701F86DF89C15F73A0770068875877D778B08858B749A799308
+7E916E946B8B08358BFB144773FB58086506774E05C1065A076706774E05C7069DFB27E1
+FB0BF7188B088F0AC3F73203F84CA6037EA701F791C801F7FFC801F928A701B88BAA9F91
+8E089C939892908B089F8B8F7D8E7508A606F7450772067A3F5240538B084F8B68EC89F7
+2108F72F06A0C805FB4506BC07F75506A0C805FB690690F71CA9EFC88B088F0AF852A603
+7EA701F791C801F7FFC801F928A701D58BB93A9C5008090E>
+AddEuroGlyph
+/Euro /Times-Bold /Times-Bold-Copy BuildNewFont
+} if
+F /F0 0 /256 T /Times-Bold mF 
+/F0S3A F0 [58 0 0 -58 0 0 ] mFS
+F0S3A Ji 
+993 297 M (Do you speak Jive?)[42 28 15 29 28 31 15 23 32 26 29 31 15 29 16 29 26  0]xS 
+
+%%IncludeResource: font Times-Italic
+7500 VM?
+/Times-Italic FontHasEuro not
+{
+/Euro.Times-Italic
+ [500 0 23 -7 578 676 ] 
+<A2F8880DDBDB03F7F8A003F88D9D0384A701F79DBB01F802BB01F91CA7018F0ADBDB03F7
+F8A003F88D9D0384A701F79DBB01F802BB01F89CF71301F8BFF93315770680758A89818B
+08848B79947592088F0ADBDB03F7F8A003F88D9D0384A701F79DBB01F802BB01F91CA701
+75916F926D8B08FB0E8B27FB0A5BFB24084606735B05D6068879857A8A79084A06745B05
+DD068A7D8A7C8B7C08FB01B3FB0BF7101EA28BA4919E94089D94948F928B08928B8D858D
+7508A006B0F72205780679674E3D438B08477BD1D11F8BB290B28FA508F76306A2BB05FB
+71068D9D929C8F9D08F77E06A3BB05FB88069FDEC8F72BEC8B08D9B757461F84078F0ADB
+DB03F7F8A003F88D9D0384A701F79DBB01F802BB01F89CF713019D06090E>
+AddEuroGlyph
+/Euro /Times-Italic /Times-Italic-Copy BuildNewFont
+} if
+F /F1 0 /256 T /Times-Italic mF 
+/F1S2A F1 [42 0 0 -42 0 0 ] mFS
+F1S2A Ji 
+810 405 M ("Je parle le francais, mais je ne comprende pas.")[17 19 19 11 21 21 16 12 19 11 12 19 11 12 16 21 21 19 21 12 16 11 11 30 21 12 16 11 12 19 11 21
+19 11 19 21 30 21 16 19 21 21 19 11 21 21 16 11  0]xS 
+946 453 M (- Woody Allen, on tour in France)[14 11 34 21 21 21 19 11 26 12 12 19 21 11 11 21 21 11 12 21 21 16 11 12 21 11 25 16 21 21 19  0]xS 
+
+%%IncludeResource: font Times-Roman
+7500 VM?
+/Times-Roman FontHasEuro not
+{
+/Euro.Times-Roman
+ [500 0 24 -14 493 676 ] 
+<A3F8880DC0EB03F854F743950C0C037DA501F7A0BB01F805BB01F91EA501F869F8911584
+F73A0576068478827E7F8B087F8B70AC438B082A8BFB0D6471FB700863067C5B05BE068A
+7E8B878B7D08750764067D5B05C206A0FB7BF71858E88B088F0AC0EB03F84BF789950C0C
+037DA501F7A0BB01F805BB01F91EA501CA8BACAC998B08988B95809076088F0AC0EB03F8
+54F743950C0C037DA501F7A0BB01F805BB01F91EA501A00692F73705750675FB09417667
+8B083A8B43C182F75E08F7740699BB05FB84069C078B978C978B9708F7950699BB05FBA1
+069AF755D5B3D18B08AB8BDD71A2FB0708090E>
+AddEuroGlyph
+/Euro /Times-Roman /Times-Roman-Copy BuildNewFont
+} if
+F /F2 0 /256 T /Times-Roman mF 
+/F2S32 F2 [50 0 0 -50 0 0 ] mFS
+F2S32 Ji 
+190 565 M (As)[35  0]xS 
+258 565 M (the)[15 24  0]xS 
+333 565 M (travel)[15 17 22 24 22  0]xS 
+459 565 M (agents)[22 25 22 24 15  0]xS 
+600 565 M (tell)[15 22 12  0]xS 
+674 565 M (you,)[23 26 25  0]xS 
+775 565 M (travelling)[15 17 22 24 22 12 12 12 24  0]xS 
+974 565 M (by)[24  0]xS 
+1035 565 M (wormhole)[36 26 17 37 24 26 12  0]xS 
+1249 565 M (portal)[25 26 17 15 22  0]xS 
+1380 565 M (isn't)[12 19 24 8  0]xS 
+1471 565 M (dangerous)[25 22 24 25 22 17 26 25  0]xS 
+1690 565 M (these)[15 24 22 19  0]xS 
+1806 565 M (days.)[25 22 23 19  0]xS 
+1922 565 M (In)[17  0]xS 
+1977 565 M (fact)[15 22 22  0]xS 
+2065 565 M (it)[12  0]xS 
+2105 565 M (is)[12  0]xS 
+2150 565 M (by)[24  0]xS 
+2211 565 M (far)[15 22  0]xS 
+190 623 M (the)[15 24  0]xS 
+265 623 M (safest)[19 22 15 22 19  0]xS 
+392 623 M (form)[15 26 17  0]xS 
+501 623 M (of)[26  0]xS 
+556 623 M (transport)[15 17 22 24 19 25 26 17  0]xS 
+750 623 M (around.)[22 17 26 25 24 25  0]xS 
+917 623 M (Statistically,)[28 15 22 15 12 19 15 12 22 22 12 12 23  0]xS 
+1173 623 M (you're)[23 26 25 8 17  0]xS 
+1308 623 M (more)[37 26 17  0]xS 
+1424 623 M (likely)[12 12 25 22 12  0]xS 
+1545 623 M (to)[15  0]xS 
+1600 623 M (get)[25 22  0]xS 
+1676 623 M (hit)[24 12  0]xS 
+1741 623 M (by)[24  0]xS 
+1803 623 M (a)S 
+1839 623 M (car)[22 22  0]xS 
+1914 623 M (on)[26  0]xS 
+1979 623 M (the)[15 24  0]xS 
+2054 623 M (way)[36 22  0]xS 
+2149 623 M (to)[15  0]xS 
+2204 623 M (the)[15 24  0]xS 
+190 680 M (portal-caster,)[25 26 17 15 22 12 17 22 22 19 15 22 17  0]xS 
+474 680 M (or)[26  0]xS 
+537 680 M (have)[24 22 24  0]xS 
+649 680 M (an)[22  0]xS 
+716 680 M (accident)[22 22 22 12 25 22 24  0]xS 
+900 680 M (in)[12  0]xS 
+956 680 M (your)[23 26 25  0]xS 
+1067 680 M (own)[26 36  0]xS 
+1173 680 M (home.)[24 26 37 22  0]xS 
+1315 680 M (In)[17  0]xS 
+1376 680 M (fact,)[15 22 22 15  0]xS 
+1483 680 M (more)[37 26 17  0]xS 
+1605 680 M (people)[25 22 26 25 12  0]xS 
+1757 680 M (die)[25 12  0]xS 
+1836 680 M (putting)[25 25 15 15 12 24  0]xS 
+1998 680 M (on)[26  0]xS 
+/F1S32 F1 [50 0 0 -50 0 0 ] mFS
+F1S32 Ji 
+2068 680 M (their)[14 25 22 14  0]xS 
+2182 680 M (own)[25 31  0]xS 
+190 737 M (trousers)[14 19 25 25 19 22 19  0]xS 
+/F1S1D F1 [29 0 0 -29 0 0 ] mFS
+F1S1D Ji 
+352 719 M (1)S 
+F2S32 Ji 
+381 737 M (than)[15 24 22  0]xS 
+481 737 M (from)[15 17 26  0]xS 
+590 737 M (mis-ports)[37 12 19 17 25 26 17 15  0]xS 
+791 737 M (-)S 
+823 737 M (seriously.)[19 22 17 12 26 25 19 12 23  0]xS 
+1025 737 M (The)[31 24  0]xS 
+1116 737 M (waiver)[36 22 12 24 22  0]xS 
+1263 737 M (you)[23 26  0]xS 
+1351 737 M (sign)[19 12 25  0]xS 
+1446 737 M (is)[12  0]xS 
+1491 737 M (just)[12 25 19  0]xS 
+1576 737 M (a)S 
+1613 737 M (formality.)[15 26 17 37 22 12 12 15 23  0]xS 
+1819 737 M (Plus)[28 12 25  0]xS 
+1917 737 M (wormhole)[36 26 17 37 24 26 12  0]xS 
+2131 737 M (portals)[25 26 17 15 22 12  0]xS 
+190 794 M (are)[22 17  0]xS 
+268 794 M (fast)[15 22 19  0]xS 
+355 794 M (and)[22 24  0]xS 
+442 794 M (cheap,)[22 24 22 22 25  0]xS 
+586 794 M (and)[22 24  0]xS 
+674 794 M (you)[23 26  0]xS 
+764 794 M (can)[22 22  0]xS 
+849 794 M (see/gland)[19 22 22 14 25 12 22 24  0]xS 
+1050 794 M (places)[25 12 22 22 22  0]xS 
+1188 794 M (your)[23 26 25  0]xS 
+1296 794 M (parents/progenitors)[25 22 17 22 24 15 19 14 25 17 26 25 22 24 12 15 26 17  0]xS 
+1698 794 M (never)[24 22 24 22  0]xS 
+1823 794 M (dreamed)[25 17 22 22 37 22  0]xS 
+2010 794 M (of.)[26 15  0]xS 
+2080 794 M (But)[33 25  0]xS 
+2169 794 M (none)[24 26 24  0]xS 
+190 851 M (of)[26  0]xS 
+249 851 M (this)[15 24 12  0]xS 
+336 851 M (was)[36 22  0]xS 
+431 851 M (any)[22 24  0]xS 
+518 851 M (consolation)[22 26 24 19 26 12 22 15 12 26  0]xS 
+763 851 M (to)[15  0]xS 
+822 851 M (Archibald)[35 17 22 24 12 24 22 12  0]xS 
+1032 851 M (Thondril,)[31 24 26 24 25 17 12 12  0]xS 
+1234 851 M (Professor)[28 17 26 15 22 19 19 26  0]xS 
+1440 851 M (of)[26  0]xS 
+1499 851 M (Linguistics)[30 12 24 25 25 12 19 15 12 22  0]xS 
+1732 851 M (at)[22  0]xS 
+1786 851 M (Jersey)[19 22 17 19 22  0]xS 
+1926 851 M (University,)[36 24 12 24 22 17 19 12 15 23  0]xS 
+2160 851 M (when)[36 24 22  0]xS 
+190 908 M (his routine port to Tau Ceti III went awry.)[24 12 19 13 17 26 25 15 12 24 22 13 25 26 17 15 13 15 26 13 31 22 25 13 33 22 15 12 13 17 17 17
+13 36 22 24 15 13 22 36 17 23  0]xS 
+190 1022 M (Mofo-style-spin-jack-baby. Dark-blue-becoming. Beaucoup mega-sombre-chill.)
+[44 26 15 26 17 19 15 23 12 22 17 19 25 12 24 17 12 22 22 25 17 24 22 24 23 13 13 36 22 17 25 17
+24 12 25 22 17 24 22 22 26 37 12 24 25 13 13 33 22 22 25 22 26 25 25 13 37 22 25 22 17 19 26 37
+24 17 22 17 22 24 12 12 12  0]xS 
+190 1136 M (He'd)[36 22 8  0]xS 
+301 1136 M (punched)[25 25 24 22 24 22  0]xS 
+489 1136 M (in)[12  0]xS 
+545 1136 M (his)[24 12  0]xS 
+620 1136 M (ticket)[15 12 22 25 22  0]xS 
+752 1136 M (at)[22  0]xS 
+809 1136 M (the)[15 24  0]xS 
+890 1136 M (London-Euston)[30 26 24 25 26 24 17 31 25 19 15 26  0]xS 
+1223 1136 M (portal)[25 26 17 15 22  0]xS 
+1360 1136 M (on)[26  0]xS 
+1430 1136 M (Earth,)[31 22 17 15 24  0]xS 
+1573 1136 M (just)[12 25 19  0]xS 
+1664 1136 M (as)[22  0]xS 
+1725 1136 M (he'd)[24 22 8  0]xS 
+1824 1136 M (done)[25 26 24  0]xS 
+1942 1136 M (dozens)[25 26 22 22 24  0]xS 
+2100 1136 M (of)[26  0]xS 
+2161 1136 M (times)[15 12 37 22  0]xS 
+190 1193 M (before.)[24 22 15 26 17 22  0]xS 
+345 1193 M (But)[33 25  0]xS 
+434 1193 M (instead)[12 24 19 15 22 22  0]xS 
+590 1193 M (of)[26  0]xS 
+647 1193 M (arriving)[22 17 17 12 24 12 24  0]xS 
+816 1193 M (in)[12  0]xS 
+868 1193 M (the)[15 24  0]xS 
+945 1193 M (reception)[17 22 22 22 25 15 12 26  0]xS 
+1146 1193 M (zone)[22 26 24  0]xS 
+1256 1193 M (of)[26  0]xS 
+1314 1193 M (the)[15 24  0]xS 
+1391 1193 M (conference)[22 26 24 15 22 17 22 24 22  0]xS 
+1623 1193 M (centre,)[22 22 24 15 17 22  0]xS 
+1774 1193 M (he)[24  0]xS 
+1836 1193 M (was)[36 22  0]xS 
+1929 1193 M (unceremoniously)[25 24 22 22 17 22 37 26 24 12 26 25 19 12  0]xS 
+190 1250 M (dumped)[25 25 37 25 22  0]xS 
+366 1250 M (on)[26  0]xS 
+433 1250 M (a)S 
+471 1250 M (deserted)[25 22 19 22 17 15 22  0]xS 
+655 1250 M (beach)[24 22 22 22  0]xS 
+786 1250 M (in)[12  0]xS 
+839 1250 M (the)[15 24  0]xS 
+916 1250 M (middle)[37 12 25 25 12  0]xS 
+1066 1250 M (of)[26  0]xS 
+1124 1250 M (god-knows-where.)[25 26 25 17 25 24 26 36 19 17 36 24 22 17 22  0]xS 
+1515 1250 M (He)[36  0]xS 
+1589 1250 M (had)[24 22  0]xS 
+1677 1250 M (heard)[24 22 22 17  0]xS 
+1804 1250 M (of)[26  0]xS 
+1862 1250 M (mis-ports)[37 12 19 17 25 26 17 15  0]xS 
+2065 1250 M (of)[26  0]xS 
+2123 1250 M (course.)[22 26 25 17 19 22  0]xS 
+190 1308 M (People)[28 22 26 25 12  0]xS 
+343 1308 M (stepped)[19 15 22 25 25 22  0]xS 
+513 1308 M (through)[15 24 17 26 25 25  0]xS 
+687 1308 M (wormhole)[36 26 17 37 24 26 12  0]xS 
+905 1308 M (portals)[25 26 17 15 22 12  0]xS 
+1058 1308 M (and)[22 24  0]xS 
+1147 1308 M (vanished)[24 22 24 12 19 24 22  0]xS 
+1336 1308 M (never)[24 22 24 22  0]xS 
+1463 1308 M (to)[15  0]xS 
+1521 1308 M (be)[24  0]xS 
+1585 1308 M (found.)[15 26 25 24 25  0]xS 
+1731 1308 M (Ported)[28 26 17 15 22  0]xS 
+1881 1308 M (into)[12 24 15  0]xS 
+1976 1308 M (outer)[26 25 15 22  0]xS 
+2098 1308 M (space)[19 25 22 22  0]xS 
+2226 1308 M (to)[15  0]xS 
+190 1365 M (die)[25 12  0]xS 
+263 1365 M (screaming)[19 22 17 22 22 37 12 24  0]xS 
+476 1365 M (silent)[19 12 12 22 24  0]xS 
+593 1365 M (into)[12 24 15  0]xS 
+683 1365 M (the)[15 24  0]xS 
+757 1365 M (vacuum.)[24 22 22 25 25 37  0]xS 
+939 1365 M (He)[36  0]xS 
+1010 1365 M (was)[36 22  0]xS 
+1100 1365 M (lucky)[12 25 22 25  0]xS 
+1220 1365 M (that)[15 24 22  0]xS 
+1309 1365 M (with)[36 12 15  0]xS 
+1410 1365 M (the)[15 24  0]xS 
+1484 1365 M (modern)[37 26 25 22 17  0]xS 
+1648 1365 M (safeguards)[19 22 15 22 25 25 22 17 25  0]xS 
+1872 1365 M (one)[26 24  0]xS 
+1957 1365 M (was)[36 22  0]xS 
+2048 1365 M (guaranteed)[25 25 22 17 22 24 15 22 22  0]xS 
+190 1422 M (to)[15  0]xS 
+250 1422 M (port)[25 26 17  0]xS 
+352 1422 M (onto)[26 24 15  0]xS 
+462 1422 M (land.)[12 22 24 25  0]xS 
+577 1422 M (This)[31 24 12  0]xS 
+683 1422 M (might)[37 12 25 24  0]xS 
+814 1422 M (be)[24  0]xS 
+880 1422 M (a)S 
+921 1422 M (false)[15 22 12 19  0]xS 
+1030 1422 M (blessing)[24 12 22 19 19 12 24  0]xS 
+1206 1422 M (though)[15 24 26 25 25  0]xS 
+1364 1422 M (-)S 
+1400 1422 M (saved)[19 22 24 22  0]xS 
+1531 1422 M (from)[15 17 26  0]xS 
+1645 1422 M (aphysixiation)[22 25 24 23 19 12 24 12 22 15 12 26  0]xS 
+1924 1422 M (only)[26 24 12  0]xS 
+2028 1422 M (to)[15  0]xS 
+2088 1422 M (starve)[19 15 22 17 24  0]xS 
+2226 1422 M (to)[15  0]xS 
+190 1479 M (death)[25 22 22 15  0]xS 
+316 1479 M (slowly)[19 12 26 36 12  0]xS 
+463 1479 M (on)[26  0]xS 
+531 1479 M (an)[22  0]xS 
+595 1479 M (inhospitable)[12 24 24 26 19 25 12 15 22 24 12  0]xS 
+850 1479 M (alien)[22 12 12 22  0]xS 
+960 1479 M (rock.)[17 26 22 25  0]xS 
+1082 1479 M (The)[31 24  0]xS 
+1177 1479 M (potential)[25 26 15 22 24 15 12 22  0]xS 
+1368 1479 M (horror)[24 26 17 17 26  0]xS 
+1513 1479 M (of)[26  0]xS 
+1573 1479 M (his)[24 12  0]xS 
+1646 1479 M (situation)[19 12 15 25 22 15 12 26  0]xS 
+1834 1479 M (hit)[24 12  0]xS 
+1903 1479 M (home.)[24 26 37 22  0]xS 
+2043 1479 M (This)[31 24 12  0]xS 
+2148 1479 M (planet)[25 12 22 24 22  0]xS 
+190 1536 M (might)[37 12 25 24  0]xS 
+322 1536 M (not)[24 26  0]xS 
+406 1536 M (be)[24  0]xS 
+471 1536 M (instantly)[12 24 19 15 22 24 15 12  0]xS 
+656 1536 M (fatal,)[15 22 15 22 12  0]xS 
+774 1536 M (but)[24 25  0]xS 
+858 1536 M (the)[15 24  0]xS 
+938 1536 M (danger)[25 22 24 25 22  0]xS 
+1091 1536 M (of)[26  0]xS 
+1152 1536 M (him)[24 12  0]xS 
+1244 1536 M (dying)[25 23 12 24  0]xS 
+1372 1536 M (here,)[24 22 17 22  0]xS 
+1489 1536 M (unknown)[25 24 25 24 26 36  0]xS 
+1692 1536 M (and)[22 24  0]xS 
+1782 1536 M (alone,)[22 12 26 24 22  0]xS 
+1920 1536 M (was)[36 22  0]xS 
+2016 1536 M (frighteningly)[15 17 12 25 24 15 22 24 12 24 25 12  0]xS 
+190 1593 M (real.)[17 22 22 12  0]xS 
+297 1593 M (They)[31 24 22  0]xS 
+418 1593 M (would)[36 26 25 12  0]xS 
+562 1593 M (know)[25 24 26  0]xS 
+694 1593 M (of)[26  0]xS 
+756 1593 M (course)[22 26 25 17 19  0]xS 
+908 1593 M (that)[15 24 22  0]xS 
+1004 1593 M (he)[24  0]xS 
+1071 1593 M (had)[24 22  0]xS 
+1163 1593 M (mis-ported,)[37 12 19 17 25 26 17 15 22 25  0]xS 
+1411 1593 M (but)[24 25  0]xS 
+1496 1593 M (that)[15 24 22  0]xS 
+1593 1593 M (didn't)[25 12 25 24 8  0]xS 
+1723 1593 M (mean)[37 22 22  0]xS 
+1848 1593 M (they)[15 24 22  0]xS 
+1953 1593 M (could)[22 26 25 12  0]xS 
+2084 1593 M (find)[15 12 24  0]xS 
+2180 1593 M (him.)[24 12 37  0]xS 
+190 1650 M (Vague)[36 22 25 25  0]xS 
+335 1650 M (recollections)[17 22 22 26 12 12 22 22 15 12 26 24  0]xS 
+602 1650 M (came)[22 22 37  0]xS 
+720 1650 M (to)[15  0]xS 
+776 1650 M (him)[24 12  0]xS 
+865 1650 M (of)[26  0]xS 
+921 1650 M (quantum)[25 25 22 24 15 25  0]xS 
+1109 1650 M (no-cloning)[24 26 17 22 12 26 24 12 24  0]xS 
+1336 1650 M (rules)[17 25 12 22  0]xS 
+1447 1650 M (and)[22 24  0]xS 
+1533 1650 M (other)[26 15 24 22  0]xS 
+1653 1650 M (small)[19 37 22 12  0]xS 
+1770 1650 M (print)[25 17 12 24  0]xS 
+1878 1650 M (gobbledegook.)[25 26 24 24 12 22 25 22 25 26 26 25  0]xS 
+2188 1650 M (The)[31 24  0]xS 
+190 1707 M (wormhole)[36 26 17 37 24 26 12  0]xS 
+409 1707 M (that)[15 24 22  0]xS 
+504 1707 M (carried)[22 22 17 17 12 22  0]xS 
+659 1707 M (him)[24 12  0]xS 
+751 1707 M (here)[24 22 17  0]xS 
+854 1707 M (was)[36 22  0]xS 
+950 1707 M (gone,)[25 26 24 22  0]xS 
+1079 1707 M (collapsed)[22 26 12 12 22 25 19 22  0]xS 
+1282 1707 M (into)[12 24 15  0]xS 
+1378 1707 M (the)[15 24  0]xS 
+1458 1707 M (quantum)[25 25 22 24 15 25  0]xS 
+1649 1707 M (ether,)[22 15 24 22 17  0]xS 
+1781 1707 M (and)[22 24  0]xS 
+1870 1707 M (nothing)[24 26 15 24 12 24  0]xS 
+2039 1707 M (could)[22 26 25 12  0]xS 
+2168 1707 M (trace)[15 17 22 22  0]xS 
+190 1764 M (where)[36 24 22 17  0]xS 
+326 1764 M (it)[12  0]xS 
+368 1764 M (had)[24 22  0]xS 
+454 1764 M (been.)[24 22 22 24  0]xS 
+575 1764 M (He)[36  0]xS 
+648 1764 M (was)[36 22  0]xS 
+740 1764 M (lost,)[12 26 19 15  0]xS 
+840 1764 M (stranded,)[19 15 17 22 24 25 22 25  0]xS 
+1037 1764 M (marooned.)[37 22 17 26 26 24 22 25  0]xS 
+1264 1764 M (The)[31 24  0]xS 
+1356 1764 M (professor)[25 17 26 15 22 19 19 26  0]xS 
+1557 1764 M (sank)[19 22 24  0]xS 
+1662 1764 M (to)[15  0]xS 
+1718 1764 M (his)[24 12  0]xS 
+1788 1764 M (knees)[25 24 22 22  0]xS 
+1915 1764 M (and)[22 24  0]xS 
+2001 1764 M (cried)[22 17 12 22  0]xS 
+2115 1764 M (into)[12 24 15  0]xS 
+2207 1764 M (the)[15 24  0]xS 
+190 1821 M (sand, sobbing. His suitcase stood beside him like an absurd gravestone.)
+[19 22 24 25 13 13 19 26 24 24 12 24 25 13 13 36 12 19 13 19 25 12 15 22 22 19 22 13 19 15 26 26
+25 13 24 22 19 12 25 22 13 24 12 37 13 12 12 25 22 13 22 24 13 22 24 19 25 17 25 13 25 17 22 24
+22 19 15 26 24 22  0]xS 
+190 1935 M (Heavy-boogie-shit. Every-no-down-fly-like. Spam-mother-baby. Spam-fuck-the-mother. )
+[36 22 22 24 23 17 24 26 26 25 12 22 17 19 24 12 15 13 13 31 24 22 17 23 17 24 26 17 25 26 36 24
+17 15 12 23 17 12 12 25 22 13 13 28 25 22 37 17 37 26 15 24 22 17 17 24 22 24 23 13 13 28 25 22
+37 17 15 25 22 25 17 15 24 22 17 37 26 15 24 22 17 13  0]xS 
+190 2050 M (How)[36 26  0]xS 
+305 2050 M (long)[12 26 24  0]xS 
+408 2050 M (he)[24  0]xS 
+470 2050 M (knelt)[25 24 22 12  0]xS 
+585 2050 M (like)[12 12 25  0]xS 
+672 2050 M (that)[15 24 22  0]xS 
+764 2050 M (he)[24  0]xS 
+826 2050 M (did)[25 12  0]xS 
+905 2050 M (not)[24 26  0]xS 
+986 2050 M (know.)[25 24 26 36  0]xS 
+1126 2050 M (It)[17  0]xS 
+1175 2050 M (was)[36 22  0]xS 
+1268 2050 M (the)[15 24  0]xS 
+1346 2050 M (tide)[15 12 25  0]xS 
+1436 2050 M (coming)[22 26 37 12 24  0]xS 
+1598 2050 M (in)[12  0]xS 
+1651 2050 M (that)[15 24 22  0]xS 
+1743 2050 M (roused)[17 26 25 19 22  0]xS 
+1893 2050 M (him.)[24 12 37  0]xS 
+1996 2050 M (The)[31 24  0]xS 
+2089 2050 M (soft)[19 26 15  0]xS 
+2180 2050 M (cold)[22 26 12  0]xS 
+190 2107 M (waves)[36 22 24 22  0]xS 
+330 2107 M (soothed)[19 26 26 15 24 22  0]xS 
+504 2107 M (him)[24 12  0]xS 
+594 2107 M (as)[22  0]xS 
+652 2107 M (they)[15 24 22  0]xS 
+753 2107 M (splashed)[19 25 12 22 19 24 22  0]xS 
+938 2107 M (over)[26 24 22  0]xS 
+1044 2107 M (his)[24 12  0]xS 
+1116 2107 M (hands)[24 22 24 25  0]xS 
+1247 2107 M (and)[22 24  0]xS 
+1335 2107 M (legs.)[12 22 25 19  0]xS 
+1443 2107 M (Standing)[28 15 22 24 25 12 24  0]xS 
+1635 2107 M (up,)[25 25  0]xS 
+1715 2107 M (he)[24  0]xS 
+1778 2107 M (now)[24 26  0]xS 
+1881 2107 M (surveyed)[19 25 17 24 22 23 22  0]xS 
+2075 2107 M (the)[15 24  0]xS 
+2153 2107 M (beach)[24 22 22 22  0]xS 
+190 2164 M (properly)[25 17 26 25 22 17 12  0]xS 
+376 2164 M (for)[15 26  0]xS 
+453 2164 M (the)[15 24  0]xS 
+533 2164 M (first)[15 12 17 19  0]xS 
+630 2164 M (time.)[15 12 37 22  0]xS 
+748 2164 M (It)[17  0]xS 
+799 2164 M (was)[36 22  0]xS 
+895 2164 M (empty;)[22 37 25 15 23  0]xS 
+1050 2164 M (yellow)[23 22 12 12 26  0]xS 
+1200 2164 M (sand)[19 22 24  0]xS 
+1309 2164 M (dunes)[25 25 24 22  0]xS 
+1443 2164 M (stretched)[19 15 17 22 15 22 24 22  0]xS 
+1643 2164 M (up)[25  0]xS 
+1712 2164 M (to)[15  0]xS 
+1772 2164 M (a)S 
+1813 2164 M (thick)[15 24 12 22  0]xS 
+1930 2164 M (green)[25 17 22 22  0]xS 
+2059 2164 M (forest)[15 26 17 22 19  0]xS 
+2192 2164 M (that)[15 24 22  0]xS 
+190 2221 M (looked)[12 26 26 25 22  0]xS 
+340 2221 M (possibly)[25 26 19 19 12 24 12  0]xS 
+513 2221 M (Terran)[31 22 17 17 22  0]xS 
+659 2221 M (in)[12  0]xS 
+709 2221 M (origin.)[26 17 12 25 12 24  0]xS 
+865 2221 M (He)[36  0]xS 
+936 2221 M (allowed)[22 12 12 26 36 22  0]xS 
+1105 2221 M (himself)[24 12 37 19 22 12  0]xS 
+1259 2221 M (to)[15  0]xS 
+1313 2221 M (hope)[24 26 25  0]xS 
+1424 2221 M (a)S 
+1459 2221 M (little.)[12 12 15 15 12 22  0]xS 
+1574 2221 M (At)[35  0]xS 
+1637 2221 M (the)[15 24  0]xS 
+1711 2221 M (border)[24 26 17 25 22  0]xS 
+1856 2221 M (where)[36 24 22 17  0]xS 
+1990 2221 M (the)[15 24  0]xS 
+2065 2221 M (forest)[15 26 17 22 19  0]xS 
+2192 2221 M (met)[37 22  0]xS 
+190 2278 M (the)[15 24  0]xS 
+271 2278 M (sand,)[19 22 24 25  0]xS 
+394 2278 M (a)S 
+436 2278 M (small)[19 37 22 12  0]xS 
+559 2278 M (pre-fab)[25 17 22 17 15 22  0]xS 
+721 2278 M (hut)[24 25  0]xS 
+805 2278 M (looked)[12 26 26 25 22  0]xS 
+961 2278 M (over)[26 24 22  0]xS 
+1070 2278 M (the)[15 24  0]xS 
+1151 2278 M (beach.)[24 22 22 22 24  0]xS 
+1298 2278 M (It)[17  0]xS 
+1350 2278 M (was)[36 22  0]xS 
+1447 2278 M (in)[12  0]xS 
+1503 2278 M (good)[25 26 26  0]xS 
+1625 2278 M (repair,)[17 22 25 22 12 17  0]xS 
+1774 2278 M (so)[19  0]xS 
+1839 2278 M (this)[15 24 12  0]xS 
+1929 2278 M (was)[36 22  0]xS 
+2026 2278 M (a)S 
+2068 2278 M (populated)[25 26 25 25 12 22 15 22  0]xS 
+190 2335 M (planet,)[25 12 22 24 22 15  0]xS 
+339 2335 M (thank)[15 24 22 24  0]xS 
+465 2335 M (god.)[25 26 25  0]xS 
+570 2335 M (Picking)[28 12 22 25 12 24  0]xS 
+734 2335 M (up)[25  0]xS 
+800 2335 M (his)[24 12  0]xS 
+871 2335 M (suitcase,)[19 25 12 15 22 22 19 22  0]xS 
+1056 2335 M (he)[24  0]xS 
+1118 2335 M (went)[36 22 24  0]xS 
+1230 2335 M (to)[15  0]xS 
+1287 2335 M (investigate)[12 24 24 22 19 15 12 25 22 15  0]xS 
+1515 2335 M (the)[15 24  0]xS 
+1592 2335 M (hut.)[24 25 15  0]xS 
+1685 2335 M (It)[17  0]xS 
+1733 2335 M (was)[36 22  0]xS 
+1826 2335 M (empty;)[22 37 25 15 23  0]xS 
+1977 2335 M (just)[12 25 19  0]xS 
+2064 2335 M (a)S 
+2102 2335 M (shell)[19 24 22 12  0]xS 
+2207 2335 M (for)[15 26  0]xS 
+190 2392 M (picnickers)[25 12 22 24 12 22 25 22 17  0]xS 
+404 2392 M (or)[26  0]xS 
+461 2392 M (campers)[22 22 37 25 22 17  0]xS 
+639 2392 M (to)[15  0]xS 
+694 2392 M (stop)[19 15 26  0]xS 
+792 2392 M (in,)[12 24  0]xS 
+855 2392 M (but)[24 25  0]xS 
+933 2392 M (there)[15 24 22 17  0]xS 
+1047 2392 M (was)[36 22  0]xS 
+1138 2392 M (a)S 
+1174 2392 M (path)[25 22 15  0]xS 
+1273 2392 M (leading)[12 22 22 25 12 24  0]xS 
+1429 2392 M (away)[22 36 22  0]xS 
+1546 2392 M (through)[15 24 17 26 25 25  0]xS 
+1716 2392 M (the)[15 24  0]xS 
+1791 2392 M (forest.)[15 26 17 22 19 15  0]xS 
+1931 2392 M (He)[36  0]xS 
+2003 2392 M (looked)[12 26 26 25 22  0]xS 
+2153 2392 M (at)[22  0]xS 
+2204 2392 M (it)[12  0]xS 
+2245 2392 M (a)S 
+190 2449 M (long)[12 26 24  0]xS 
+293 2449 M (time)[15 12 37  0]xS 
+395 2449 M (before)[24 22 15 26 17  0]xS 
+536 2449 M (setting)[19 22 15 15 12 24  0]xS 
+684 2449 M (off.)[26 15 15  0]xS 
+769 2449 M (There)[31 24 22 17  0]xS 
+900 2449 M (was)[36 22  0]xS 
+993 2449 M (really)[17 22 22 12 12  0]xS 
+1117 2449 M (no)[24  0]xS 
+1183 2449 M (choice,)[22 24 26 12 22 22  0]xS 
+1339 2449 M (but)[24 25  0]xS 
+1419 2449 M (the)[15 24  0]xS 
+1496 2449 M (simple)[19 12 37 25 12  0]xS 
+1638 2449 M (track)[15 17 22 22  0]xS 
+1755 2449 M (leading)[12 22 22 25 12 24  0]xS 
+1913 2449 M (into)[12 24 15  0]xS 
+2006 2449 M (the)[15 24  0]xS 
+2082 2449 M (unknown)[25 24 25 24 26 36  0]xS 
+190 2506 M (jungle filled him with fear. Eventually he set off, the taste of fear strong in his mouth.)
+[12 25 24 25 12 22 13 15 12 12 12 22 25 13 24 12 37 13 36 12 15 24 13 15 22 22 17 13 13 31 24 22
+24 15 25 22 12 12 23 13 24 22 13 19 22 15 13 26 15 15 13 13 15 24 22 13 15 22 19 15 22 13 26 15
+13 15 22 22 17 13 19 15 17 26 24 25 13 12 24 13 24 12 19 13 37 26 25 15 24  0]xS 
+190 2620 M (Several)[28 22 24 22 17 22  0]xS 
+351 2620 M (hours)[24 26 25 17  0]xS 
+475 2620 M (later)[12 22 15 22  0]xS 
+577 2620 M (and)[22 24  0]xS 
+662 2620 M (the)[15 24  0]xS 
+736 2620 M (walk)[36 22 12  0]xS 
+845 2620 M (had)[24 22  0]xS 
+930 2620 M (become)[24 22 22 26 37  0]xS 
+1096 2620 M (monotonous)[37 26 24 26 15 26 24 26 25  0]xS 
+1358 2620 M (and)[22 24  0]xS 
+1443 2620 M (tiring.)[15 12 17 12 24 25  0]xS 
+1574 2620 M (His)[36 12  0]xS 
+1655 2620 M (feet)[15 22 22  0]xS 
+1742 2620 M (hurt,)[24 25 17 15  0]xS 
+1850 2620 M (his)[24 12  0]xS 
+1919 2620 M (suit)[19 25 12  0]xS 
+2003 2620 M (was)[36 22  0]xS 
+2094 2620 M (wet)[36 22  0]xS 
+2180 2620 M (with)[36 12 15  0]xS 
+190 2678 M (moisture)[37 26 12 19 15 25 17  0]xS 
+384 2678 M (and)[22 24  0]xS 
+475 2678 M (sweat)[19 36 22 22  0]xS 
+609 2678 M (whilst)[36 24 12 12 19  0]xS 
+747 2678 M (his)[24 12  0]xS 
+823 2678 M (throat)[15 24 17 26 22  0]xS 
+962 2678 M (was)[36 22  0]xS 
+1059 2678 M (dry.)[25 17 23  0]xS 
+1158 2678 M (Clinging)[33 12 12 24 25 12 24  0]xS 
+1345 2678 M (to)[15  0]xS 
+1406 2678 M (the)[15 24  0]xS 
+1488 2678 M (suitcase)[19 25 12 15 22 22 19  0]xS 
+1664 2678 M (like)[12 12 25  0]xS 
+1755 2678 M (a)S 
+1797 2678 M (lifeline,)[12 12 15 22 12 12 24 22  0]xS 
+1962 2678 M (he)[24  0]xS 
+2028 2678 M (trudged)[15 17 25 25 25 22  0]xS 
+2202 2678 M (on.)[26 24  0]xS 
+190 2735 M (Abruptly he halted. There were noises coming from up the path. Noises that sounded human.)
+[35 24 17 25 25 15 12 23 13 24 22 13 24 22 12 15 22 25 13 13 31 24 22 17 22 13 36 22 17 22 13 24
+26 12 19 22 19 13 22 26 37 12 24 25 13 15 17 26 37 13 25 25 13 15 24 22 13 25 22 15 24 13 13 36
+26 12 19 22 19 13 15 24 22 15 13 19 26 25 24 25 22 25 13 24 25 37 22 24  0]xS 
+190 2849 M (A)S 
+244 2849 M (flamboyantly)[15 12 22 37 24 26 23 22 24 15 12  0]xS 
+517 2849 M (dressed)[25 17 22 19 19 22  0]xS 
+684 2849 M (young)[23 26 25 24  0]xS 
+826 2849 M (couple)[22 26 25 25 12  0]xS 
+976 2849 M (rounded)[17 26 25 24 25 22  0]xS 
+1159 2849 M (the)[15 24  0]xS 
+1238 2849 M (corner)[22 26 17 24 22  0]xS 
+1385 2849 M (chatting)[22 24 22 15 15 12 24  0]xS 
+1562 2849 M (amiably.)[22 37 12 22 24 12 23  0]xS 
+1745 2849 M (They)[31 24 22  0]xS 
+1864 2849 M (ground)[25 17 26 25 24  0]xS 
+2024 2849 M (to)[15  0]xS 
+2084 2849 M (a)S 
+2124 2849 M (halt)[24 22 12  0]xS 
+2215 2849 M (on)[26  0]xS 
+190 2906 M (seeing)[19 22 22 12 24  0]xS 
+333 2906 M (Thondril's)[31 24 26 24 25 17 12 12 8  0]xS 
+549 2906 M (bedraggled)[24 22 25 17 22 25 25 12 22  0]xS 
+787 2906 M (form.)[15 26 17 37  0]xS 
+914 2906 M (The)[31 24  0]xS 
+1009 2906 M (three)[15 24 17 22  0]xS 
+1128 2906 M (humans)[24 25 37 22 24  0]xS 
+1298 2906 M (stood)[19 15 26 26  0]xS 
+1427 2906 M (still)[19 15 12 12  0]xS 
+1516 2906 M (and)[22 24  0]xS 
+1605 2906 M (silent,)[19 12 12 22 24 15  0]xS 
+1741 2906 M (regarding)[17 22 25 22 17 25 12 24  0]xS 
+1949 2906 M (each)[22 22 22  0]xS 
+2057 2906 M (other)[26 15 24 22  0]xS 
+2180 2906 M (with)[36 12 15  0]xS 
+/F2S2A F2 [42 0 0 -42 0 0 ] mFS
+F2S2A Ji 
+190 3004 M (1)S 
+249 3004 M (Statistics are not available for deaths from putting on other people's trousers.)
+[23 12 19 12 12 16 12 12 18 16 11 19 15 18 11 22 20 12 11 19 20 19 12 12 19 20 12 18 11 13 20 15
+11 21 18 19 12 22 16 11 13 15 20 33 11 21 21 12 12 12 22 21 11 20 22 11 20 12 22 18 15 11 21 18
+20 21 12 18 8 16 11 12 15 20 21 16 18 15 16  0]xS 
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Win_GdiObject 5.0 0
+/SavedCTM null d/CTMsave{/SavedCTM SavedCTM currentmatrix d}b/CTMrestore
+{SavedCTM setmatrix}b/mp null d/ADO_mxRot null d/GDIHMatrix null d
+/GDIHPatternDict 22 dict d GDIHPatternDict `/PatternType 1 d/PaintType 2 d/Reps
+L2?{1}{5}? d/XStep 8 Reps mul d/YStep XStep d/BBox[0 0 XStep YStep]d/TilingType
+1 d/PaintProc{` 1 Lw[]0 sd PaintData , exec E}b/FGnd null d/BGnd null d
+/HS_Horizontal{horiz}b/HS_Vertical{vert}b/HS_FDiagonal{fdiag}b/HS_BDiagonal
+{biag}b/HS_Cross{horiz vert}b/HS_DiagCross{fdiag biag}b/MaxXYStep XStep YStep
+gt{XStep}{YStep}? d/horiz{Reps{0 4 M XStep 0 - 0 8 +}repeat 0 -8 Reps mul + K}b
+/vert{Reps{4 0 M 0 YStep - 8 0 +}repeat 0 -8 Reps mul + K}b/biag{Reps{0 0 M
+MaxXYStep @ - 0 YStep neg M MaxXYStep @ - 0 8 +}repeat 0 -8 Reps mul + 0 YStep
+M 8 8 - K}b/fdiag{Reps{0 0 M MaxXYStep @ neg - 0 YStep M MaxXYStep @ neg - 0 8
++}repeat 0 -8 Reps mul + MaxXYStep @ M 8 -8 - K}b E/makehatch{4 -2 $/yOrg ~ d
+/xOrg ~ d GDIHPatternDict/PaintData 3 -1 $ put CTMsave GDIHMatrix setmatrix
+GDIHPatternDict matrix xOrg yOrg + mp CTMrestore ~ U ~ 2 ^ put}b/h0{/h0
+/HS_Horizontal makehatch}b/h1{/h1/HS_Vertical makehatch}b/h2{/h2/HS_FDiagonal
+makehatch}b/h3{/h3/HS_BDiagonal makehatch}b/h4{/h4/HS_Cross makehatch}b/h5{/h5
+/HS_DiagCross makehatch}b/GDIBWPatternMx null d/pfprep{save 8 1 $
+/PatternOfTheDay 8 1 $ GDIBWPatternDict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/yExt
+~ d/Width ~ d/BGnd ~ d/FGnd ~ d/Height yExt RepsV mul d/mx[Width 0 0 Height 0
+0]d E build_pattern ~ !}b/pfbf{/fEOFill ~ d pfprep hbf fEOFill{O}{L}? restore}b
+/GraphInit{GDIHMatrix null eq{/SavedCTM matrix d : ADO_mxRot concat 0 0 snap +
+: 0.48 @ GDIHPatternDict ` YStep mul ~ XStep mul ~ nonzero_dsnap YStep V ~
+XStep V ~ E +S/GDIHMatrix matrix currentmatrix readonly d ; : 0.24 -0.24 +S
+GDIBWPatternDict ` Width Height E nonzero_dsnap +S/GDIBWPatternMx matrix
+currentmatrix readonly d ; ;}if}b
+%%EndResource
+%%BeginResource: file Pscript_Win_GdiObject_L2 5.0 0
+/GDIBWPatternDict 25 dict @ `/PatternType 1 d/PaintType 1 d/RepsV 1 d/RepsH 1 d
+/BBox[0 0 RepsH 1]d/TilingType 1 d/XStep 1 d/YStep 1 d/Height 8 RepsV mul d
+/Width 8 d/mx[Width 0 0 Height neg 0 Height]d/FGnd null d/BGnd null d
+/SetBGndFGnd{BGnd null ne{BGnd aload ! scol BBox aload ! 2 ^ sub ~ 3 ^ sub ~
+rf}if FGnd null ne{FGnd aload ! scol}if}b/PaintProc{` SetBGndFGnd RepsH{Width
+Height F mx PaintData imagemask Width 0 +}repeat E}b E d/mp/makepattern , d
+/build_pattern{CTMsave GDIBWPatternMx setmatrix/nupangle where{! nupangle -90
+eq{nupangle R}if}if GDIBWPatternDict @ ` Width Height ne{Width Height gt{Width
+Height V 1}{1 Height Width V}? +S}if xOrg yOrg E matrix + mp CTMrestore}b/hbf
+{setpattern}b/hf{:/fEOFill ~ d ~ ! setpattern fEOFill{O}{L}? ;}b/pbf{: !
+/fEOFill ~ d GDIBWPatternDict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/OutputBPP ~ d
+/Height ~ d/Width ~ d/PaintType 1 d/PatternType 1 d/TilingType 1 d/BBox[0 0
+Width Height]d/XStep Width d/YStep Height d/mx xOrg yOrg matrix + d 20 dict @ `
+/ImageType 1 d/Width Width d/Height Height d/ImageMatrix[1 0 0 1 0 0]d
+/BitsPerComponent 8 d OutputBPP 24 eq{/Decode[0 1 0 1 0 1]d}{OutputBPP 8 eq{
+/Decode[0 1]d}{/Decode[0 1 0 1 0 1 0 1]d}?}?/DataSource{PaintData}d E/ImageDict
+~ d/PaintProc{` ImageDict image E}b & mx makepattern setpattern E fEOFill{O}{L}
+? ;}b/mask_pbf{:/fEOFill ~ d 20 dict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/Height ~
+d/Width ~ d/PatternType 1 d/PaintType 2 d/TilingType 1 d/BBox[0 0 Width Height]
+d/XStep Width d/YStep Height d/mx xOrg yOrg matrix + d/PaintProc{` Width Height
+T 1 1 dtransform abs ~ abs ~ 0 0 3 -1 $ 0 0 6 array astore{PaintData}imagemask
+E}b & mx makepattern setpattern E fEOFill{O}{L}? ;}b
+%%EndResource
+end reinitialize
+/DeviceRGB dup setcolorspace /colspABC exch def
+: N 190 2952 520 3 rp C 
+/DeviceCMYK dup setcolorspace /colspABC exch def
+0.832 0.813 0.777 0.594 3 scol  L ; LH
+(%%[Page: 1]%%) = 
+%%PageTrailer
+
+%%Page: 2 2
+%%PageBoundingBox: 11 13 601 780
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+/DeviceCMYK dup setcolorspace /colspABC exch def
+0.832 0.813 0.777 0.594 3 scol F2S32 Ji 
+190 231 M (quizzical eyes.)[25 25 12 22 22 12 22 22 12 13 22 23 22 19  0]xS 
+190 288 M ("Hello?" Thondril ventured.)[20 36 22 12 12 26 21 20 13 31 24 26 24 25 17 12 12 13 24 22 24 15 25 17 22 25  0]xS 
+190 345 M ("Ola!)[20 36 12 22  0]xS 
+310 345 M (Slap-low-very-honky.")[28 12 22 25 17 12 26 36 17 24 22 17 23 17 24 26 24 25 23 13  0]xS 
+777 345 M (the)[15 24  0]xS 
+852 345 M (man)[37 22  0]xS 
+949 345 M (replied.)[17 22 25 12 12 22 25  0]xS 
+1111 345 M (His)[36 12  0]xS 
+1193 345 M (tone)[15 26 24  0]xS 
+1294 345 M (seemed)[19 22 22 37 22  0]xS 
+1455 345 M (friendly)[15 17 12 22 24 25 12  0]xS 
+1619 345 M (enough)[22 24 26 25 25  0]xS 
+1779 345 M (with)[36 12 15  0]xS 
+1880 345 M (a)S 
+1916 345 M (touch)[15 26 25 22  0]xS 
+2042 345 M (of)[26  0]xS 
+2097 345 M (concern.)[22 26 24 22 22 17 24  0]xS 
+190 403 M (The)[31 24  0]xS 
+281 403 M (professional)[25 17 26 15 22 19 19 12 26 24 22  0]xS 
+534 403 M (linguist)[12 12 24 25 25 12 19  0]xS 
+692 403 M (in)[12  0]xS 
+742 403 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+928 403 M (was)[36 22  0]xS 
+1018 403 M (immediately)[12 37 37 22 25 12 22 15 22 12  0]xS 
+1271 403 M (struck)[19 15 17 25 22  0]xS 
+1409 403 M (by)[24  0]xS 
+1470 403 M (their)[15 24 22 12  0]xS 
+1574 403 M (rhythmic)[17 24 23 15 24 37 12  0]xS 
+1762 403 M (way)[36 22  0]xS 
+1857 403 M (of)[26  0]xS 
+1912 403 M (speaking,)[19 25 22 22 25 12 24 25  0]xS 
+2113 403 M (and)[22 24  0]xS 
+2198 403 M (this)[15 24 12  0]xS 
+190 460 M (would)[36 26 25 12  0]xS 
+338 460 M (later)[12 22 15 22  0]xS 
+450 460 M (lead)[12 22 22  0]xS 
+555 460 M (him)[24 12  0]xS 
+652 460 M (to)[15  0]xS 
+718 460 M (name)[24 22 37  0]xS 
+846 460 M (the)[15 24  0]xS 
+931 460 M (language)[12 22 24 25 25 22 25  0]xS 
+1133 460 M ('Jive'.)[8 19 12 24 22 8  0]xS 
+1263 460 M (Human)[36 25 37 22  0]xS 
+1431 460 M (and)[22 24  0]xS 
+1526 460 M (non-violent,)[24 26 24 17 24 12 26 12 22 24 15  0]xS 
+1789 460 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+1984 460 M (thought.)[15 24 26 25 25 24 15  0]xS 
+2175 460 M (Also)[35 12 19  0]xS 
+190 517 M (judging)[12 25 25 25 12 24  0]xS 
+352 517 M (by)[24  0]xS 
+412 517 M (the)[15 24  0]xS 
+486 517 M (cut)[22 25  0]xS 
+562 517 M (of)[26  0]xS 
+616 517 M (their)[15 24 22 12  0]xS 
+720 517 M (clothes)[22 12 26 15 24 22  0]xS 
+873 517 M (this)[15 24 12  0]xS 
+956 517 M (was)[36 22  0]xS 
+1047 517 M (not)[24 26  0]xS 
+1125 517 M (a)S 
+1161 517 M (degenerate)[25 22 25 22 24 22 17 22 15  0]xS 
+1390 517 M (colony.)[22 26 12 26 24 23  0]xS 
+1550 517 M (This)[31 24 12  0]xS 
+1649 517 M (disaster)[25 12 19 22 19 15 22  0]xS 
+1814 517 M (no)[24  0]xS 
+1877 517 M (longer)[12 26 24 25 22  0]xS 
+2016 517 M (looked)[12 26 26 25 22  0]xS 
+2166 517 M (quite)[25 25 12 15  0]xS 
+190 574 M (so)[19  0]xS 
+250 574 M (bad.)[24 22 25  0]xS 
+350 574 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+536 574 M (smiled)[19 37 12 12 22  0]xS 
+678 574 M (at)[22  0]xS 
+731 574 M (them)[15 24 22  0]xS 
+844 574 M (and)[22 24  0]xS 
+930 574 M (waited)[36 22 12 15 22  0]xS 
+1078 574 M (for)[15 26  0]xS 
+1151 574 M (the)[15 24  0]xS 
+1227 574 M (automatic)[22 25 15 26 37 22 15 12  0]xS 
+1438 574 M (translator)[15 17 22 24 19 12 22 15 26  0]xS 
+1643 574 M (he)[24  0]xS 
+1704 574 M (wore)[36 26 17  0]xS 
+1820 574 M (to)[15  0]xS 
+1877 574 M (make)[37 22 25  0]xS 
+1998 574 M (sense)[19 22 24 19  0]xS 
+2119 574 M (of)[26  0]xS 
+2175 574 M (their)[15 24 22 12  0]xS 
+190 631 M (speech.)[19 25 22 22 22 24  0]xS 
+355 631 M (Instead)[17 24 19 15 22 22  0]xS 
+518 631 M (it)[12  0]xS 
+563 631 M (emitted)[22 37 12 15 15 22  0]xS 
+729 631 M (a)S 
+769 631 M (small)[19 37 22 12  0]xS 
+889 631 M (error)[22 17 17 26  0]xS 
+1007 631 M (beep.)[24 22 22 25  0]xS 
+1131 631 M (This)[31 24 12  0]xS 
+1235 631 M (merely)[37 22 17 22 12  0]xS 
+1386 631 M (meant)[37 22 22 24  0]xS 
+1525 631 M (their)[15 24 22 12  0]xS 
+1633 631 M (language)[12 22 24 25 25 22 25  0]xS 
+1828 631 M (wasn't)[36 22 19 24 8  0]xS 
+1970 631 M (one)[26 24  0]xS 
+2060 631 M (of)[26  0]xS 
+2120 631 M (the)[15 24  0]xS 
+2199 631 M (top)[15 26  0]xS 
+190 688 M (1,000)[25 13 25 25  0]xS 
+319 688 M (languages)[12 22 24 25 25 22 25 22  0]xS 
+531 688 M (stored)[19 15 26 17 22  0]xS 
+671 688 M (in)[12  0]xS 
+723 688 M (the)[15 24  0]xS 
+800 688 M (device.)[25 22 24 12 22 22  0]xS 
+956 688 M (However)[36 26 36 22 24 22  0]xS 
+1155 688 M (the)[15 24  0]xS 
+1231 688 M (translator)[15 17 22 24 19 12 22 15 26  0]xS 
+1436 688 M (was)[36 22  0]xS 
+1529 688 M (capable)[22 22 25 22 24 12  0]xS 
+1694 688 M (of)[26  0]xS 
+1751 688 M (learning)[12 22 22 17 24 12 24  0]xS 
+1925 688 M (new)[24 22  0]xS 
+2023 688 M (tongues.)[15 26 24 25 25 22 19  0]xS 
+2208 688 M (All)[35 12  0]xS 
+190 745 M (he)[24  0]xS 
+252 745 M (needed)[24 22 22 25 22  0]xS 
+407 745 M (was)[36 22  0]xS 
+500 745 M (to)[15  0]xS 
+556 745 M (let)[12 22  0]xS 
+621 745 M (it)[12  0]xS 
+663 745 M (listen)[12 12 19 15 22  0]xS 
+783 745 M (in)[12  0]xS 
+834 745 M (on)[26  0]xS 
+900 745 M (enough)[22 24 26 25 25  0]xS 
+1061 745 M (of)[26  0]xS 
+1118 745 M (the)[15 24  0]xS 
+1194 745 M (natives)[24 22 15 12 24 22  0]xS 
+1348 745 M (chatter)[22 24 22 15 15 22  0]xS 
+1500 745 M (and)[22 24  0]xS 
+1587 745 M (it)[12  0]xS 
+1629 745 M (would)[36 26 25 12  0]xS 
+1769 745 M (automatically)[22 25 15 26 37 22 15 12 22 22 12 12  0]xS 
+2049 745 M (pick)[25 12 22  0]xS 
+2149 745 M (up)[25  0]xS 
+2214 745 M (on)[26  0]xS 
+190 802 M (the)[15 24  0]xS 
+272 802 M (patterns)[25 22 15 15 22 17 24  0]xS 
+453 802 M (in)[12  0]xS 
+510 802 M (their)[15 24 22 12  0]xS 
+621 802 M (speech.)[19 25 22 22 22 24  0]xS 
+789 802 M (It)[17  0]xS 
+842 802 M (would)[36 26 25 12  0]xS 
+987 802 M (take)[15 22 25  0]xS 
+1092 802 M (a)S 
+1135 802 M (while)[36 24 12 12  0]xS 
+1263 802 M (-)S 
+1301 802 M (perhaps)[25 22 17 24 22 25  0]xS 
+1476 802 M (a)S 
+1519 802 M (few)[15 22  0]xS 
+1613 802 M (days)[25 22 23  0]xS 
+1723 802 M (-)S 
+1761 802 M (but)[24 25  0]xS 
+1846 802 M (there)[15 24 22 17  0]xS 
+1968 802 M (were)[36 22 17  0]xS 
+2086 802 M (very)[24 22 17  0]xS 
+2193 802 M (few)[15 22  0]xS 
+190 859 M (languages)[12 22 24 25 25 22 25 22  0]xS 
+404 859 M (that)[15 24 22  0]xS 
+498 859 M (the)[15 24  0]xS 
+577 859 M (machine)[37 22 22 24 12 24  0]xS 
+758 859 M (couldn't)[22 26 25 12 25 24 8  0]xS 
+933 859 M (decipher.)[25 22 22 12 25 24 22 17  0]xS 
+1133 859 M (Moreover)[44 26 17 22 26 24 22  0]xS 
+1349 859 M (those)[15 24 26 19  0]xS 
+1473 859 M (were)[36 22 17  0]xS 
+1588 859 M (either)[22 12 15 24 22  0]xS 
+1718 859 M (non-vocal)[24 26 24 17 24 26 22 22  0]xS 
+1933 859 M (or)[26  0]xS 
+1994 859 M (so)[19  0]xS 
+2057 859 M (alien)[22 12 12 22  0]xS 
+2167 859 M (as)[22  0]xS 
+2226 859 M (to)[15  0]xS 
+190 916 M (defy any translation, such as the storm-singers of Crab Nebula VII who )
+[25 22 15 23 13 22 24 23 13 15 17 22 24 19 12 22 15 12 26 24 13 13 19 25 22 24 13 22 19 13 15 24
+22 13 19 15 26 17 37 17 19 12 24 25 22 17 19 13 26 15 13 33 17 22 24 13 36 22 24 25 12 22 13 36
+17 17 13 36 24 26  0]xS 
+F1S32 Ji 
+1616 916 M (were)[31 22 19  0]xS 
+F2S32 Ji 
+1710 916 M ( the language.)[13 15 24 22 13 12 22 24 25 25 22 25 22  0]xS 
+190 973 M ("I'm)[20 17 8  0]xS 
+292 973 M (sorry,)[19 26 17 17 23  0]xS 
+427 973 M (I)S 
+464 973 M (don't)[25 26 24 8  0]xS 
+582 973 M (understand.")[25 24 25 22 17 19 15 22 24 25 13  0]xS 
+853 973 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+1044 973 M (said)[19 22 12  0]xS 
+1141 973 M (with)[36 12 15  0]xS 
+1248 973 M (polite)[25 26 12 12 15  0]xS 
+1380 973 M (smiled)[19 37 12 12 22  0]xS 
+1527 973 M (of)[26  0]xS 
+1588 973 M (incomprehension,)[12 24 22 26 37 25 17 22 24 22 24 19 12 26 24  0]xS 
+1957 973 M ("Do)[20 36  0]xS 
+2059 973 M (you)[23 26  0]xS 
+2153 973 M (speak)[19 25 22 22  0]xS 
+190 1030 M (Terran? ")[31 22 17 17 22 24 21 13  0]xS 
+190 1088 M (The)[31 24  0]xS 
+281 1088 M (man)[37 22  0]xS 
+378 1088 M (nodded)[24 26 25 25 22  0]xS 
+538 1088 M (amiably,)[22 37 12 22 24 12 23  0]xS 
+717 1088 M (but)[24 25  0]xS 
+794 1088 M (that)[15 24 22  0]xS 
+884 1088 M (might)[37 12 25 24  0]xS 
+1011 1088 M (mean)[37 22 22  0]xS 
+1129 1088 M (anything.)[22 24 23 15 24 12 24 25  0]xS 
+1325 1088 M ("Whip-smooth-baby?")[20 46 24 12 25 17 19 37 26 26 15 24 17 24 22 24 23 21  0]xS 
+1780 1088 M (he)[24  0]xS 
+1840 1088 M (said.)[19 22 12 25  0]xS 
+1945 1088 M (Evidently)[31 24 12 25 22 24 15 12  0]xS 
+2146 1088 M (he)[24  0]xS 
+2206 1088 M (did)[25 12  0]xS 
+190 1145 M (not speak Terran.)[24 26 15 13 19 25 22 22 25 13 31 22 17 17 22 24  0]xS 
+190 1202 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+382 1202 M (shook)[19 24 26 26  0]xS 
+522 1202 M (his)[24 12  0]xS 
+598 1202 M (head)[24 22 22  0]xS 
+711 1202 M ("I'm)[20 17 8  0]xS 
+814 1202 M (afraid)[22 15 17 22 12  0]xS 
+947 1202 M (I)S 
+985 1202 M (don't)[25 26 24 8  0]xS 
+1103 1202 M (speak)[19 25 22 22  0]xS 
+1237 1202 M (your)[23 26 25  0]xS 
+1348 1202 M (language.")[12 22 24 25 25 22 25 22 13  0]xS 
+1579 1202 M (-)S 
+1616 1202 M (though)[15 24 26 25 25  0]xS 
+1776 1202 M (he)[24  0]xS 
+1842 1202 M (realised)[17 22 22 12 12 19 22  0]xS 
+2014 1202 M (this)[15 24 12  0]xS 
+2104 1202 M (must)[37 25 19  0]xS 
+2221 1202 M (be)[24  0]xS 
+190 1259 M (meaningless to them.)[37 22 22 24 12 24 25 12 22 19 19 13 15 26 13 15 24 22 37  0]xS 
+190 1316 M ("God-shit-for-singing" the man replied with a trace of annoyance.)
+[20 36 26 25 17 19 24 12 15 17 15 26 17 17 19 12 24 25 12 24 25 20 13 15 24 22 13 37 22 24 13 17
+22 25 12 12 22 25 13 36 12 15 24 13 22 13 15 17 22 22 22 13 26 15 13 22 24 24 26 23 22 24 22 22
+ 0]xS 
+190 1373 M (At)[35  0]xS 
+257 1373 M (this)[15 24 12  0]xS 
+343 1373 M (point)[25 26 12 24  0]xS 
+462 1373 M (the)[15 24  0]xS 
+539 1373 M (girl)[25 12 17  0]xS 
+622 1373 M (intervened.)[12 24 15 22 17 24 22 24 22 25  0]xS 
+859 1373 M ("Welter-soup-hamster-style-like")[20 46 22 12 15 22 17 17 19 26 25 25 17 24 22 37 19 15 22 17 17 19 15 23 12 22 17 12 12 25 22  0]xS 
+1530 1373 M (she)[19 24  0]xS 
+1611 1373 M (said)[19 22 12  0]xS 
+1706 1373 M (touching)[15 26 25 22 24 12 24  0]xS 
+1896 1373 M (his)[24 12  0]xS 
+1967 1373 M (arm)[22 17  0]xS 
+2060 1373 M (gently.)[25 22 24 15 12 23  0]xS 
+2210 1373 M (To)[31  0]xS 
+190 1430 M (the man she said "Downshift-a-beat-sweetward." indicating back up the path. )
+[15 24 22 13 37 22 24 13 19 24 22 13 19 22 12 25 13 20 36 26 36 24 19 24 12 15 15 17 22 17 24 22
+22 15 17 19 36 22 22 15 36 22 17 25 13 20 13 12 24 25 12 22 22 15 12 24 25 13 24 22 22 25 13 25
+25 13 15 24 22 13 25 22 15 24 13  0]xS 
+190 1544 M (They)[31 24 22  0]xS 
+308 1544 M (soon)[19 26 26  0]xS 
+420 1544 M (arrived)[22 17 17 12 24 22  0]xS 
+576 1544 M (at)[22  0]xS 
+631 1544 M (a)S 
+670 1544 M (small)[19 37 22 12  0]xS 
+789 1544 M (town)[15 26 36  0]xS 
+908 1544 M (of)[26  0]xS 
+966 1544 M (sophisticated)[19 26 25 24 12 19 15 12 22 22 15 22  0]xS 
+1242 1544 M (metal)[37 22 15 22  0]xS 
+1367 1544 M (bungalows.)[24 25 24 25 22 12 26 36 19  0]xS 
+1610 1544 M (People)[28 22 26 25 12  0]xS 
+1763 1544 M (and)[22 24  0]xS 
+1851 1544 M (robots)[17 26 24 26 15  0]xS 
+1995 1544 M (wandered)[36 22 24 25 22 17 22  0]xS 
+2206 1544 M (the)[15 24  0]xS 
+190 1601 M (streets,)[19 15 17 22 22 15 19  0]xS 
+351 1601 M (the)[15 24  0]xS 
+432 1601 M (people)[25 22 26 25 12  0]xS 
+583 1601 M (happy)[24 22 25 25  0]xS 
+721 1601 M (and)[22 24  0]xS 
+811 1601 M (healthy)[24 22 22 12 15 24  0]xS 
+973 1601 M (looking,)[12 26 26 25 12 24 25  0]xS 
+1155 1601 M (the)[15 24  0]xS 
+1235 1601 M (machines)[37 22 22 24 12 24 22  0]xS 
+1436 1601 M (purposeful)[25 25 17 25 26 19 22 15 25  0]xS 
+1667 1601 M (and)[22 24  0]xS 
+1757 1601 M (efficient.)[22 15 15 12 22 12 22 24 15  0]xS 
+1948 1601 M (Thondril's)[31 24 26 24 25 17 12 12 8  0]xS 
+2165 1601 M (heart)[24 22 22 17  0]xS 
+190 1658 M (leapt. He was now more confident than ever that these people could help him return home, as soon as he)
+[12 22 22 25 15 13 13 36 22 13 36 22 19 13 24 26 36 13 37 26 17 22 13 22 26 24 15 12 25 22 24 15
+13 15 24 22 24 13 22 24 22 17 13 15 24 22 15 13 15 24 22 19 22 13 25 22 26 25 12 22 13 22 26 25
+12 25 13 24 22 12 25 13 24 12 37 13 17 22 15 25 17 24 13 24 26 37 22 13 13 22 19 13 19 26 26 24
+13 22 19 13 24  0]xS 
+190 1715 M (figured out how to ask them.)[15 12 25 25 17 22 25 13 26 25 15 13 24 26 36 13 15 26 13 22 19 25 13 15 24 22 37  0]xS 
+190 1830 M (Two)[31 36  0]xS 
+299 1830 M (weeks)[36 22 22 25  0]xS 
+439 1830 M (later)[12 22 15 22  0]xS 
+542 1830 M (he)[24  0]xS 
+604 1830 M (still)[19 15 12 12  0]xS 
+690 1830 M (could)[22 26 25 12  0]xS 
+815 1830 M (not)[24 26  0]xS 
+896 1830 M (communicate)[22 26 37 37 25 24 12 22 22 15  0]xS 
+1176 1830 M (in)[12  0]xS 
+1228 1830 M (anything)[22 24 23 15 24 12 24  0]xS 
+1412 1830 M (but)[24 25  0]xS 
+1492 1830 M (basic)[24 22 19 12  0]xS 
+1607 1830 M (sign)[19 12 25  0]xS 
+1703 1830 M (language.)[12 22 24 25 25 22 25 22  0]xS 
+1908 1830 M (Doggedly)[36 26 25 25 22 25 12  0]xS 
+2118 1830 M (he)[24  0]xS 
+2180 1830 M (kept)[25 22 25  0]xS 
+190 1887 M (trying)[15 17 23 12 24  0]xS 
+319 1887 M (to)[15  0]xS 
+374 1887 M (crack)[22 17 22 22  0]xS 
+495 1887 M (their)[15 24 22 12  0]xS 
+598 1887 M (language,)[12 22 24 25 25 22 25 22  0]xS 
+801 1887 M (but)[24 25  0]xS 
+879 1887 M (it)[12  0]xS 
+919 1887 M (was)[36 22  0]xS 
+1009 1887 M (frustrating)[15 17 25 19 15 17 22 15 12 24  0]xS 
+1228 1887 M (unrewarding)[25 24 17 22 36 22 17 25 12 24  0]xS 
+1490 1887 M (work.)[36 26 17 25  0]xS 
+1634 1887 M (The)[31 24  0]xS 
+1724 1887 M (townsfolk)[15 26 36 24 19 15 26 12  0]xS 
+1935 1887 M (had)[24 22  0]xS 
+2019 1887 M (been)[24 22 22  0]xS 
+2125 1887 M (excited)[22 24 22 12 15 22  0]xS 
+190 1944 M (by)[24  0]xS 
+252 1944 M (his)[24 12  0]xS 
+322 1944 M (arrival)[22 17 17 12 24 22  0]xS 
+463 1944 M (but)[24 25  0]xS 
+542 1944 M (had)[24 22  0]xS 
+643 1944 M (soon)[19 26 26  0]xS 
+752 1944 M (lost)[12 26 19  0]xS 
+839 1944 M (interest)[12 24 15 22 17 22 19  0]xS 
+1000 1944 M (in)[12  0]xS 
+1051 1944 M (such)[19 25 22  0]xS 
+1156 1944 M (a)S 
+1193 1944 M (shy)[19 24  0]xS 
+1274 1944 M (perennially)[25 22 17 22 24 24 12 22 12 12  0]xS 
+1504 1944 M (apologising)[22 25 26 12 26 25 12 19 12 24  0]xS 
+1746 1944 M (stranger.)[19 15 17 22 24 25 22 17  0]xS 
+1950 1944 M (The)[31 24  0]xS 
+2042 1944 M (couple)[22 26 25 25 12  0]xS 
+2189 1944 M (he'd)[24 22 8  0]xS 
+190 2001 M (met on the path looked after him, giving him a bed in their home. The man seemed to think Thondril was)
+[37 22 15 13 26 24 13 15 24 22 13 25 22 15 24 13 12 26 26 25 22 25 13 22 15 15 22 17 13 24 12 37
+13 13 25 12 24 12 24 25 13 24 12 37 13 22 13 24 22 25 13 12 24 13 15 24 22 12 17 13 24 26 37 22
+13 13 31 24 22 13 37 22 24 13 19 22 22 37 22 25 13 15 26 13 15 24 12 24 25 13 31 24 26 24 25 17
+12 12 13 36 22  0]xS 
+190 2058 M (retarded)[17 22 15 22 17 25 22  0]xS 
+376 2058 M (and)[22 24  0]xS 
+468 2058 M (viewed)[24 12 22 36 22  0]xS 
+630 2058 M (him)[24 12  0]xS 
+724 2058 M (as)[22  0]xS 
+786 2058 M (a)S 
+829 2058 M (type)[15 23 25  0]xS 
+935 2058 M (of)[26  0]xS 
+996 2058 M (chore.)[22 24 26 17 22  0]xS 
+1141 2058 M ("A)[20  0]xS 
+1217 2058 M (refusal)[17 22 15 25 19 22  0]xS 
+1370 2058 M (to)[15  0]xS 
+1432 2058 M (accept)[22 22 22 22 25  0]xS 
+1581 2058 M (that)[15 24 22  0]xS 
+1678 2058 M (others)[26 15 24 22 17  0]xS 
+1822 2058 M (might)[37 12 25 24  0]xS 
+1956 2058 M (not)[24 26  0]xS 
+2042 2058 M (speak)[19 25 22 22  0]xS 
+2176 2058 M (your)[23 26 25  0]xS 
+190 2115 M (language)[12 22 24 25 25 22 25  0]xS 
+386 2115 M (is)[12  0]xS 
+435 2115 M (often)[26 15 15 22  0]xS 
+556 2115 M (met)[37 22  0]xS 
+649 2115 M (even)[22 24 22  0]xS 
+759 2115 M (in)[12  0]xS 
+814 2115 M (reasonably)[17 22 22 19 26 24 22 24 12  0]xS 
+1044 2115 M (advanced)[22 25 24 22 24 22 22  0]xS 
+1248 2115 M (cultures")[22 25 12 15 25 17 22 19  0]xS 
+1444 2115 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+1634 2115 M (reminded)[17 22 37 12 24 25 22  0]xS 
+1836 2115 M (himself.)[24 12 37 19 22 12 15  0]xS 
+2009 2115 M (The)[31 24  0]xS 
+2104 2115 M (girl)[25 12 17  0]xS 
+2189 2115 M (was)[36 22  0]xS 
+190 2172 M (kinder.)[25 12 24 25 22 17  0]xS 
+343 2172 M (She)[28 24  0]xS 
+432 2172 M (brought)[24 17 26 25 25 24  0]xS 
+604 2172 M (him)[24 12  0]xS 
+691 2172 M (food)[15 26 26  0]xS 
+799 2172 M (with)[36 12 15  0]xS 
+901 2172 M (a)S 
+938 2172 M (charming)[22 24 22 17 37 12 24  0]xS 
+1136 2172 M (smile.)[19 37 12 12 22  0]xS 
+1266 2172 M (Often)[36 15 15 22  0]xS 
+1393 2172 M (she)[19 24  0]xS 
+1473 2172 M (sat)[19 22  0]xS 
+1544 2172 M (with)[36 12 15  0]xS 
+1646 2172 M (him)[24 12  0]xS 
+1734 2172 M (or)[26  0]xS 
+1793 2172 M (led)[12 22  0]xS 
+1866 2172 M (him)[24 12  0]xS 
+1955 2172 M (on)[26  0]xS 
+2020 2172 M (walks)[36 22 12 25  0]xS 
+2149 2172 M (to)[15  0]xS 
+2205 2172 M (the)[15 24  0]xS 
+190 2229 M (beach,)[24 22 22 22 24  0]xS 
+333 2229 M (chatting)[22 24 22 15 15 12 24  0]xS 
+508 2229 M (pleasantly,)[25 12 22 22 19 22 24 15 12 23  0]xS 
+733 2229 M (not)[24 26  0]xS 
+814 2229 M (seeming)[19 22 22 37 12 24  0]xS 
+991 2229 M (to)[15  0]xS 
+1048 2229 M (mind)[37 12 24  0]xS 
+1162 2229 M (that)[15 24 22  0]xS 
+1254 2229 M (he)[24  0]xS 
+1315 2229 M (didn't)[25 12 25 24 8  0]xS 
+1440 2229 M (reply.)[17 22 25 12 23  0]xS 
+1568 2229 M (He)[36  0]xS 
+1642 2229 M (could)[22 26 25 12  0]xS 
+1768 2229 M (easily)[22 22 19 12 12  0]xS 
+1894 2229 M (have)[24 22 24  0]xS 
+2002 2229 M (taken)[15 22 25 22  0]xS 
+2126 2229 M (care)[22 22 17  0]xS 
+2225 2229 M (of)[26  0]xS 
+190 2286 M (himself)[24 12 37 19 22 12  0]xS 
+346 2286 M (-)S 
+378 2286 M (the)[15 24  0]xS 
+454 2286 M (town)[15 26 36  0]xS 
+570 2286 M (had)[24 22  0]xS 
+656 2286 M (a)S 
+693 2286 M (high)[24 12 25  0]xS 
+792 2286 M (level)[12 22 24 22  0]xS 
+899 2286 M (of)[26  0]xS 
+955 2286 M (automation.)[22 25 15 26 37 22 15 12 26 24  0]xS 
+1207 2286 M (It)[17  0]xS 
+1254 2286 M (seemed)[19 22 22 37 22  0]xS 
+1416 2286 M (there)[15 24 22 17  0]xS 
+1531 2286 M (was)[36 22  0]xS 
+1623 2286 M (a)S 
+1659 2286 M (machine)[37 22 22 24 12 24  0]xS 
+1837 2286 M (to)[15  0]xS 
+1893 2286 M (do)[25  0]xS 
+1959 2286 M (everything,)[22 24 22 17 23 15 24 12 24 25  0]xS 
+2195 2286 M (and)[22 24  0]xS 
+190 2343 M (all)[22 12  0]xS 
+253 2343 M (unguided.)[25 24 25 25 12 25 22 25  0]xS 
+465 2343 M (However)[36 26 36 22 24 22  0]xS 
+665 2343 M (he)[24  0]xS 
+727 2343 M (would)[36 26 25 12  0]xS 
+868 2343 M (have)[24 22 24  0]xS 
+976 2343 M (sorely)[19 26 17 22 12  0]xS 
+1112 2343 M (missed)[37 12 19 19 22  0]xS 
+1263 2343 M (the)[15 24  0]xS 
+1340 2343 M (company)[22 26 37 25 22 24  0]xS 
+1536 2343 M (of)[26  0]xS 
+1593 2343 M (his)[24 12  0]xS 
+1665 2343 M (hosts,)[24 26 19 15 19  0]xS 
+1797 2343 M (limited)[12 12 37 12 15 22  0]xS 
+1949 2343 M (as)[22  0]xS 
+2006 2343 M (it)[12  0]xS 
+2050 2343 M (was)[36 22  0]xS 
+2143 2343 M (by)[24  0]xS 
+2207 2343 M (the)[15 24  0]xS 
+190 2400 M (language barrier.)[12 22 24 25 25 22 25 22 13 24 22 17 17 12 22 17  0]xS 
+190 2515 M (He)[36  0]xS 
+264 2515 M (hadn't)[24 22 25 24 8  0]xS 
+397 2515 M (even)[22 24 22  0]xS 
+505 2515 M (worked)[36 26 17 25 22  0]xS 
+671 2515 M (out)[26 25  0]xS 
+753 2515 M (their)[15 24 22 12  0]xS 
+858 2515 M (names.)[24 22 37 22 19  0]xS 
+1011 2515 M (That)[31 24 22  0]xS 
+1118 2515 M (at)[22  0]xS 
+1171 2515 M (least)[12 22 22 19  0]xS 
+1276 2515 M (ought)[26 25 25 24  0]xS 
+1407 2515 M (to)[15  0]xS 
+1463 2515 M (be)[24  0]xS 
+1525 2515 M (simple,)[19 12 37 25 12 22  0]xS 
+1680 2515 M (but)[24 25  0]xS 
+1760 2515 M (they)[15 24 22  0]xS 
+1859 2515 M (kept)[25 22 25  0]xS 
+1962 2515 M (giving)[25 12 24 12 24  0]xS 
+2099 2515 M (different)[25 12 15 15 22 17 22 24  0]xS 
+190 2572 M (answers)[22 24 19 36 22 17  0]xS 
+364 2572 M (and)[22 24  0]xS 
+449 2572 M (rarely)[17 22 17 22 12  0]xS 
+576 2572 M (responded)[17 22 19 25 26 24 25 22  0]xS 
+795 2572 M (to)[15  0]xS 
+850 2572 M (any)[22 24  0]xS 
+934 2572 M (of)[26  0]xS 
+989 2572 M (them.)[15 24 22 37  0]xS 
+1114 2572 M (In)[17  0]xS 
+1169 2572 M (frustration)[15 17 25 19 15 17 22 15 12 26  0]xS 
+1391 2572 M (he)[24  0]xS 
+1451 2572 M (had)[24 22  0]xS 
+1536 2572 M (labelled)[12 22 24 22 12 12 22  0]xS 
+1701 2572 M (them)[15 24 22  0]xS 
+1814 2572 M (Alice)[35 12 12 22  0]xS 
+1931 2572 M (and)[22 24  0]xS 
+2016 2572 M (Bob,)[33 26 24  0]xS 
+2126 2572 M (though)[15 24 26 25 25  0]xS 
+190 2629 M (they)[15 24 22  0]xS 
+288 2629 M (didn't)[25 12 25 24 8  0]xS 
+410 2629 M (respond)[17 22 19 25 26 24  0]xS 
+581 2629 M (to)[15  0]xS 
+635 2629 M (these)[15 24 22 19  0]xS 
+750 2629 M (names)[24 22 37 22  0]xS 
+888 2629 M (either.)[22 12 15 24 22 17  0]xS 
+1026 2629 M (The)[31 24  0]xS 
+1116 2629 M (same)[19 22 37  0]xS 
+1229 2629 M (problem)[25 17 26 24 12 22  0]xS 
+1405 2629 M (seemed)[19 22 22 37 22  0]xS 
+1565 2629 M (to)[15  0]xS 
+1620 2629 M (arise)[22 17 12 19  0]xS 
+1725 2629 M (with)[36 12 15  0]xS 
+1825 2629 M (every)[22 24 22 17  0]xS 
+1946 2629 M (word)[36 26 17  0]xS 
+2064 2629 M (he)[24  0]xS 
+2123 2629 M (tried)[15 17 12 22  0]xS 
+2227 2629 M (to)[15  0]xS 
+190 2686 M (learn.)[12 22 22 17 24  0]xS 
+320 2686 M (Surely)[28 25 17 22 12  0]xS 
+468 2686 M (they)[15 24 22  0]xS 
+572 2686 M (couldn't)[22 26 25 12 25 24 8  0]xS 
+749 2686 M (be)[24  0]xS 
+816 2686 M (misunderstanding)[37 12 19 25 24 25 22 17 19 15 22 24 25 12 24  0]xS 
+1183 2686 M (his)[24 12  0]xS 
+1258 2686 M (questions?)[25 25 22 19 15 12 26 24 19  0]xS 
+1486 2686 M (Not)[36 26  0]xS 
+1584 2686 M (repeatedly.)[17 22 25 22 22 15 22 25 12 23  0]xS 
+1822 2686 M (Everything)[31 24 22 17 23 15 24 12 24  0]xS 
+2059 2686 M (seemed)[19 22 22 37 22  0]xS 
+2227 2686 M (to)[15  0]xS 
+190 2743 M (have)[24 22 24  0]xS 
+309 2743 M (a)S 
+357 2743 M (multitude)[37 25 12 15 12 15 25 25  0]xS 
+571 2743 M (of)[26  0]xS 
+639 2743 M (names.)[24 22 37 22 19  0]xS 
+802 2743 M (He)[36  0]xS 
+886 2743 M (was)[36 22  0]xS 
+990 2743 M (reminded)[17 22 37 12 24 25 22  0]xS 
+1200 2743 M (of)[26  0]xS 
+1267 2743 M (the)[15 24  0]xS 
+1355 2743 M (Borges)[33 26 17 25 22  0]xS 
+1523 2743 M (character)[22 24 22 17 22 22 15 22  0]xS 
+1732 2743 M (who)[36 24  0]xS 
+1845 2743 M (invented)[12 24 24 22 24 15 22  0]xS 
+2039 2743 M (symbols)[19 23 37 24 26 12  0]xS 
+2225 2743 M (to)[15  0]xS 
+190 2800 M (distinguish)[25 12 19 15 12 24 25 25 12 19  0]xS 
+416 2800 M (between)[24 22 15 36 22 22  0]xS 
+595 2800 M ('dog)[8 25 26  0]xS 
+693 2800 M (at)[22  0]xS 
+744 2800 M (3:14)[25 14 25  0]xS 
+846 2800 M (seen)[19 22 22  0]xS 
+947 2800 M (from)[15 17 26  0]xS 
+1056 2800 M (the)[15 24  0]xS 
+1131 2800 M (side')[19 12 25 22  0]xS 
+1231 2800 M (and)[22 24  0]xS 
+1316 2800 M ('dog)[8 25 26  0]xS 
+1413 2800 M (at)[22  0]xS 
+1464 2800 M (3:15)[25 14 25  0]xS 
+1567 2800 M (seen)[19 22 22  0]xS 
+1668 2800 M (from)[15 17 26  0]xS 
+1777 2800 M (the)[15 24  0]xS 
+1851 2800 M (front',)[15 17 26 24 15 8  0]xS 
+1983 2800 M (but)[24 25  0]xS 
+2061 2800 M (that)[15 24 22  0]xS 
+2151 2800 M (was)[36 22  0]xS 
+2242 2800 M (a)S 
+190 2857 M (private)[25 17 12 24 22 15  0]xS 
+342 2857 M (language)[12 22 24 25 25 22 25  0]xS 
+533 2857 M (and)[22 24  0]xS 
+619 2857 M (moreover)[37 26 17 22 26 24 22  0]xS 
+824 2857 M (fictitious.)[15 12 22 15 12 15 12 26 25 19  0]xS 
+1025 2857 M (Jive)[19 12 24  0]xS 
+1116 2857 M (was)[36 22  0]xS 
+1208 2857 M (spoken)[19 25 26 25 22  0]xS 
+1363 2857 M (fluently)[15 12 25 22 24 15 12  0]xS 
+1525 2857 M (by)[24  0]xS 
+1587 2857 M (even)[22 24 22  0]xS 
+1693 2857 M (quite)[25 25 12 15  0]xS 
+1807 2857 M (young)[23 26 25 24  0]xS 
+1944 2857 M (natives.)[24 22 15 12 24 22 19  0]xS 
+2110 2857 M (It)[17  0]xS 
+2156 2857 M (could)[22 26 25 12  0]xS 
+190 2914 M (not have such subtle distinctions. Surely.)[24 26 15 13 24 22 24 22 13 19 25 22 24 13 19 25 24 15 12 22 13 25 12 19 15 12 24 22 15 12 26 24
+19 13 13 28 25 17 22 12 23  0]xS 
+LH
+(%%[Page: 2]%%) = 
+%%PageTrailer
+
+%%Page: 3 3
+%%PageBoundingBox: 11 13 601 780
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+/DeviceCMYK dup setcolorspace /colspABC exch def
+0.832 0.813 0.777 0.594 3 scol 190 231 M ("Clearly)[20 33 12 22 22 17 12  0]xS 
+367 231 M (the)[15 24  0]xS 
+444 231 M (Jive)[19 12 24  0]xS 
+537 231 M (language)[12 22 24 25 25 22 25  0]xS 
+730 231 M (is)[12  0]xS 
+777 231 M (context)[22 26 24 15 22 24  0]xS 
+941 231 M (sensitive)[19 22 24 19 12 15 12 24  0]xS 
+1126 231 M (in)[12  0]xS 
+1178 231 M (an)[22  0]xS 
+1239 231 M (extremely)[22 24 15 17 22 37 22 12  0]xS 
+1449 231 M (complex)[22 26 37 25 12 22  0]xS 
+1633 231 M (way.")[36 22 23 13  0]xS 
+1763 231 M (he)[24  0]xS 
+1825 231 M (typed)[15 23 25 22  0]xS 
+1951 231 M (into)[12 24 15  0]xS 
+2044 231 M (his)[24 12  0]xS 
+2115 231 M (journal,)[12 26 25 17 24 22 12  0]xS 
+190 288 M ("The)[20 31 24  0]xS 
+312 288 M (lexicon)[12 22 24 12 22 26  0]xS 
+478 288 M (has)[24 22  0]xS 
+568 288 M (many)[37 22 24  0]xS 
+698 288 M (words)[36 26 17 25  0]xS 
+845 288 M (in)[12  0]xS 
+906 288 M (common)[22 26 37 37 26  0]xS 
+1103 288 M (with)[36 12 15  0]xS 
+1214 288 M (standard)[19 15 22 24 25 22 17  0]xS 
+1407 288 M (Terran)[31 22 17 17 22  0]xS 
+1565 288 M (suggesting)[19 25 25 25 22 19 15 12 24  0]xS 
+1800 288 M (that)[15 24 22  0]xS 
+1901 288 M (this)[15 24 12  0]xS 
+1995 288 M (was)[36 22  0]xS 
+2097 288 M (the)[15 24  0]xS 
+2182 288 M (root)[17 26 26  0]xS 
+190 345 M (language)[12 22 24 25 25 22 25  0]xS 
+390 345 M (of)[26  0]xS 
+453 345 M (the)[15 24  0]xS 
+536 345 M (colonists.)[22 26 12 26 24 12 19 15 19  0]xS 
+747 345 M (However)[36 26 36 22 24 22  0]xS 
+952 345 M (the)[15 24  0]xS 
+1035 345 M (grammar)[25 17 22 37 37 22  0]xS 
+1235 345 M (and)[22 24  0]xS 
+1328 345 M (semantics)[19 22 37 22 24 15 12 22  0]xS 
+1543 345 M (of)[26  0]xS 
+1606 345 M (Jive)[19 12 24  0]xS 
+1705 345 M (appear)[22 25 25 22 22  0]xS 
+1861 345 M (to)[15  0]xS 
+1924 345 M (be)[24  0]xS 
+1993 345 M (entirely)[22 24 15 12 17 22 12  0]xS 
+2162 345 M (alien.)[22 12 12 22 24  0]xS 
+190 403 M (Perhaps this planet is home to another intelligent species that has influenced their language.")
+[28 22 17 24 22 25 19 13 15 24 12 19 13 25 12 22 24 22 15 13 12 19 13 24 26 37 22 13 15 26 13 22
+24 26 15 24 22 17 13 12 24 15 22 12 12 12 25 22 24 15 13 19 25 22 22 12 22 19 13 15 24 22 15 13
+24 22 19 13 12 24 15 12 25 22 24 22 22 25 13 15 24 22 12 17 13 12 22 24 25 25 22 25 22 13  0]xS 
+190 517 M (One)[36 24  0]xS 
+289 517 M (afternoon)[22 15 15 22 17 24 26 26  0]xS 
+497 517 M (an)[22  0]xS 
+560 517 M (argument)[22 17 25 25 37 22 24  0]xS 
+764 517 M (erupted)[22 17 25 25 15 22  0]xS 
+932 517 M (between)[24 22 15 36 22 22  0]xS 
+1114 517 M (Alice)[35 12 12 22  0]xS 
+1234 517 M (and)[22 24  0]xS 
+1322 517 M (Bob.)[33 26 24  0]xS 
+1435 517 M (Although)[35 12 15 24 26 25 25  0]xS 
+1638 517 M (he)[24  0]xS 
+1701 517 M (couldn't)[22 26 25 12 25 24 8  0]xS 
+1875 517 M (understand)[25 24 25 22 17 19 15 22 24  0]xS 
+2110 517 M (a)S 
+2149 517 M (word,)[36 26 17 25  0]xS 
+190 574 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+379 574 M (sensed)[19 22 24 19 22  0]xS 
+529 574 M (it)[12  0]xS 
+574 574 M (was)[36 22  0]xS 
+669 574 M (about)[22 24 26 25  0]xS 
+799 574 M (him.)[24 12 37  0]xS 
+904 574 M (They)[31 24 22  0]xS 
+1022 574 M (shouted)[19 24 26 25 15 22  0]xS 
+1196 574 M (and)[22 24  0]xS 
+1285 574 M (gesticulated)[25 22 19 15 12 22 25 12 22 15 22  0]xS 
+1539 574 M (at)[22  0]xS 
+1595 574 M (each)[22 22 22  0]xS 
+1703 574 M (other)[26 15 24 22  0]xS 
+1825 574 M (for)[15 26  0]xS 
+1901 574 M (a)S 
+1941 574 M (while,)[36 24 12 12 22  0]xS 
+2079 574 M (then)[15 24 22  0]xS 
+2182 574 M (Bob)[33 26  0]xS 
+190 631 M (stamped)[19 15 22 37 25 22  0]xS 
+377 631 M (out)[26 25  0]xS 
+464 631 M (slamming)[19 12 22 37 37 12 24  0]xS 
+674 631 M (the)[15 24  0]xS 
+756 631 M (door.)[25 26 26 17  0]xS 
+885 631 M (Alice)[35 12 12 22  0]xS 
+1009 631 M (came)[22 22 37  0]xS 
+1134 631 M (and)[22 24  0]xS 
+1226 631 M (sat)[19 22  0]xS 
+1304 631 M (beside)[24 22 19 12 25  0]xS 
+1450 631 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+1642 631 M (then.)[15 24 22 24  0]xS 
+1762 631 M (She)[28 24  0]xS 
+1857 631 M (sat)[19 22  0]xS 
+1935 631 M (for)[15 26  0]xS 
+2014 631 M (a)S 
+2058 631 M (long)[12 26 24  0]xS 
+2166 631 M (time,)[15 12 37 22  0]xS 
+190 688 M (alternating)[22 12 15 22 17 24 22 15 12 24  0]xS 
+421 688 M (between)[24 22 15 36 22 22  0]xS 
+606 688 M (crying)[22 17 23 12 24  0]xS 
+750 688 M (and)[22 24  0]xS 
+841 688 M (hugging)[24 25 25 25 12 24  0]xS 
+1022 688 M (him,)[24 12 37  0]xS 
+1128 688 M (her)[24 22  0]xS 
+1212 688 M (pretty)[25 17 22 15 15  0]xS 
+1349 688 M (eyes)[22 23 22  0]xS 
+1456 688 M (sore)[19 26 17  0]xS 
+1560 688 M (and)[22 24  0]xS 
+1652 688 M (red.)[17 22 25  0]xS 
+1749 688 M (The)[31 24  0]xS 
+1847 688 M (without)[36 12 15 24 26 25  0]xS 
+2020 688 M (warning)[36 22 17 24 12 24  0]xS 
+2201 688 M (she)[19 24  0]xS 
+190 745 M (kissed)[25 12 19 19 22  0]xS 
+327 745 M (him)[24 12  0]xS 
+415 745 M (quickly)[25 25 12 22 25 12  0]xS 
+574 745 M (on)[26  0]xS 
+639 745 M (the)[15 24  0]xS 
+715 745 M (lips)[12 12 25  0]xS 
+798 745 M (and)[22 24  0]xS 
+883 745 M (was)[36 22  0]xS 
+975 745 M (gone)[25 26 24  0]xS 
+1087 745 M (before)[24 22 15 26 17  0]xS 
+1228 745 M (he)[24  0]xS 
+1289 745 M (could)[22 26 25 12  0]xS 
+1414 745 M (respond.)[17 22 19 25 26 24 25  0]xS 
+1600 745 M (From)[27 17 26  0]xS 
+1721 745 M (his)[24 12  0]xS 
+1791 745 M (journal)[12 26 25 17 24 22  0]xS 
+1944 745 M (entry)[22 24 15 17  0]xS 
+2060 745 M (that)[15 24 22  0]xS 
+2151 745 M (night:)[24 12 25 24 15  0]xS 
+190 802 M ("It is not just the language that I don't understand." )[20 17 15 13 12 19 13 24 26 15 13 12 25 19 15 13 15 24 22 13 12 22 24 25 25 22 25 22 13 15 24 22
+15 13 17 13 25 26 24 8 15 13 25 24 25 22 17 19 15 22 24 25 13 20  0]xS 
+190 916 M (But)[33 25  0]xS 
+282 916 M (as)[22  0]xS 
+341 916 M (the)[15 24  0]xS 
+420 916 M (weeks)[36 22 22 25  0]xS 
+563 916 M (stretched)[19 15 17 22 15 22 24 22  0]xS 
+762 916 M (into)[12 24 15  0]xS 
+858 916 M (months)[37 26 24 15 24  0]xS 
+1021 916 M (an)[22  0]xS 
+1086 916 M (understanding)[25 24 25 22 17 19 15 22 24 25 12 24  0]xS 
+1383 916 M (did)[25 12  0]xS 
+1463 916 M (form.)[15 26 17 37  0]xS 
+1590 916 M (An)[35  0]xS 
+1667 916 M (idea)[12 25 22  0]xS 
+1767 916 M (gradually)[25 17 22 25 25 22 12 12  0]xS 
+1968 916 M (emerged)[22 37 22 17 25 22  0]xS 
+2156 916 M (in)[12  0]xS 
+2211 916 M (his)[24 12  0]xS 
+190 973 M (mind. An incredible idea, a)[37 12 24 25 13 13 35 24 13 12 24 22 17 22 25 12 24 12 22 13 12 25 22 22 13 13  0]xS 
+720 973 M ( colourless )[13 22 26 12 26 25 17 12 22 19 19  0]xS 
+946 973 M (green idea furiously dreaming, unbelievable, impossible, yet... )
+[25 17 22 22 24 13 12 25 22 22 13 15 25 17 12 26 25 19 12 23 13 25 17 22 22 37 12 24 25 13 13 25
+24 24 22 12 12 22 24 22 24 12 22 13 13 12 37 25 26 19 19 12 24 12 22 13 13 23 22 15 13 13 13  0]xS 
+190 1088 M (They were sat in the town square.)[31 24 22 23 13 36 22 17 22 13 19 22 15 13 12 24 13 15 24 22 13 15 26 36 24 13 19 25 25 22 17 22
+ 0]xS 
+190 1145 M ("Baby," he spoke confidently, bluffing that he knew what he was talking about, "Super bland mojo!")
+[20 33 22 24 23 13 20 13 24 22 13 19 25 26 25 22 13 22 26 24 15 12 25 22 24 15 12 23 13 13 24 12
+25 15 15 12 24 25 13 15 24 22 15 13 24 22 13 25 24 22 36 13 36 24 22 15 13 24 22 13 36 22 19 13
+15 22 12 25 12 24 25 13 22 24 26 25 15 13 13 20 28 25 25 22 17 13 24 12 22 24 25 13 37 26 12 26
+16  0]xS 
+190 1202 M (Alice)[35 12 12 22  0]xS 
+315 1202 M (looked)[12 26 26 25 22  0]xS 
+472 1202 M (at)[22  0]xS 
+531 1202 M (him)[24 12  0]xS 
+625 1202 M (with)[36 12 15  0]xS 
+734 1202 M (interest.)[12 24 15 22 17 22 19 15  0]xS 
+914 1202 M (He)[36  0]xS 
+994 1202 M (had)[24 22  0]xS 
+1086 1202 M (never)[24 22 24 22  0]xS 
+1217 1202 M (spoken)[19 25 26 25 22  0]xS 
+1380 1202 M (to)[15  0]xS 
+1442 1202 M (her)[24 22  0]xS 
+1527 1202 M (before)[24 22 15 26 17  0]xS 
+1674 1202 M (without)[36 12 15 24 26 25  0]xS 
+1849 1202 M (the)[15 24  0]xS 
+1931 1202 M (hesitation)[24 22 19 12 15 22 15 12 26  0]xS 
+2144 1202 M (of)[26  0]xS 
+2206 1202 M (the)[15 24  0]xS 
+190 1259 M (foreigner in his voice.)[15 26 17 22 12 25 24 22 17 13 12 24 13 24 12 19 13 24 26 12 22 22  0]xS 
+190 1316 M ("Stodgy pseudo man! Coming at uber-fly speed." she replied. )[20 28 15 26 25 25 23 13 25 19 22 25 25 26 13 37 22 24 16 13 33 26 37 12 24 25 13 22 15 13 25 24
+22 17 17 15 12 23 13 19 25 22 22 25 13 20 13 19 24 22 13 17 22 25 12 12 22 25 13  0]xS 
+190 1373 M ("Pseudo-my-arse!" he retorted with)[20 28 19 22 25 25 26 17 37 23 17 22 17 19 22 16 20 13 24 22 13 17 22 15 26 17 15 22 25 13 36 12
+15  0]xS 
+896 1373 M ( agreeable )[13 22 25 17 22 22 22 24 12 22  0]xS 
+1110 1373 M (enthusiasm)[22 24 15 24 25 19 12 22 19  0]xS 
+190 1430 M ("Hebe baby. You the green door" she said, eyes sparkling.)[20 36 22 24 22 13 24 22 24 23 13 13 36 26 25 13 15 24 22 13 25 17 22 22 24 13 25 26 26 17 20 13
+19 24 22 13 19 22 12 25 13 13 22 23 22 19 13 19 25 22 17 25 12 12 24 25  0]xS 
+190 1487 M ("Gibber my wotsit!" he exclaimed lightheadedly. This, he thought, this must cause her some pause.)
+[20 36 12 24 24 22 17 13 37 23 13 36 26 15 19 12 15 16 20 13 24 22 13 22 24 22 12 22 12 37 22 25
+13 12 12 25 24 15 24 22 22 25 22 25 12 23 13 13 31 24 12 19 13 13 24 22 13 15 24 26 25 25 24 15
+13 13 15 24 12 19 13 37 25 19 15 13 22 22 25 19 22 13 24 22 17 13 19 26 37 22 13 25 22 25 19 22
+ 0]xS 
+190 1544 M (But she just nodded, squeezed his hand and said "Hebe-chill.")
+[33 25 15 13 19 24 22 13 12 25 19 15 13 24 26 25 25 22 25 13 13 19 25 25 22 22 22 22 25 13 24 12
+19 13 24 22 24 25 13 22 24 25 13 19 22 12 25 13 20 36 22 24 22 17 22 24 12 12 12 13  0]xS 
+190 1601 M (With)[46 12 15  0]xS 
+302 1601 M (this)[15 24 12  0]xS 
+386 1601 M (the)[15 24  0]xS 
+462 1601 M (dam)[25 22  0]xS 
+561 1601 M (broke)[24 17 26 25  0]xS 
+690 1601 M (and)[22 24  0]xS 
+775 1601 M (understanding)[25 24 25 22 17 19 15 22 24 25 12 24  0]xS 
+1069 1601 M (washed)[36 22 19 24 22  0]xS 
+1231 1601 M (over)[26 24 22  0]xS 
+1335 1601 M (him.)[24 12 37  0]xS 
+1436 1601 M (He)[36  0]xS 
+1509 1601 M (laughed)[12 22 25 25 24 22  0]xS 
+1678 1601 M (then.)[15 24 22 24  0]xS 
+1791 1601 M (Laughed)[30 22 25 25 24 22  0]xS 
+1979 1601 M (long)[12 26 24  0]xS 
+2080 1601 M (and)[22 24  0]xS 
+2166 1601 M (loud.)[12 26 25 25  0]xS 
+190 1658 M (So much that he drew a small crowd; curious, concerned, baffled.)
+[28 26 13 37 25 22 24 13 15 24 22 15 13 24 22 13 25 17 22 36 13 22 13 19 37 22 12 12 13 22 17 26
+36 25 13 13 22 25 17 12 26 25 19 13 13 22 26 24 22 22 17 24 22 25 13 13 24 22 15 15 12 22 25  0]xS 
+190 1773 M ("Like)[20 30 12 25  0]xS 
+315 1773 M (steps)[19 15 22 25  0]xS 
+431 1773 M (in)[12  0]xS 
+482 1773 M (a)S 
+520 1773 M (dance,")[25 22 24 22 22 13  0]xS 
+684 1773 M (he)[24  0]xS 
+745 1773 M (wrote)[36 17 26 15  0]xS 
+877 1773 M (that)[15 24 22  0]xS 
+969 1773 M (evening,)[22 24 22 24 12 24 25  0]xS 
+1151 1773 M ("the)[20 15 24  0]xS 
+1247 1773 M (words)[36 26 17 25  0]xS 
+1386 1773 M (have)[24 22 24  0]xS 
+1494 1773 M (a)S 
+1531 1773 M (purpose)[25 25 17 25 26 19  0]xS 
+1706 1773 M (but)[24 25  0]xS 
+1786 1773 M (no)[24  0]xS 
+1851 1773 M (meaning.)[37 22 22 24 12 24 25  0]xS 
+F1S32 Ji 
+2046 1773 M (Jive)[22 14 22  0]xS 
+2142 1773 M (is)[14  0]xS 
+2191 1773 M (just)[14 25 19  0]xS 
+190 1830 M (stylish)[19 14 22 14 14 19  0]xS 
+341 1830 M (gibberish.)[25 14 25 25 22 19 14 19 25  0]xS 
+F2S32 Ji 
+542 1830 M (")S 
+585 1830 M (After)[35 15 15 22  0]xS 
+713 1830 M (that)[15 24 22  0]xS 
+812 1830 M (breakthrough,)[24 17 22 22 25 15 24 17 26 25 25 24  0]xS 
+1114 1830 M (ideas)[12 25 22 22  0]xS 
+1238 1830 M (came)[22 22 37  0]xS 
+1364 1830 M (to)[15  0]xS 
+1429 1830 M (him)[24 12  0]xS 
+1525 1830 M (at)[22  0]xS 
+1585 1830 M (a)S 
+1631 1830 M (furious)[15 25 17 12 26 25  0]xS 
+1793 1830 M (pace.)[25 22 22 22  0]xS 
+1921 1830 M ("How)[20 36 26  0]xS 
+2062 1830 M (could)[22 26 25 12  0]xS 
+2195 1830 M (this)[15 24 12  0]xS 
+190 1887 M (happen?")[24 22 25 25 22 24 21  0]xS 
+396 1887 M (he)[24  0]xS 
+464 1887 M (wrote,)[36 17 26 15 22  0]xS 
+616 1887 M ("Language)[20 30 22 24 25 25 22 25  0]xS 
+854 1887 M (serves)[19 22 17 24 22  0]xS 
+999 1887 M (two)[15 36  0]xS 
+1099 1887 M (roles:)[17 26 12 22 19  0]xS 
+1231 1887 M (as)[22  0]xS 
+1295 1887 M (a)S 
+1339 1887 M (tool)[15 26 26  0]xS 
+1441 1887 M (for)[15 26  0]xS 
+1522 1887 M (manipulating)[37 22 24 12 25 25 12 22 15 12 24  0]xS 
+1799 1887 M (the)[15 24  0]xS 
+1883 1887 M (physical)[25 24 23 19 12 22 22  0]xS 
+2064 1887 M (world)[36 26 17 12  0]xS 
+2203 1887 M (\(by)[17 24  0]xS 
+190 1944 M (allowing)[22 12 12 26 36 12 24  0]xS 
+380 1944 M (cooperation)[22 26 26 25 22 17 22 15 12 26  0]xS 
+639 1944 M (between)[24 22 15 36 22 22  0]xS 
+825 1944 M (individuals)[12 24 25 12 24 12 25 25 22 12  0]xS 
+1058 1944 M (and)[22 24  0]xS 
+1150 1944 M (the)[15 24  0]xS 
+1232 1944 M (transmission)[15 17 22 24 19 37 12 19 19 12 26  0]xS 
+1499 1944 M (of)[26  0]xS 
+1561 1944 M (ideas\))[12 25 22 22 19  0]xS 
+1699 1944 M (and)[22 24  0]xS 
+1791 1944 M (as)[22  0]xS 
+1854 1944 M (a)S 
+1897 1944 M (medium)[37 22 25 12 25  0]xS 
+2076 1944 M (for)[15 26  0]xS 
+2155 1944 M (social)[19 26 22 12 22  0]xS 
+190 2001 M (interaction.)[12 24 15 22 17 22 22 15 12 26 24  0]xS 
+433 2001 M (We)[46  0]xS 
+520 2001 M (do)[25  0]xS 
+590 2001 M (not)[24 26  0]xS 
+674 2001 M (normally)[24 26 17 37 22 12 12  0]xS 
+866 2001 M (distinguish)[25 12 19 15 12 24 25 25 12 19  0]xS 
+1098 2001 M (between)[24 22 15 36 22 22  0]xS 
+1281 2001 M (these,)[15 24 22 19 22  0]xS 
+1416 2001 M (since)[19 12 24 22  0]xS 
+1534 2001 M (both)[24 26 15  0]xS 
+1642 2001 M (involve)[12 24 24 26 12 24  0]xS 
+1805 2001 M (communication)[22 26 37 37 25 24 12 22 22 15 12 26  0]xS 
+2128 2001 M (for)[15 26  0]xS 
+2205 2001 M (the)[15 24  0]xS 
+190 2058 M (purpose)[25 25 17 25 26 19  0]xS 
+363 2058 M (of)[26  0]xS 
+417 2058 M (survival.)[19 25 17 24 12 24 22 12  0]xS 
+599 2058 M (But)[33 25  0]xS 
+685 2058 M (all)[22 12  0]xS 
+744 2058 M (of)[26  0]xS 
+799 2058 M (these)[15 24 22 19  0]xS 
+914 2058 M (people's)[25 22 26 25 12 22 8  0]xS 
+1087 2058 M (physical)[25 24 23 19 12 22 22  0]xS 
+1259 2058 M (needs)[24 22 22 25  0]xS 
+1384 2058 M (are)[22 17  0]xS 
+1459 2058 M (taken)[15 22 25 22  0]xS 
+1580 2058 M (care)[22 22 17  0]xS 
+1677 2058 M (of)[26  0]xS 
+1731 2058 M (automatically)[22 25 15 26 37 22 15 12 22 22 12 12  0]xS 
+2010 2058 M (by)[24  0]xS 
+2070 2058 M (machines.)[37 22 22 24 12 24 22 19  0]xS 
+190 2115 M (They)[31 24 22  0]xS 
+309 2115 M (have)[24 22 24  0]xS 
+420 2115 M (no)[24  0]xS 
+489 2115 M (need)[24 22 22  0]xS 
+601 2115 M (for)[15 26  0]xS 
+677 2115 M (cooperation;)[22 26 26 25 22 17 22 15 12 26 24  0]xS 
+946 2115 M (no)[24  0]xS 
+1015 2115 M (ideas)[12 25 22 22  0]xS 
+1134 2115 M (to)[15  0]xS 
+1194 2115 M (communicate.)[22 26 37 37 25 24 12 22 22 15 22  0]xS 
+1490 2115 M (As)[35  0]xS 
+1562 2115 M (for)[15 26  0]xS 
+1639 2115 M (the)[15 24  0]xS 
+1719 2115 M (social)[19 26 22 12 22  0]xS 
+1851 2115 M (interaction)[12 24 15 22 17 22 22 15 12 26  0]xS 
+2081 2115 M (aspect)[22 19 25 22 22  0]xS 
+2225 2115 M (of)[26  0]xS 
+190 2172 M (language,)[12 22 24 25 25 22 25 22  0]xS 
+398 2172 M (that)[15 24 22  0]xS 
+492 2172 M (was)[36 22  0]xS 
+587 2172 M (always)[22 12 36 22 23  0]xS 
+738 2172 M (communicated)[22 26 37 37 25 24 12 22 22 15 22  0]xS 
+1045 2172 M (as)[22  0]xS 
+1104 2172 M (much)[37 25 22  0]xS 
+1230 2172 M (by)[24  0]xS 
+F1S32 Ji 
+1295 2172 M (how)[25 25  0]xS 
+F2S32 Ji 
+1393 2172 M (people)[25 22 26 25 12  0]xS 
+1543 2172 M (spoke)[19 25 26 25  0]xS 
+1678 2172 M (as)[22  0]xS 
+1737 2172 M (what)[36 24 22  0]xS 
+1852 2172 M (they)[15 24 22  0]xS 
+1953 2172 M (actually)[22 22 15 25 22 12 12  0]xS 
+2124 2172 M (said.)[19 22 12 25  0]xS 
+2233 2172 M (A)S 
+190 2229 M (smile,)[19 37 12 12 22  0]xS 
+324 2229 M (a)S 
+364 2229 M (sneer,)[19 24 22 22 17  0]xS 
+500 2229 M (an)[22  0]xS 
+565 2229 M (arched)[22 17 22 24 22  0]xS 
+715 2229 M (eyebrow)[22 23 22 24 17 26  0]xS 
+904 2229 M (-)S 
+940 2229 M (these)[15 24 22 19  0]xS 
+1060 2229 M (are)[22 17  0]xS 
+1140 2229 M (the)[15 24  0]xS 
+1219 2229 M (real)[17 22 22  0]xS 
+1311 2229 M (communicators)[22 26 37 37 25 24 12 22 22 15 26 17  0]xS 
+1634 2229 M (of)[26  0]xS 
+1693 2229 M (emotion.)[22 37 26 15 12 26 24  0]xS 
+1887 2229 M (So)[28  0]xS 
+1960 2229 M (the)[15 24  0]xS 
+2039 2229 M (sounds)[19 26 25 24 25  0]xS 
+2196 2229 M (and)[22 24  0]xS 
+190 2286 M (emotions of speaking have remained whilst the physical meanings of the words slowly atrophied.")
+[22 37 26 15 12 26 24 19 13 26 15 13 19 25 22 22 25 12 24 25 13 24 22 24 22 13 17 22 37 22 12 24
+22 25 13 36 24 12 12 19 15 13 15 24 22 13 25 24 23 19 12 22 22 12 13 37 22 22 24 12 24 25 19 13
+26 15 13 15 24 22 13 36 26 17 25 19 13 19 12 26 36 12 23 13 22 15 17 26 25 24 12 22 25 13  0]xS 
+190 2400 M (His first feelings were of elation at having solved the riddle of Jive. It was the find of his career. It would)
+[36 12 19 13 15 12 17 19 15 13 15 22 22 12 12 24 25 19 13 36 22 17 22 13 26 15 13 22 12 22 15 12
+26 24 13 22 15 13 24 22 24 12 24 25 13 19 26 12 24 22 25 13 15 24 22 13 17 12 25 25 12 22 13 26
+15 13 19 12 24 22 13 13 17 15 13 36 22 19 13 15 24 22 13 15 12 24 25 13 26 15 13 24 12 19 13 22
+22 17 22 22 17 13 13 17 15 13 36 26 25 12  0]xS 
+190 2458 M (be)[24  0]xS 
+253 2458 M (the)[15 24  0]xS 
+331 2458 M (discovery)[25 12 19 22 26 24 22 17  0]xS 
+538 2458 M (of)[26  0]xS 
+595 2458 M (the)[15 24  0]xS 
+673 2458 M (decade)[25 22 22 22 25  0]xS 
+828 2458 M (in)[12  0]xS 
+880 2458 M (his)[24 12  0]xS 
+952 2458 M (field.)[15 12 22 12 25  0]xS 
+1068 2458 M (He)[36  0]xS 
+1143 2458 M (could)[22 26 25 12  0]xS 
+1269 2458 M (imagine)[12 37 22 25 12 24  0]xS 
+1440 2458 M (how)[24 26  0]xS 
+1543 2458 M (his)[24 12  0]xS 
+1615 2458 M (fellow)[15 22 12 12 26  0]xS 
+1754 2458 M (linguists)[12 12 24 25 25 12 19 15  0]xS 
+1934 2458 M (would)[36 26 25 12  0]xS 
+2075 2458 M (react:)[17 22 22 22 15  0]xS 
+2204 2458 M (the)[15 24  0]xS 
+190 2515 M (disbelief,)[25 12 19 24 22 12 12 22 15  0]xS 
+390 2515 M (the)[15 24  0]xS 
+474 2515 M (amazement,)[22 37 22 22 22 37 22 24 15  0]xS 
+734 2515 M (the)[15 24  0]xS 
+818 2515 M (competing)[22 26 37 25 22 15 12 24  0]xS 
+1049 2515 M (theories)[15 24 22 26 17 12 22  0]xS 
+1230 2515 M (as)[22  0]xS 
+1294 2515 M (everyone)[22 24 22 17 23 26 24  0]xS 
+1498 2515 M (tried)[15 17 12 22  0]xS 
+1612 2515 M (to)[15  0]xS 
+1676 2515 M (claim)[22 12 22 12  0]xS 
+1805 2515 M (this)[15 24 12  0]xS 
+1898 2515 M (as)[22  0]xS 
+1963 2515 M (proof)[25 17 26 26  0]xS 
+2095 2515 M (for)[15 26  0]xS 
+2176 2515 M (their)[15 24 22 12  0]xS 
+190 2572 M (approach.)[22 25 25 17 26 22 22 24  0]xS 
+401 2572 M (And)[35 24  0]xS 
+501 2572 M (for)[15 26  0]xS 
+574 2572 M (him)[24 12  0]xS 
+662 2572 M (as)[22  0]xS 
+719 2572 M (the)[15 24  0]xS 
+795 2572 M (discoverer:)[25 12 19 22 26 24 22 17 22 17  0]xS 
+1030 2572 M (fame)[15 22 37  0]xS 
+1141 2572 M (\(within)[17 36 12 15 24 12  0]xS 
+1297 2572 M (his)[24 12  0]xS 
+1367 2572 M (world)[36 26 17 12  0]xS 
+1498 2572 M (at)[22  0]xS 
+1551 2572 M (least\),)[12 22 22 19 15 17  0]xS 
+1686 2572 M (awards,)[22 36 22 17 25 19  0]xS 
+1855 2572 M (probably)[25 17 26 24 22 24 12  0]xS 
+2044 2572 M (a)S 
+2081 2572 M (chair)[22 24 22 12  0]xS 
+2193 2572 M (at)[22  0]xS 
+2245 2572 M (a)S 
+190 2629 M (prestigious university. When he got back to civilisation, he would be made. When. If... Oh.)
+[25 17 22 19 15 12 25 12 26 25 19 13 25 24 12 24 22 17 19 12 15 23 13 13 46 24 22 24 13 24 22 13
+25 26 15 13 24 22 22 25 13 15 26 13 22 12 24 12 12 12 19 22 15 12 26 24 13 13 24 22 13 36 26 25
+12 25 13 24 22 13 37 22 25 22 13 13 46 24 22 24 13 13 17 15 13 13 13 13 36 24  0]xS 
+190 2743 M (The)[31 24  0]xS 
+285 2743 M (Jive-talkers')[19 12 24 22 17 15 22 12 25 22 17 19  0]xS 
+537 2743 M (civilisation)[22 12 24 12 12 12 19 22 15 12 26  0]xS 
+767 2743 M (could)[22 26 25 12  0]xS 
+894 2743 M (not)[24 26  0]xS 
+977 2743 M (help)[24 22 12  0]xS 
+1078 2743 M (him)[24 12  0]xS 
+1169 2743 M (get)[25 22  0]xS 
+1249 2743 M (back)[24 22 22  0]xS 
+1359 2743 M (home)[24 26 37  0]xS 
+1486 2743 M (for)[15 26  0]xS 
+1562 2743 M (there)[15 24 22 17  0]xS 
+1680 2743 M (was)[36 22  0]xS 
+1775 2743 M (no)[24  0]xS 
+1842 2743 M (civilisation)[22 12 24 12 12 12 19 22 15 12 26  0]xS 
+2072 2743 M (here.)[24 22 17 22  0]xS 
+2188 2743 M (Not)[36 26  0]xS 
+190 2800 M (even)[22 24 22  0]xS 
+296 2800 M (a)S 
+331 2800 M (society,)[19 26 22 12 22 15 23  0]xS 
+496 2800 M (not)[24 26  0]xS 
+575 2800 M (the)[15 24  0]xS 
+649 2800 M (way)[36 22  0]xS 
+744 2800 M (we)[36  0]xS 
+815 2800 M (think)[15 24 12 24  0]xS 
+929 2800 M (of)[26  0]xS 
+983 2800 M (society.)[19 26 22 12 22 15 23  0]xS 
+1148 2800 M (Every)[31 24 22 17  0]xS 
+1279 2800 M (Jive-talker)[19 12 24 22 17 15 22 12 25 22  0]xS 
+1499 2800 M (was)[36 22  0]xS 
+1590 2800 M (alone,)[22 12 26 24 22  0]xS 
+1722 2800 M (unable)[25 24 22 24 12  0]xS 
+1864 2800 M (to)[15  0]xS 
+1919 2800 M (communicate)[22 26 37 37 25 24 12 22 22 15  0]xS 
+2196 2800 M (any)[22 24  0]xS 
+190 2857 M (but)[24 25  0]xS 
+273 2857 M (the)[15 24  0]xS 
+353 2857 M (most)[37 26 19  0]xS 
+469 2857 M (basic)[24 22 19 12  0]xS 
+587 2857 M (of)[26  0]xS 
+648 2857 M (thoughts.)[15 24 26 25 25 24 15 19  0]xS 
+853 2857 M (And)[35 24  0]xS 
+955 2857 M (-)S 
+991 2857 M (having)[24 22 24 12 24  0]xS 
+1142 2857 M (never)[24 22 24 22  0]xS 
+1270 2857 M (had)[24 22  0]xS 
+1360 2857 M (any)[22 24  0]xS 
+1448 2857 M (practice)[25 17 22 22 15 12 22  0]xS 
+1624 2857 M (-)S 
+1660 2857 M (probably)[25 17 26 24 22 24 12  0]xS 
+1852 2857 M (unable)[25 24 22 24 12  0]xS 
+2000 2857 M (to)[15  0]xS 
+2060 2857 M (even)[22 24 22  0]xS 
+2171 2857 M (form)[15 26 17  0]xS 
+190 2914 M (complex)[22 26 37 25 12 22  0]xS 
+375 2914 M (thoughts.)[15 24 26 25 25 24 15 19  0]xS 
+579 2914 M (How)[36 26  0]xS 
+694 2914 M (could)[22 26 25 12  0]xS 
+821 2914 M (they,)[15 24 22 23  0]xS 
+935 2914 M (in)[12  0]xS 
+988 2914 M (a)S 
+1027 2914 M (language)[12 22 24 25 25 22 25  0]xS 
+1221 2914 M (where)[36 24 22 17  0]xS 
+1360 2914 M (every)[22 24 22 17  0]xS 
+1485 2914 M (word)[36 26 17  0]xS 
+1606 2914 M (was)[36 22  0]xS 
+1700 2914 M (bluff)[24 12 25 15  0]xS 
+1808 2914 M (and)[22 24  0]xS 
+1896 2914 M (posture,)[25 26 19 15 25 17 22  0]xS 
+2076 2914 M (devoid)[25 22 24 26 12  0]xS 
+2227 2914 M (of)[26  0]xS 
+190 2971 M (content.)[22 26 24 15 22 24 15  0]xS 
+374 2971 M (It)[17  0]xS 
+428 2971 M (was)[36 22  0]xS 
+527 2971 M (a)S 
+572 2971 M (degenerate)[25 22 25 22 24 22 17 22 15  0]xS 
+810 2971 M (colony.)[22 26 12 26 24 23  0]xS 
+979 2971 M (The)[31 24  0]xS 
+1078 2971 M (machines)[37 22 22 24 12 24 22  0]xS 
+1282 2971 M (still)[19 15 12 12  0]xS 
+1375 2971 M (worked,)[36 26 17 25 22 25  0]xS 
+1561 2971 M (but)[24 25  0]xS 
+1647 2971 M (everything)[22 24 22 17 23 15 24 12 24  0]xS 
+1878 2971 M (else)[22 12 19  0]xS 
+1975 2971 M (had)[24 22  0]xS 
+2069 2971 M (been)[24 22 22  0]xS 
+2183 2971 M (lost.)[12 26 19 15  0]xS 
+LH
+(%%[Page: 3]%%) = 
+%%PageTrailer
+
+%%Page: 4 4
+%%PageBoundingBox: 11 13 601 780
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+/DeviceCMYK dup setcolorspace /colspABC exch def
+0.832 0.813 0.777 0.594 3 scol 190 231 M (Thondril was stranded. He would never escape the planet, never return to his world. Never - and here he)
+[31 24 26 24 25 17 12 12 13 36 22 19 13 19 15 17 22 24 25 22 25 13 13 36 22 13 36 26 25 12 25 13
+24 22 24 22 17 13 22 19 22 22 25 22 13 15 24 22 13 25 12 22 24 22 15 13 13 24 22 24 22 17 13 17
+22 15 25 17 24 13 15 26 13 24 12 19 13 36 26 17 12 25 13 13 36 22 24 22 17 13 17 13 22 24 25 13
+24 22 17 22 13 24  0]xS 
+190 288 M (choked,)[22 24 26 25 22 25  0]xS 
+367 288 M (recoiled)[17 22 22 26 12 12 22  0]xS 
+544 288 M (from)[15 17 26  0]xS 
+659 288 M (the)[15 24  0]xS 
+739 288 M (horror)[24 26 17 17 26  0]xS 
+885 288 M (of)[26  0]xS 
+946 288 M (his)[24 12  0]xS 
+1020 288 M (situation,)[19 12 15 25 22 15 12 26 24  0]xS 
+1223 288 M (felt)[15 22 12  0]xS 
+1306 288 M (desperately)[25 22 19 25 22 17 22 15 22 12  0]xS 
+1550 288 M (trapped)[15 17 22 25 25 22  0]xS 
+1720 288 M (and)[22 24  0]xS 
+1811 288 M (physically)[25 24 23 19 12 22 22 12 12  0]xS 
+2024 288 M (sick)[19 12 22  0]xS 
+2122 288 M (-)S 
+2158 288 M (never)[24 22 24 22  0]xS 
+190 345 M (have another intelligent conversation with a fellow being. He would go mad.)
+[24 22 24 22 13 22 24 26 15 24 22 17 13 12 24 15 22 12 12 12 25 22 24 15 13 22 26 24 24 22 17 19
+22 15 12 26 24 13 36 12 15 24 13 22 13 15 22 12 12 26 36 13 24 22 12 24 25 13 13 36 22 13 36 26
+25 12 25 13 25 26 13 37 22 25  0]xS 
+190 460 M (Archie)[35 17 22 24 12  0]xS 
+340 460 M (Thondril)[31 24 26 24 25 17 12  0]xS 
+529 460 M (-)S 
+564 460 M (former)[15 26 17 37 22  0]xS 
+716 460 M (Professor)[28 17 26 15 22 19 19 26  0]xS 
+923 460 M (of)[26  0]xS 
+982 460 M (Linguistics)[30 12 24 25 25 12 19 15 12 22  0]xS 
+1215 460 M (at)[22  0]xS 
+1270 460 M (Jersey)[19 22 17 19 22  0]xS 
+1410 460 M (University)[36 24 12 24 22 17 19 12 15  0]xS 
+1632 460 M (-)S 
+1667 460 M (has)[24 22  0]xS 
+1750 460 M (a)S 
+1790 460 M (nice)[24 12 22  0]xS 
+1888 460 M (house)[24 26 25 19  0]xS 
+2022 460 M (on)[26  0]xS 
+2090 460 M (Brighton)[33 17 12 25 24 15 26  0]xS 
+190 517 M (beach.)[24 22 22 22 24  0]xS 
+333 517 M (Well)[46 22 12  0]xS 
+441 517 M (-)S 
+473 517 M (he)[24  0]xS 
+535 517 M (calls)[22 22 12 12  0]xS 
+638 517 M (it)[12  0]xS 
+680 517 M (Brighton;)[33 17 12 25 24 15 26 24  0]xS 
+885 517 M (other)[26 15 24 22  0]xS 
+1005 517 M (people)[25 22 26 25 12  0]xS 
+1153 517 M (have)[24 22 24  0]xS 
+1260 517 M (other)[26 15 24 22  0]xS 
+1380 517 M (names,)[24 22 37 22 19  0]xS 
+1533 517 M (but)[24 25  0]xS 
+1613 517 M (that's)[15 24 22 15 8  0]xS 
+1731 517 M (ok)[26  0]xS 
+1798 517 M (with)[36 12 15  0]xS 
+1901 517 M (him.)[24 12 37  0]xS 
+2002 517 M (He)[36  0]xS 
+2076 517 M (lives)[12 12 24 22  0]xS 
+2181 517 M (with)[36 12 15  0]xS 
+190 574 M (Alice)[35 12 12 22  0]xS 
+308 574 M (now.)[24 26 36  0]xS 
+421 574 M (Lying)[30 23 12 24  0]xS 
+550 574 M (in)[12  0]xS 
+601 574 M (his)[24 12  0]xS 
+671 574 M (arms)[22 17 37  0]xS 
+780 574 M (at)[22  0]xS 
+832 574 M (night)[24 12 25 24  0]xS 
+946 574 M (she)[19 24  0]xS 
+1026 574 M (will)[36 12 12  0]xS 
+1113 574 M (whisper)[36 24 12 19 25 22  0]xS 
+1282 574 M (into)[12 24 15  0]xS 
+1374 574 M (his)[24 12  0]xS 
+1444 574 M (ear;)[22 22 17  0]xS 
+1532 574 M ("Brillig)[20 33 17 12 12 12 12  0]xS 
+1690 574 M (gimble.")[25 12 37 24 12 22 13  0]xS 
+1870 574 M (or)[26  0]xS 
+1927 574 M ("Very)[20 36 22 17  0]xS 
+2060 574 M (mimsy")[37 12 37 19 23  0]xS 
+2223 574 M (or)[26  0]xS 
+190 631 M (other)[26 15 24 22  0]xS 
+313 631 M (sweet)[19 36 22 22  0]xS 
+445 631 M (nothings.)[24 26 15 24 12 24 25 19  0]xS 
+646 631 M (He)[36  0]xS 
+723 631 M (smiles)[19 37 12 12 22  0]xS 
+862 631 M (at)[22  0]xS 
+918 631 M (her.)[24 22 17  0]xS 
+1013 631 M (He)[36  0]xS 
+1089 631 M (tells)[15 22 12 12  0]xS 
+1188 631 M (her)[24 22  0]xS 
+1269 631 M (he)[24  0]xS 
+1334 631 M (loves)[12 26 24 22  0]xS 
+1456 631 M (her.)[24 22 17  0]xS 
+1550 631 M (She)[28 24  0]xS 
+1643 631 M (doesn't)[25 26 22 19 24 8  0]xS 
+1801 631 M (understand.)[25 24 25 22 17 19 15 22 24 25  0]xS 
+2050 631 M (That's)[31 24 22 15 8  0]xS 
+2188 631 M (also)[22 12 19  0]xS 
+190 688 M (fine;)[15 12 24 22  0]xS 
+290 688 M (he)[24  0]xS 
+350 688 M (tells)[15 22 12 12  0]xS 
+444 688 M (her)[24 22  0]xS 
+521 688 M (in)[12  0]xS 
+571 688 M (ways)[36 22 23  0]xS 
+685 688 M (she)[19 24  0]xS 
+765 688 M (does)[25 26 22  0]xS 
+871 688 M (understand.)[25 24 25 22 17 19 15 22 24 25  0]xS 
+1116 688 M (Some)[28 26 37  0]xS 
+1243 688 M (things)[15 24 12 24 25  0]xS 
+1376 688 M (don't)[25 26 24 8  0]xS 
+1488 688 M (need)[24 22 22  0]xS 
+1595 688 M (words.)[36 26 17 25 19  0]xS 
+1745 688 M (He's)[36 22 8  0]xS 
+1844 688 M (not)[24 26  0]xS 
+1923 688 M (sure)[19 25 17  0]xS 
+2020 688 M (whether)[36 24 22 15 24 22  0]xS 
+2194 688 M (he's)[24 22 8  0]xS 
+190 745 M (still sane. It no longer seems to matter.)[19 15 12 12 12 13 19 22 24 22 13 13 17 15 13 24 26 13 12 26 24 25 22 17 13 19 22 22 37 19 13 15
+26 13 37 22 15 15 22 17  0]xS 
+190 859 M (Kabba-man-chutz-mega-bright. Hack-fuck-the-mother. So-no-wassup. Chill 'n chill good. Perma-style.)
+[35 22 24 24 22 17 37 22 24 17 22 24 25 15 22 17 37 22 25 22 17 24 17 12 25 24 15 13 13 36 22 22
+25 17 15 25 22 25 17 15 24 22 17 37 26 15 24 22 17 13 13 28 26 17 24 26 17 36 22 19 19 25 25 13
+13 33 24 12 12 12 13 8 24 13 22 24 12 12 12 13 25 26 26 25 13 13 28 22 17 37 22 17 19 15 23 12
+22  0]xS 
+LH
+(%%[Page: 4]%%) = 
+%%PageTrailer
+
+%%Trailer
+%%BoundingBox: 11 13 601 780
+%%DocumentNeededResources: 
+%%+ font Times-Bold
+%%+ font Times-Italic
+%%+ font Times-Roman
+%%DocumentSuppliedResources: 
+%%+ procset Pscript_WinNT_ErrorHandler 5.0 0
+%%+ procset Pscript_FatalError 5.0 0
+%%+ procset Pscript_Win_Basic 5.0 0
+%%+ procset Pscript_Win_Utils_L2 5.0 0
+%%+ procset Pscript_Text 5.0 0
+%%+ procset Pscript_Encoding256 5.0 0
+%%+ procset Pscript_Win_Euro_L2 5.0 0
+%%+ procset Pscript_Win_GdiObject 5.0 0
+%%+ procset Pscript_Win_GdiObject_L2 5.0 0
+Pscript_WinNT_Incr dup /terminate get exec
+ehsave restore
+%%Pages: 4
+(%%[LastPage]%%) = 
+%%EOF
+%-12345X@PJL EOJ
+%-12345X

@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Cookies: variables that last</title>
+  </head>
+  <body>
+  <script src="cookies.js"></script>
+
+<h1>Cookies: Variables that Last</h1>
+
+Consider the following script:
+<p>
+<code>
+name = prompt("What is your name?");<br>
+document.write("Hello " + name);<br>
+</code>
+<p>
+This will run every time someone visits the page - which could get annoying.
+The problem is that the variable name doesn't last. 
+The web-browser forgets it when the user leaves the page.
+<p>
+Cookies let us create variables that last. A cookie is stored on the user's
+browser, and is available next time they visit the page.
+
+<h2>Cookie Functions</h2>
+Cookies are quite simple. Unfortunately though, the code for using cookies 
+is quite advanced and idiosyncratic. Here we define 3 functions to make using
+cookies easier. Don't worry about how they work. You can just copy and paste
+them into your web page.
+<p>
+<hr>
+<code>
+// Place the code below in a JavaScript block
+<br><br>
+/*<br>
+Create a cookie<br>
+&nbsp;&nbsp; name - name of the cookie<br>
+&nbsp;&nbsp; value - value of the cookie<br>
+These cookies will ask to stay alive for a year.<br>
+*/<br>
+function setCookie(name, value) {<br>
+&nbsp;&nbsp; var largeExpDate = new Date ();<br>
+&nbsp;&nbsp; largeExpDate.setTime(largeExpDate.getTime() + (365 * 24 * 3600 * 1000)); // Last for a year - note that the browser may not respect this.<br>
+&nbsp;&nbsp; // Create the cookie string<br>
+&nbsp;&nbsp; var curCookie = name + "=" + escape(value) + "; expires="+largeExpDate.toGMTString()+";";<br>
+&nbsp;&nbsp; // Add it to the document<br>
+&nbsp;&nbsp; document.cookie = curCookie; // Note that this *doesn't* re-assign document.cookie (which would delete all existing cookies). <br>
+&nbsp;&nbsp; // It magically appends the new cookie to the list.<br>
+}<br>
+<br>
+/*<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;name - name of the desired cookie<br>
+&nbsp;&nbsp;Return a string containing the value of specified cookie, or null if cookie does not exist<br>
+*/<br>
+function getCookie(name) {<br>
+&nbsp;&nbsp;var dc = document.cookie;<br>
+&nbsp;&nbsp;var prefix = name + "=";<br>
+&nbsp;&nbsp;var begin = dc.indexOf("; " + prefix);<br>
+&nbsp;&nbsp;if (begin == -1) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;begin = dc.indexOf(prefix);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if (begin != 0) return null;<br>
+&nbsp;&nbsp;} else begin += 2;<br>
+&nbsp;&nbsp;var end = document.cookie.indexOf(";", begin);<br>
+&nbsp;&nbsp;if (end == -1) end = dc.length;<br>
+&nbsp;&nbsp;return unescape(dc.substring(begin + prefix.length, end));<br>
+}<br>
+<br>
+// Convert a cookie into a number (otherwise it will be a string)<br>
+function getNumberCookie(name) {<br>
+&nbsp;&nbsp; return parseInt( getCookie(name) );<br>
+}<br>
+<br>
+
+</code>
+<hr>
+<p>
+This creates the following functions:
+<p>
+setCookie("CookieName", value);
+<br><i>This creates a cookie (or sets a new value for an existing cookie).</i>
+<p>
+value = getCookie("CookieName");<br>
+<i>If the cookie doesn't exist then this will return false - so you can also use
+it to test whether a cookie has been created.</i>
+<p>
+value = getNumberCookie("CookieName");
+<P>
+The example below counts how many times you visit this page.
+<p>
+&lt;script&gt;<br>
+visits = getNumberCookie("visits");<br>
+if (!visits) {<br>
+&nbsp;&nbsp;&nbsp; // Set visits to a starting value if it doesn't exist<br>
+&nbsp;&nbsp;&nbsp; visits = 0;<br>
+}<br>
+visits++;<br>
+document.write("You have been here " + visits + " times.");<br>
+setCookie("visits", visits);<br>
+&lt;/script&gt;
+<p>
+<script>
+// Place the code below in a JavaScript block
+
+/*
+Create a cookie
+   name - name of the cookie
+   value - value of the cookie
+These cookies will ask to stay alive for a year.
+*/
+function setCookie(name, value) {
+   var largeExpDate = new Date ();
+   largeExpDate.setTime(largeExpDate.getTime() + (365 * 24 * 3600 * 1000)); // Last for a year - note that the browser may not respect this.
+   // Create the cookie string
+   var curCookie = name + "=" + escape(value) + "; expires="+largeExpDate.toGMTString()+";";
+   // Add it to the document
+   document.cookie = curCookie; // Note that this *doesn't* re-assign document.cookie (which would delete all existing cookies).
+   // It magically appends the new cookie to the list.
+}
+
+/*
+  
+  name - name of the desired cookie
+  Return a string containing the value of specified cookie, or null if cookie does not exist
+*/
+function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  } else begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1) end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+}
+
+// Convert a cookie into a number (otherwise it will be a string)
+function getNumberCookie(name) {
+   return parseInt( getCookie(name) );
+}
+
+
+
+
+visits = getNumberCookie("visits");
+if (!visits) {
+    // Set visits to a starting value if it doesn't exist
+    visits = 0;
+}
+visits++;
+document.write("You have been here " + visits + " times.");
+setCookie("visits", visits);
+</script>
+
+
+  </body>
+</html>

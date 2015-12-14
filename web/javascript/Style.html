@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Style</title>
+</head>
+<body>
+<h1>Lesson 10 (part 2): Style</h1>
+ 
+ <a href="index.html">Go back to course home page</a>
+ 
+<p>
+<i>Style</i> (also called Cascading Style 
+Sheets or CSS) is a very useful
+ feature, and when combined with JavaScript you 
+ can do some impressive things. It is a separate language - different
+ from both Html and JavaScript. We don't need to learn much of it
+ though - just a few special formulae.
+ <p>
+ Note that tricks with style work for all sorts of objects, such as
+ images and text blocks.
+ </p>
+ 
+ <h2>Position</h2>
+ Style can be used to set an object's position:<p>
+First we define an object with a position given by its style.
+<p>
+Position is given by the <i>top</i> and <i>left</i> properties.
+These give coordinates in pixels from the top and from the left. 
+So <code>myObject.style.top = 100;</code> actually means '100 pixels down'.
+These coordinates can be <i>relative</i> (which means 'in the natural flow of the page'),
+<i>absolute</i> (which means 'from the top-left of the web page') or
+<i>fixed</i> (which means 'relative to the browser window'
+ - try it out on a large web page to see what that means).
+ <p>
+We also give the image an onClick event-handler so that it will respond to
+clicks:<br>
+<code>
+&nbsp;&lt;img id="plane" src="aeroplane.gif" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; style="position:relative; top:0;
+left:0;" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; onClick="movePlane();"&gt;<p>
+
+Now we better define the movePlane() function that gets called
+when you click on the image:<br>
+<br>
+&nbsp;&lt;script&gt;<br>
+&nbsp;myplane = document.getElementById("plane");<br>
+// Define a variable to hold the position value<br>
+&nbsp;x = 0;<br>
+// Define a function to increase x, and reset the image's position<br>
+&nbsp;function movePlane()<br>
+&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x += 50;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; myplane.style.left = x;<br>
+&nbsp;}<br>
+&nbsp;&lt;/script&gt;<br>
+</code>
+ 
+ <script>
+ x = 0;
+ </script>
+ <img id="plane" src="aeroplane.gif" 
+      style="position:relative; top:0; left:0;" 
+      onClick="movePlane();">
+<br>Click on the plane above to make it move right
+
+ <script>
+ myplane = document.getElementById("plane");
+ function movePlane()
+ {
+    x += 50;
+    myplane.style.left = x;
+ }
+ </script>
+
+
+
+<h2>Hide and Seek</h2>
+Another useful style property is <code>visibility</code>. This lets
+you hide objects. <code>visibility</code> can be "visible" or "hidden".
+You can use this for many special effects. One common use is to make
+pop-up menus and drop-down menus.
+
+In the code below we will make another plane image appear and disappear.
+<p>
+First we need the plane image:
+<p>
+&nbsp;&lt;img id="plane2" src="aeroplane.gif" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; style="visibility:visible;" &gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>
+
+Now let's get hold of the image object and store it in a variable:<br>
+&nbsp;&lt;script&gt;<br>
+&nbsp;myplane2 = document.getElementById("plane2");<br>
+&nbsp;&lt;/script&gt;<br>
+<p>
+Now we need a way of calling the function. So let's create two links with
+onClick event-handlers:<br>
+&nbsp;&lt;a href="#" onClick="myplane2.style.visibility = 'hidden'"&gt;Click
+here to make the <br>
+&nbsp;plane disappear&lt;/a&gt;<br>
+
+&nbsp;&lt;a href="#" onClick="myplane2.style.visibility = 'visible'"&gt;Click
+here to make the <br>
+&nbsp;plane appear&lt;/a&gt;<br>
+</code>
+
+
+
+ <img id="plane2" src="aeroplane.gif" 
+      style="visibility:visible;" >
+      
+      <script>
+ myplane2 = document.getElementById("plane2");
+ </script>
+      <br>
+     <a name="here" href="#here" onClick="myplane2.style.visibility = 'hidden'">Click here to make the
+ plane disappear</a><br>
+ <a href="#here" onClick="myplane2.style.visibility = 'visible'">Click here to make the
+ plane appear</a> 
+      
+
+</body>
+</html>
+

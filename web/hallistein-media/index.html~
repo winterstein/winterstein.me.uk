@@ -1,0 +1,65 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Hallistein Media</title>
+<link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+  <style>
+body{
+  background-color:#333;
+}
+.main {
+  background:url(hexagons800_cc_estherase_on_flickr.jpg);  
+  -moz-border-radius:20px;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  border:solid 5px #039;
+  height:500px;
+  width:800px;
+  margin-top:70px;
+  margin-left:auto; margin-right:auto;
+}
+h1, h2 {
+  margin-top:50px;
+  color:#eee;
+  text-shadow: -4px -2px 2px #ccc, 2px 2px 2px #000;
+  font-family: 'Krona One', 'Arial', san-serif;
+}
+h1 {font-size:40pt;}
+h2 {font-size:30pt;}
+  </style>
+	<meta name="viewport" content = "width = device-width" />		
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script>
+function switchBG1() {
+  $('.main').css('background-image', 'url(symbolburst800_cc_andrew_kelsall.jpg)');
+}
+function switchBG2() {
+  $('.main').css('background-image', 'url(hexagons800_cc_estherase_on_flickr.jpg)');
+}
+setTimeout('switchBG1();', 3000);
+setTimeout('switchBG2();', 5000);
+</script>
+</head>
+<body>
+
+<center>
+<div class='main'>
+  <h1>Hallistein Media</h1>
+  <h2>Realising ideas</h2>
+</div>
+</center>
+
+<!-- Google Analytics tracking code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1042278-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

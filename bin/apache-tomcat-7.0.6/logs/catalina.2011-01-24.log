@@ -1,0 +1,1311 @@
+24-Jan-2011 14:09:59 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24-Jan-2011 14:10:04 org.apache.coyote.AbstractProtocolHandler init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:10:04 org.apache.coyote.AbstractProtocolHandler init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:10:04 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 8135 ms
+24-Jan-2011 14:10:04 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+24-Jan-2011 14:10:04 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.6
+24-Jan-2011 14:10:04 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:10:04 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+24-Jan-2011 14:10:05 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+24-Jan-2011 14:10:05 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:10:05 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:10:05 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:10:05 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+24-Jan-2011 14:10:06 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+24-Jan-2011 14:10:06 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+24-Jan-2011 14:10:06 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+24-Jan-2011 14:10:12 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+24-Jan-2011 14:10:53 org.apache.coyote.AbstractProtocolHandler start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:10:53 org.apache.coyote.AbstractProtocolHandler start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:10:53 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 49123 ms
+24-Jan-2011 14:11:03 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:11:03 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:11:03 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:03 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:03 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:11:03 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:11:03 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:11:13 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:11:13 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:11:13 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:13 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:13 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:11:13 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:11:13 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:11:23 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:11:23 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:11:23 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:23 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:23 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:11:23 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:11:23 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:11:33 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:11:33 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:11:33 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:33 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:33 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:11:33 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:11:33 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:11:43 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:11:43 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:11:43 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:43 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:43 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:11:43 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:11:43 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:11:53 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:11:53 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:11:53 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:53 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:11:53 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:11:53 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:11:53 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:12:03 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:12:03 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:12:03 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:03 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:03 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:12:03 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:12:03 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:12:13 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:12:17 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:12:17 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:17 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:17 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:12:17 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:12:17 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:12:28 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:12:28 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:12:28 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:28 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:28 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:12:28 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:12:28 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:12:38 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:12:38 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:12:38 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:38 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:38 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:12:38 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:12:38 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:12:48 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:12:48 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:12:48 org.apache.catalina.startup.ContextConfig init
+SEVERE: Exception fixing docBase for context [/bbx-meaFlow] 
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:114)
+	at java.util.jar.JarFile.<init>(JarFile.java:135)
+	at java.util.jar.JarFile.<init>(JarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:72)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:48)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:70)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:104)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:71)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:714)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:837)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:335)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:48 org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4634)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:12:48 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+24-Jan-2011 14:12:48 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+24-Jan-2011 14:12:48 org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/bbx-meaFlow] startup failed due to previous errors
+24-Jan-2011 14:12:58 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:12:58 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:13:20 org.apache.catalina.loader.WebappLoader startInternal
+SEVERE: LifecycleException 
+java.lang.ClassNotFoundException: org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at org.apache.catalina.loader.WebappLoader.createClassLoader(WebappLoader.java:715)
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:581)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4857)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:13:20 org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:626)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4857)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.ClassNotFoundException: org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at org.apache.catalina.loader.WebappLoader.createClassLoader(WebappLoader.java:715)
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:581)
+	... 18 more
+24-Jan-2011 14:13:20 org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive bbx-meaFlow.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:816)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1335)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:293)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1235)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1403)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1382)
+	at java.lang.Thread.run(Thread.java:662)
+24-Jan-2011 14:13:37 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jan-2011 14:13:37 org.apache.coyote.AbstractProtocolHandler pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:13:42 org.apache.coyote.AbstractProtocolHandler pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:13:43 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+24-Jan-2011 14:13:46 org.apache.coyote.AbstractProtocolHandler stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:13:46 org.apache.coyote.AbstractProtocolHandler stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:15:09 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24-Jan-2011 14:15:10 org.apache.coyote.AbstractProtocolHandler init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:15:10 org.apache.coyote.AbstractProtocolHandler init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:15:10 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1694 ms
+24-Jan-2011 14:15:10 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+24-Jan-2011 14:15:10 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.6
+24-Jan-2011 14:15:10 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:15:11 org.apache.catalina.loader.WebappLoader startInternal
+SEVERE: LifecycleException 
+java.lang.ClassNotFoundException: org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at org.apache.catalina.loader.WebappLoader.createClassLoader(WebappLoader.java:715)
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:581)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4857)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+24-Jan-2011 14:15:11 org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:626)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4857)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+Caused by: java.lang.ClassNotFoundException: org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at org.apache.catalina.loader.WebappLoader.createClassLoader(WebappLoader.java:715)
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:581)
+	... 32 more
+24-Jan-2011 14:15:11 org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive bbx-meaFlow.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:816)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+24-Jan-2011 14:15:11 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+24-Jan-2011 14:15:11 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+24-Jan-2011 14:15:11 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+24-Jan-2011 14:15:11 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+24-Jan-2011 14:15:12 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+24-Jan-2011 14:15:12 org.apache.coyote.AbstractProtocolHandler start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:15:12 org.apache.coyote.AbstractProtocolHandler start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:15:12 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1982 ms
+24-Jan-2011 14:17:30 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jan-2011 14:17:30 org.apache.coyote.AbstractProtocolHandler pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:17:31 org.apache.coyote.AbstractProtocolHandler pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:17:32 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+24-Jan-2011 14:17:35 org.apache.coyote.AbstractProtocolHandler stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:17:35 org.apache.coyote.AbstractProtocolHandler stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:17:37 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24-Jan-2011 14:17:38 org.apache.coyote.AbstractProtocolHandler init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:17:38 org.apache.coyote.AbstractProtocolHandler init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:17:38 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1702 ms
+24-Jan-2011 14:17:38 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+24-Jan-2011 14:17:38 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.6
+24-Jan-2011 14:17:38 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive bbx-meaFlow.war
+24-Jan-2011 14:17:38 org.apache.catalina.loader.WebappLoader startInternal
+SEVERE: LifecycleException 
+java.lang.ClassNotFoundException: org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at org.apache.catalina.loader.WebappLoader.createClassLoader(WebappLoader.java:715)
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:581)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4857)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+24-Jan-2011 14:17:38 org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:626)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4857)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:812)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+Caused by: java.lang.ClassNotFoundException: org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at org.apache.catalina.loader.WebappLoader.createClassLoader(WebappLoader.java:715)
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:581)
+	... 32 more
+24-Jan-2011 14:17:38 org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive bbx-meaFlow.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:816)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:787)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:917)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:715)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:469)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1294)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:310)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:89)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:343)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:323)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1043)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:750)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1035)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:442)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:674)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:303)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:431)
+24-Jan-2011 14:17:38 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+24-Jan-2011 14:17:46 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+24-Jan-2011 14:17:46 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+24-Jan-2011 14:17:46 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+24-Jan-2011 14:17:46 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+24-Jan-2011 14:17:47 org.apache.coyote.AbstractProtocolHandler start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:17:47 org.apache.coyote.AbstractProtocolHandler start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:17:47 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 8995 ms
+24-Jan-2011 14:20:18 org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/bbx-meaFlow]
+24-Jan-2011 14:20:23 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Jan-2011 14:20:23 org.apache.coyote.AbstractProtocolHandler pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:20:24 org.apache.coyote.AbstractProtocolHandler pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+24-Jan-2011 14:20:25 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+24-Jan-2011 14:20:27 org.apache.coyote.AbstractProtocolHandler stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+24-Jan-2011 14:20:27 org.apache.coyote.AbstractProtocolHandler stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository class='org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository' version='1.0.0'?>
+<repository name='file:/home/daniel/public_html/projects/tt-update-site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.compressed' value='false'/>
+    <property name='p2.timestamp' value='1216301820101'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='5'>
+    <artifact classifier='osgi.bundle' id='thinktank.markdown' version='0.9.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='306151'/>
+        <property name='download.size' value='306151'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='thinktank.markdown.feature' version='0.1.17'>
+      <properties size='2'>
+        <property name='artifact.size' value='7356'/>
+        <property name='download.size' value='7356'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='thinktank.markdown' version='0.1.17'>
+      <properties size='2'>
+        <property name='artifact.size' value='309131'/>
+        <property name='download.size' value='309131'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='thinktank.markdown.feature' version='0.9.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='7354'/>
+        <property name='download.size' value='7354'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='thinktank.markdown' version='0.9.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='306258'/>
+        <property name='download.size' value='306258'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

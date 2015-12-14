@@ -1,0 +1,50 @@
+<html>
+
+<!-- Load an external javascript file with some basic cookie functions -->
+<script type="text/javascript" src="cookies.js"></script>
+
+<script>
+
+// a simple use of a variable
+
+x = 0; // Create the variable
+
+document.write("x created with value "+x+"<br>");
+
+x += 1; // Increase its value by 1
+
+document.write("x is now "+x+"<br>");
+
+
+
+// Using a cookie to store values 
+
+// Store a value
+setCookie("myName","Daniel");
+
+// retrieve it
+document.write( getCookie("myName") + "<br>" );
+
+
+// Another cookie example - stores a value over several visits
+
+// Retrieve / initialise value
+
+visits = getIntegerCookie("visits");
+
+// Initialise the value to 0 if it hasn't been set yet (i.e. this is our first visit)
+if ( ! visits ) {
+	visits = 0;
+}
+
+visits += 1;
+
+document.write( "This is your <b>" + visits + "</b>th visit" );
+
+// Update the cookie
+setCookie("visits", visits);
+
+
+
+</script>
+</html>

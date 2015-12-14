@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+	<TITLE>Index: Leader leaders</TITLE>
+<script language="JavaScript">
+function loadPage (page) {
+	var address  = "/fist/" + page;
+	creator.location = address;
+	self.close();	
+}
+</script>
+</HEAD>
+
+
+<BODY link=#cc0033 vlink=#cc9900>
+
+<center><font face="Impact" size=4>Leader Articles</font></center>
+<br>
+<A href="javascript: loadPage('index1.html');">The Leader Speaks</a><br>
+<br>
+<A href="javascript: loadPage('index2.html');">Smash France</a><br>
+<br>
+<A href="javascript: loadPage('index3.html');">Leader Dominates World Markets</a><br>
+<br>
+<A href="javascript: loadPage('index4.html');">Love Me, Love My Fist</a><br>
+<br>
+<A href="javascript: loadPage('index5.html');">Genetically Modified Food & Food Equivalent Items</a><br>
+<br>
+<A href="javascript: loadPage('index6.html');">Date Rape: The Millenium Bug</a><br>
+<br>
+<A href="javascript: loadPage('index7.html');">Everything's Fine</a><br>
+
+
+<img src=http://dyce.dai.ed.ac.uk:8080/cgi-bin/dan/counter.cgi height=1 width=1>
+
+<SCRIPT LANGUAGE="javascript">
+//<!--
+
+rf=escape(document.referrer)+"";
+
+if((rf=="undefined") || (rf=="")) {rf="bookmark";}
+
+
+document.write("<img width=1 height=1 src='http://dyce.dai.ed.ac.uk:8080/cgi-bin/dan/refs.cgi?ref=" + rf + "' > ");
+
+//-->
+</SCRIPT>
+
+</BODY>
+</HTML>

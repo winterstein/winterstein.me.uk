@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+
+<img id="blowImg" src="blow.gif" />
+
+<img id="flame" src="flame.gif" />
+<img src="cake.jpg" />
+<form>
+<input id="timer" type="text" value="" />
+</form>
+<script>
+
+blowTime = 3000;
+interval = 50;
+blowImg = document.getElementById("blowImg");
+countDown = document.getElementById("timer");
+
+function blowing() {
+	blowTime -= interval;
+	countDown.value = blowTime;	
+	if (blowTime>0) setTimeout("blowing()",50);
+}
+
+</script>
+<a href="#" onClick="blowTime=3000; blowing();">Blow!</a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>space-cow</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.wst.jsdt.core.javascriptValidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>space-cow (Daniel Winterstein&apos;s conflicted copy 2012-10-03).txt</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Dropbox/writing/kids/space-cow%20(Daniel%20Winterstein&apos;s%20conflicted%20copy%202012-10-03).txt</locationURI>
+		</link>
+		<link>
+			<name>space-cow (Daniel Winterstein&apos;s conflicted copy 2012-12-20).txt</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Dropbox/writing/kids/space-cow%20(Daniel%20Winterstein&apos;s%20conflicted%20copy%202012-12-20).txt</locationURI>
+		</link>
+		<link>
+			<name>space-cow.html</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Dropbox/writing/kids/space-cow.html</locationURI>
+		</link>
+		<link>
+			<name>space-cow.txt</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Dropbox/writing/kids/space-cow.txt</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

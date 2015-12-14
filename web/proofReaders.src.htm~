@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Dan's PhD Thesis</title>
+</head>
+<body>
+
+<h3>Abstract</h3>
+This project looks at using diagrammatic reasoning to prove mathematical theorems. The
+work is motivated by a need for theorem provers whose reasoning is readily intelligible to
+human beings. It should also have practical applications in mathematics teaching.
+<p>We focus on the continuous domain of analysis - a geometric subject, but one which is
+taught using a dry algebraic formalism which many students find hard. The geometric nature
+of the domain makes it suitable for a diagram-based approach. However it is a difficult
+domain, and there are several problems, including handling alternating quantifiers,
+sequences and generalisation. We developed representations and reasoning methods to solve
+these. Our diagram logic isn't complete, but does cover a reasonable range of theorems. It
+utilises computers to extend diagrammatic reasoning in new directions – including using
+animation.
+<p>
+This work is tested for soundness, and evaluated empirically for ease of use. We
+demonstrate that computerised diagrammatic theorem proving is not only possible in the
+domain of real analysis, but that students perform better using it - at least with introductory problems - than with an equivalent algebraic computer system.
+
+<p>
+<h3>Downloads</h3>
+<ul>
+<li> Weighing in at 236 pages... The Thesis [<b><a href=/academic/thesis.pdf>thesis.pdf</a></b>] (7.5mb)
+<li> Why not start with a 5 page poster instead? 
+	[<a href=/academic/dr_doodle_poster.pdf>Poster from IJCAR 2004</a>]
+<li> You can also try the prototype application. This was developed for the evaluation - a set of experiments involving 1st year undergrads doing 2x45 minutes trials. [<b><a href=http://homepages.inf.ed.ac.uk/s9902178/thesis/>http://homepages.inf.ed.ac.uk/s9902178/thesis/</a></b>] (10mb)
+</ul>
+
+<p>
+<h3>Notes</h3> 
+<ul>
+<li> In chapter 4, section 4.3 can safely be skipped by non-logicians. Sections 4.1, 4.2 & 4.4 contain all the important stuff.
+<li> Chapter 5 contains lots of dense technical stuff (with some vaguely comprehensible nuggets of discussion). Much of it is borderline comprehensible even to experts or indeed me, plus it's not really important; just necessary. If you still feel like trying it, then (a) probably best to save it until last, and (b) Sections 5.1 and 5.3 (which contains some actual honest mathematics as opposed to logic) are more interesting than section 5.2. 
+</ul>
+
+<!--
+<p>
+<h3>Things to look out for</h3>
+Simple Mistakes
+<ul>
+<li>	Smelling pistakes
+<li>	Grammar mistake
+<li>	Wrong font used
+<li>	Poor formatting
+<li>	Font problems (little boxes where characters should be)
+<li>	Missing references (usually show up as strange
+				blank spaces in a sentence)
+<li>	Referencing errors (e.g. if "see Fig. 5" should be "see Fig. 3")
+<li>	Inconsistent use of terminology (i.e. calling the same thing by
+				different names in differemt places)
+<li>	Unfinished things (where I clearly meant to come back and finish a sentence/paragraph, but somehow
+</ul>
+<br>
+Deeper Flaws
+<ul>
+<li>	Unclear explanations
+<li>	Unconvincing explanations
+<li>	Missing things
+<li>	Technical terms used without definition
+<li>	Inappropriate language/tone, including:
+<ul>
+<li>		misplaced humour
+<li>		being overly defensive
+<li>		being too technical / not technical enough
+<li>		reading like a rough draft instead of a work of geniu
+</ul>
+<li>	Repetition
+<li>	Unnecessary stuff
+<li>	Repetition
+<li>	Clumsy writing
+<li>	Poor structure
+</ul>
+
+<b>Remember:</b> Except for chapter 5, if it doesn't make sense to you, that means it's badly written - <i>not</i> that the material is too hard (chapter 5 is badly written too, but it also contains some hard material).
+-->
+
+<br><br><center>
+<prev>&nbsp;&nbsp;<a href="#page_top">top</a>&nbsp;&nbsp;<next>
+</center>
+<br><hr>
+<font size=-1>All material &copy;Daniel Winterstein 2004 unless otherwise stated, and may not be used or reproduced without permission. So there.</font>
+</td><td valign=top>
+<br><br>
+
+
+
+
+</td>
+</tr></table>
+
+<!--
+<img src=http://dyce.dai.ed.ac.uk:8080/cgi-bin/dan/counter.cgi height=1 width=1>
+-->
+
+<SCRIPT LANGUAGE="javascript">
+//<!--
+
+//rf=escape(document.referrer)+"";
+
+//if((rf=="undefined") || (rf=="")) {rf="bookmark";}
+
+
+//document.write("<img width=1 height=1 //src='http://dyce.dai.ed.ac.uk:8080/cgi-bin/dan/refs.cgi?ref=" + rf + "' > ");
+
+//-->
+</SCRIPT>
+
+
+</body>

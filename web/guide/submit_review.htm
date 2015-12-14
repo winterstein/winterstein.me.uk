@@ -1,0 +1,50 @@
+<html>
+<body>
+<br>
+<form action="http://bigred.homelinux.org/cgi-bin/guide/submit.py" method="post">
+<table border=1><tr><th colspan=2><b>Submit a Review</b></th></tr>
+<tr><td>
+Reviewer:</td><td><input type="text" name="reviewer" size="40" maxlength="40"></td></tr>
+<tr><td>
+Play:</td><td><input type="text" name="playTitle" size="40" maxlength="40"></td></tr>
+<tr><td>
+Company:</td><td><input type="text" name="company" size="40" maxlength="40"></td></tr>
+<tr><td valign=top>Venue:</td><td>
+<table><tr><td valign=top>
+<select name='venue'>
+	<option value="Traverse">Traverse</option>
+		<option value="other">Other</option>
+</select>
+</td><td>
+If <i>other</i>, please add the venue details:<br>
+Name: <input type="text" name="venueOther" size="40" maxlength="40"><br>
+Address: <input type="text" name="venueAddress" size="40" maxlength="40"><br>
+Phone: <input type="text" name="venuePhone" size="40" maxlength="40"><br>
+Website: <input type="text" name="venueWebsite" size="40" maxlength="40">
+</td></tr></table>
+<tr><td>
+Dates:</td><td><input type="text" name="dates" size="40" maxlength="40"></td></tr><tr><td>
+Start time:</td><td><input type="text" name="startTime" size="5" maxlength="40"></td></tr><tr><td>
+Finish time:</td><td><input type="text" name="finishTime" size="5" maxlength="40"></td></tr><tr><td>
+Price:</td><td><input type="text" name="price" size="10" maxlength="40"></td></tr><tr><td>
+Drams:</td><td><input type="text" name="drams" size="3" maxlength="40"></td></tr>
+
+<tr><td colspan=2>
+Either type or copy and paste your review here:<br>
+<textarea name="review" cols="60" rows="24">
+</textarea>
+</td></tr>
+
+<tr><td colspan=2>
+Any special instructions:<br>
+<textarea name="specials" cols="60" rows="4">
+</textarea></td></tr>
+
+<tr><th colspan=2>
+<input type="submit" value="Submit">
+&nbsp;&nbsp;&nbsp;
+<input type="reset" value="reset"></th></tr>
+</table>
+</form>
+</body>
+</html>

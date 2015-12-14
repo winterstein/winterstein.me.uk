@@ -1,0 +1,141 @@
+
+// TODO record data
+
+var timeoutMsecs = 2000;
+
+
+var debugdiv = document.getElementById("debugdiv");
+
+function setText(txt, i) {
+	var textdiv = document.getElementById("text");
+	textdiv.innerHTML = txt.substring(0,i)+"<b>"+txt.substring(i,i+1)+"</b>"+txt.substring(i+1, txt.length);
+	textdiv.trainingText = txt;
+	textdiv.trainingTextIndex = i;
+}
+function textUpdate() {
+	var textdiv = document.getElementById("text");
+	setText(textdiv.trainingText, textdiv.trainingTextIndex +1);
+	setTimeout("textUpdate()", 1000);
+}
+
+var lastInput = 0;
+function characterRecogniser() {
+	var gap = new Date().getTime() - lastInput;
+	if (gap > timeoutMsecs) {
+		clearCanvas();
+	}
+	setTimeout("characterRecogniser()", 200);	
+}
+
+function clearCanvas() {
+	sketchpad.vars.context.fillStyle = "rgb(255,255,255)";
+	sketchpad.vars.context.fillRect (0, 0, 400, 300);
+}
+var sketchpad;
+function activateCanvas(sketchpad) {
+	sketchpad = sketchpad;
+	var vars = {};
+	sketchpad.vars = vars;
+	vars.bMouseIsDown = false;
+	vars.context = sketchpad.getContext("2d");	
+	vars.context.strokeStyle = "rgb(128,128,128)";
+	vars.context.strokeWidth = "10px";
+	vars.canvasX = findPosX(sketchpad);
+	vars.canvasY = findPosY(sketchpad);			
+	
+	vars.context.beginPath();			
+	vars.context.moveTo(0, 0);
+	vars.context.lineTo(275, 140);
+	vars.context.stroke();	
+	
+
+	sketchpad.onmousedown = function(e) {
+		vars.bMouseIsDown = true;
+		lastInput = new Date().getTime();
+		vars.lastX = mouseX - vars.canvasX;
+		vars.lastY = mouseY - vars.canvasY;
+		return true;
+	}
+	sketchpad.onmouseup = function() {
+		vars.bMouseIsDown = false;
+		vars.lastX = -1;
+		vars.lastY = -1;
+		return true;
+	}
+	sketchpad.onmouseout = function() {
+		vars.bMouseIsDown = false;
+		vars.lastX = -1;
+		vars.lastY = -1;
+		return true;
+	}
+	sketchpad.onmousemove = function(e) {
+		var iX = mouseX - vars.canvasX;
+		var iY = mouseY - vars.canvasY;
+//		debugdiv.innerHTML = "Mouse: "+mouseX+","+mouseY+"<br>Canvas: "+iX+","+iY;
+		if (vars.bMouseIsDown) {
+			lastInput = new Date().getTime();
+			vars.context.beginPath();			
+			vars.context.moveTo(vars.lastX, vars.lastY);
+			vars.context.lineTo(iX, iY);
+			vars.context.stroke();
+			vars.lastX = iX;
+			vars.lastY = iY;
+		}
+		return true;
+	}
+}
+
+
+// Find x and y positions
+// Public domain, by Peter-Paul Koch & Alex Tingle
+function findPosX(obj) {
+    var curleft = 0;
+    if(obj.offsetParent)
+        while(1) 
+        {
+          curleft += obj.offsetLeft;
+          if(!obj.offsetParent)
+            break;
+          obj = obj.offsetParent;
+        }
+    else if(obj.x)
+        curleft += obj.x;
+    return curleft;
+}
+
+  function findPosY(obj)
+  {
+    var curtop = 0;
+    if(obj.offsetParent)
+        while(1)
+        {
+          curtop += obj.offsetTop;
+          if(!obj.offsetParent)
+            break;
+          obj = obj.offsetParent;
+        }
+    else if(obj.y)
+        curtop += obj.y;
+    return curtop;
+  }
+  
+  
+// Mouse location
+var IE = document.all?true:false;
+if (!IE) document.captureEvents(Event.MOUSEMOVE)
+function getMouseXY(e) {
+	if (IE) { // grab the x-y pos.s if browser is IE
+		mouseX = event.clientX + document.body.scrollLeft;
+		mouseY = event.clientY + document.body.scrollTop;
+	} else {  // grab the x-y pos.s if browser is NS
+		mouseX = e.pageX;
+		mouseY = e.pageY;
+	}  
+	if (mouseX < 0){mouseX = 0;}
+	if (mouseY < 0){mouseY = 0;}  
+	return true;
+}
+document.onmousemove = getMouseXY;
+var mouseX = 0;
+var mouseY = 0;
+

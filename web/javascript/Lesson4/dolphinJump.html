@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Lesson 4: Objects</title>
+</head>
+<body>
+
+<i>Note that this file will work fine if downloaded (along with all the dolphin images).
+It will also work online, but not nearly so well. 
+You might like to think about why this is so (hint: it's to do with the image files).</i><br><br>
+
+<We use html to create an image object in the page: <br>
+<img src="DOLPHIN1.gif" id="dolphin" border="1"> <br>
+
+<script>
+
+// First we create an array called dolphinImages that holds the strings 
+//    	"DOLPHIN1.gif" ... "DOLPHIN7.gif"
+dolphinImages = ["DOLPHIN1.gif","DOLPHIN2.gif","DOLPHIN3.gif","DOLPHIN4.gif","DOLPHIN5.gif","DOLPHIN6.gif","DOLPHIN7.gif"];
+
+// This will tell us what image to use (it will be an index into the dolphinImages array, so it runs from 0 to 6)
+counter = 0;
+
+// This gets hold of the image object created in html above
+dolphin = document.getElementById('dolphin');
+
+// This defines a function which will animate the dolphin if called repeadtedly
+function animate_one_step() {	
+	// Change the src property of the dolphin image 
+	dolphin.src = dolphinImages[counter];
+	counter += 1;
+}
+</script>
+
+The &lt;a&gt; tag below has an onClick <i>event handler</i><br>
+
+<a href="#" onClick="animate_one_step();">Click Here to Make the Dolphin Jump!</a>
+
+<script>
+
+// This defines a fancier animation function. It uses a special method - setTimeout - to call itself after a delay
+function animate() {
+   animate_one_step(); // call the 1-step animation function we defined earlier
+   if (counter < dolphinImages.length) { // if we haven't finished...
+      window.setTimeout("animate()",200); // repeat after 200 milli-seconds
+   } else {
+      counter = 0; // reset so we could start again
+   }
+}
+</script>
+<br><br>
+<a href="#" onClick="animate();">Click Here For a Fancier Animation Function!</a>
+
+</body>
+</html>

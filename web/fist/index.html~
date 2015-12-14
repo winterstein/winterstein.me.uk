@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+	<TITLE>MORNING FIST</TITLE>
+<meta http-equiv="description" content="Underground press - Thrusting the mighty phallus of revolution into the public eye.">
+<meta http-equiv="Keywords" content="revolution,morning fist,underground,Kapital,satire,humour">
+<script language="JavaScript">
+//<!--
+function Links(section) {
+	var linkswin = window.open("","", "width=200,height=450");
+	linkswin.location="links"+section+".html";
+	linkswin.creator = self;
+	linkswin.focus();
+}
+// -->
+</script>
+</HEAD>
+<body bgcolor=white>
+<table border=0 cellspacing=0 cellpadding=0 width=100%><tr><td colspan=3>
+<center>
+<FONT SIZE="12" FACE="Impact"><B>MORNING FIST</b></font><br>
+</td></tr><tr><td align=left width=20%>
+<!-- SIDE BAR -->
+<b><i>INDICES</i></b><br>
+<a href="javascript:Links('leaders')">Leader leaders</a><br>
+<br>
+<a href="javascript:Links('iru')">International<br>
+Round Up</a><br>
+<br>
+<!-- <a href="javascript:Links('brummie')">Birmingham</a><br>
+<br> -->
+<a href="javascript:Links('finger')">Fist Fingers</a><br>
+<br>
+<a href="javascript:Links('page3')">Page 3 Pinups</a><br>
+<br>
+</td><td align=center>
+<img src="images/newflag.jpg" width=340 height=200 border=0>
+</td><td width=20%>
+&nbsp;
+</td></tr>
+<tr><td colspan=3 align=center>
+<FONT SIZE="5" FACE="Impact">It's time for Kapital Punishment</font>
+</td></tr>
+<tr><td colspan=3>
+<center>
+<font face="arial black,arial,helvetica" size="5">
+<a href=index1.html>FIST 1</a>&nbsp;&nbsp;&nbsp;
+<a href=index2.html>FIST 2</a>&nbsp;&nbsp;&nbsp;
+<a href=index3.html>FIST 3</a><br>
+<a href=index4.html>FIST 4</a>&nbsp;&nbsp;&nbsp;
+<a href=index5.html>FIST 5</a>&nbsp;&nbsp;&nbsp;
+<a href=index6.html>FIST 6</a>&nbsp;&nbsp;&nbsp;
+<a href=index7.html>FIST 7</a>
+<br>
+<a href=feedback.html>FEEDBACK</a>&nbsp;&nbsp;&nbsp;
+<a href=contacts.html>CREDITS</a>&nbsp;&nbsp;&nbsp;
+<a href=finnish.html>Apology to Finland</a>
+</font>
+<br>
+
+<!--
+<table cellspacing=0 cellpadding=0 border=0><tr><td align="right" valign=top><img src="images/no1.gif" width=15 height=20 border=0 hspace=0></td><td align="right" valign=top>
+<IMG SRC="http://cgi.fortunecity.com/user-cgi/Count.cgi?df=The.Leader.001&style=b" hspace=0 border=0>
+</td></tr></table>
+-->
+
+</center>
+</td></tr></table>
+<hr>
+<center>
+|&nbsp;<a href=mailto:crb27@cam.ac.uk>First Secretary to the Soviet of Editors</a> |
+<a href="/">Commissar for Revolutionary Fermentation</a> |
+<a href=mailto:peter@green11.freeserve.co.uk>The Right Reverend Davis Greece</a> |
+</center>
+<hr>
+
+
+
+<a href="http://uk.nedstat.net/viewstat.asp?name=morningfist"><img
+src="http://uk.nedstat.net/scripts/nedstat.dll?name=morningfist"
+border=0 alt="" nosave width=1 height=1></a>
+
+
+<!-- Google Analytics -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1042278-1";
+urchinTracker();
+</script>
+
+
+</BODY>
+</HTML>

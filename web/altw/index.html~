@@ -1,0 +1,175 @@
+<html>
+<head><title>The Heist of the Art</title>
+<style>
+body {
+    background: #111 url('side-banner.jpg') repeat-y fixed;
+    color: #eee;
+    color: #dfdfc7;
+    font-family: "Gill Sans","Gill Sans MT",sans-serif;
+    line-height: 150%;
+    padding: 0px;
+    margin: 0px;
+}
+h1 {
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#main {
+    padding: 20px;
+    padding-top: 10px;
+    width: 800px;
+    background: #111;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+table {
+    width: 100%;
+}
+td {
+    border: none;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+}
+
+td.desc {
+    text-align: left;
+}
+
+a {
+    color: #eee;
+    color: #b6b77b;
+    color: #d24b53;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: normal;
+    border-bottom: 1px solid #555;
+}
+
+a.pic {
+    border: none;
+}
+a img {
+    border: none;
+}
+</style>
+</head>
+
+<body>
+<div id="main">
+<h1>The Heist of the Art</h1>
+<p>This page contains links to supporting documentation for 
+<a href="http://www.winterstein.me.uk">Daniel Winterstein's</a> Heist of the Art project.
+Since the project is driven by action and narrative, and I am a writer, this documentation is mostly textual rather than visual.
+</p>
+<h1>Writing</h1>
+I have written a number of plays, short stories and newspaper articles.
+Here are some examples of my work:
+<p>
+</p>
+
+<blockquote>
+<p><i>
+JOHN: It's a tough business. Not everyone can take it.<br>
+BENWAY: This is true. Especially with this kind of money at stake.<br>
+JOHN: I can feel it pushing down on me now.<br>
+BENWAY: Can you take the pressure?<br>
+JOHN: Does the pope shit in the woods?</i><br>
+&nbsp;&nbsp;&nbsp;&mdash; <a href="http://winterstein.me.uk/writing/campaign.print.html">Show me the Money</a> (first performed at The Traverse, Edinburgh)<br>
+<i>"superb... great characterisation, sparkling dialogue and solid structure"</i> &mdash; Edinburgh Evening News
+</p>
+
+</blockquote>
+
+<blockquote>
+<p><i>
+Things to remember: Except for going to bed, everything you do after 3am will be wrong. 
+<!--
+It's that time of day when morning is spelt with a 'u' and sunlight 
+just gives you skin cancer and the only good your last lecture did was practice 
+your ability to take notes you don't understand for when you become a secretary and 
+you can't see any future for yourself and you don't know how you'll make it through 
+the morning to the future you can't see yourself having and your girl is hundreds 
+of miles away and there're only bills in the mail and you're actively hoping for 
+armageddon because that'd get you out of the next lecture and your sentences are 
+just rambling messes that you have to remember not to grumble.
+-->
+</i>
+<br />
+&nbsp;&nbsp;&nbsp;&mdash; <a href="http://winterstein.me.uk/writing/keepsmiling.htm">Keep Smiling</a> (published in New Moon Magazine)
+</p>
+</blockquote>
+
+<blockquote>
+<p><i>Perhaps it was all the drugs he'd taken as a student, but at the age of 
+34, Max Lipowicz's liver became conscious. Like all sentient beings, it desired 
+companionship. Unfortunately its attempts to communicate were variously misinterpreted 
+by Max as hangovers, indigestion and an allergic reaction to shrimp. In frustration, 
+the liver developed telepathy. "Hello," Max thought, "I'm hearing voices." and 
+wondered if this was due to all the drugs he'd taken as a student.<br>
+"Just one voice." his liver corrected, and explained who it was.
+Max, of course, headed straight for the nearest doctor.</i><br />
+&nbsp;&nbsp;&nbsp;&mdash; <a href="http://winterstein.me.uk/writing/liver.htm">Mr Lipowicz's Liver</a> (published in Ape Magazine)
+</p>
+</blockquote>
+
+<h2>More...</h2>
+
+<p>More of my writing can be found on <a href="http://www.winterstein.me.uk/">my website</a>.</p>
+
+<h1>Team</h1>
+The team for Heist of the Art is a group of talented individuals with portfolios of their own. Here is a brief summary.
+<h2>Ken Nicholson</h2>
+Ken is a writer and director working with Edinburgh-based theatre groups The Luvvies, 
+Creative Space and his own company Townhill & Nicholson. He has produced & directed 
+10 plays in the last three years and also 3 short films. Most recently, the 
+satirical musical F*You (2008) (4 stars, The Guardian) which he also co-wrote, 
+Painted Eggs (2008), The Torchsong Trilogy (2007) (3 stars, Edinburgh Evening News), 
+and Pinter's The Dumb Waiter (2007). He is currently working on a low budget feature film. 
+</p>
+<h2>Joe Halliwell</h2>
+<p>Joe is an experienced web-designer and runs a 
+<a href="http://www.confiction.org">community site for constrained literature</a>. 
+He has maintained his keen interest in the artistic potential of new technology 
+through contact with local groups such as <a href="http://www.dorkbot.org">Dorkbot</a> and 
+the <a href="http://www.chateau.org.uk/chit/">Chateau Institute of Technology</a>.
+</p>
+<h2>Ilana Winterstein</h2>
+<p>Ilana is a theatre practitioner with a Masters in Performing from Central School 
+of Speech and Drama, as well as a BA degree in English Literature from Birmingham University. 
+She also writes for the theatre, and is a member of 
+the <a href="http://www.sohotheatre.com/p37.html">Soho Theatre Young Writers Group</a>.
+</p>
+<blockquote>
+<p><i>There was a village, a little bit like this one. In fact not so much like this one, 
+because here it is big and smelly and full of too many people and noise and cars and animals 
+and buildings and trains and pushing and buses and shoving and queueing and shopping and 
+bustling and tooting and running and... in fact some people would say that this here is not a 
+village at all. And here it seems that there is not enough time to just sit and watch a 
+feather fall from the sky. Simple and soft, on the breath of the wind. And how sad it makes 
+me that here people do not spend the time they have on finding the holes made by rainbows 
+or catching falling stars in nets at night or bottling birdsong to bake into cakes.</i><br/>
+&nbsp;&nbsp;&nbsp;&mdash; The Cloak of a Story
+</p>
+</blockquote>
+
+<h2>Tom Lewis</h2>
+<p>Tom is a premium degree pencil wizard, and mouse master of the first order. 
+Born in Birmingham in 1979, he is at present working as an artist and 
+illustrator in Warwick.</p>
+<h1>Sample work</h1>
+<p>Some samples of the team's work can be viewed below:</p>
+<a class="pic" href="http://www.tomlewis.co.uk/pages/07_channel martin.html"><img src="tom-example-1.png"/></a>
+<a class="pic" href="http://www.tomlewis.co.uk/pages/07_monkey.html"><img src="tom-example-2.png"/></a>
+<a class="pic" href="http://www.confiction.org"><img src="constrained.png"/></a>
+
+</div>
+</body>
+</html>

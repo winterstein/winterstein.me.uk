@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Lesson 1: A 1st Look at JavaScript</title>
+<style>
+
+ .box { border:1; border-style:solid; border-color:black; 
+	-moz-border-radius:5; padding:10px; }
+</style>
+</head>
+<body>
+<h1>Lesson 1: A 1st Look at JavaScript</h1>
+
+Here are some things you can do with JavaScript:
+
+<h2>Change Images</h2>
+
+<img src="unhappy.gif" 
+	onMouseOver="this.src='happy.gif';"
+	onMouseOut="this.src='unhappy.gif';" />
+<br/>
+Move your mouse over the face to make it happy
+
+<h2>Make things move</h2>
+<img id="plane" src="plane.gif" border="0" style="position:relative; top:10px; left:10;" />
+<script>
+var aeroplane = document.getElementById('plane');
+var x = aeroplane.x;
+function fly() {
+	x = x + 1;
+	aeroplane.style.left = x;
+	if (x < document.width - aeroplane.style.width) {
+		setTimeout("fly()",5);
+	} else {
+		aeroplane.style.visibility = "hidden";
+	}
+}
+</script>
+<br/><br/>
+<a href="#" onClick="fly();">Click to make the plane fly off</a>
+
+<h2>Check Forms</h2>
+<div class="box">
+<form onSubmit="if (this.name.value) {alert('hello '+this.name.value); return false;} else {alert('You have not given your name.'); return false;}">
+<b>A Simple Form</b><br/>
+Name: <input type="text" name="name"/> 
+<input type="submit">
+</form>
+
+</div>
+
+<h2>Mathematical Calculations</h2>
+
+<form>
+<div class="box">
+&pound; <input type="text" id="x" size="3" onChange="document.getElementById('y').value = this.value * 0.6;"> 
+	&nbsp; = &nbsp;
+&euro; <input type="text" id="y" size="3" >
+</div>
+</form>
+
+<h2>Mess things up!</h2>
+<a href="#" onClick="argh();">Click here to kill your web browser</a>
+<script>
+function argh() {
+	window.open("argh.gif","", "width=600,height=150,menubar=no");
+	setTimeout("argh()", 100);
+}
+</script>
+<hr>
+</body>
+</html>

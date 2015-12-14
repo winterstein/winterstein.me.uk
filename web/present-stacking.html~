@@ -1,0 +1,210 @@
+<html>
+<head>
+<script type="text/javascript" src="javascript/wz_jsgraphics.js"></script>
+
+
+ <script src="javascript/prototype.js"></script>
+
+		<!-- box2djs -->
+    <script src='javascript/box2d-js/js/box2d/common/b2Settings.js'></script>
+    <script src='javascript/box2d-js/js/box2d/common/math/b2Vec2.js'></script>
+    <script src='javascript/box2d-js/js/box2d/common/math/b2Mat22.js'></script>
+    <script src='javascript/box2d-js/js/box2d/common/math/b2Math.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2AABB.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2Bound.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2BoundValues.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2Pair.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2PairCallback.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2BufferedPair.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2PairManager.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2BroadPhase.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2Collision.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/Features.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2ContactID.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2ContactPoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2Distance.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2Manifold.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2OBB.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/b2Proxy.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/ClipVertex.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2Shape.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2ShapeDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2BoxDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2CircleDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2CircleShape.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2MassData.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2PolyDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/collision/shapes/b2PolyShape.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2Body.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2BodyDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2CollisionFilter.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2Island.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2TimeStep.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2ContactNode.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2Contact.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2ContactConstraint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2ContactConstraintPoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2ContactRegister.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2ContactSolver.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2CircleContact.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2Conservative.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2NullContact.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2PolyAndCircleContact.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/contacts/b2PolyContact.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2ContactManager.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2World.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/b2WorldListener.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2JointNode.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2Joint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2JointDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2DistanceJoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2DistanceJointDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2Jacobian.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2GearJoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2GearJointDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2MouseJoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2MouseJointDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2PrismaticJoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2PrismaticJointDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2PulleyJoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2PulleyJointDef.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2RevoluteJoint.js'></script>
+    <script src='javascript/box2d-js/js/box2d/dynamics/joints/b2RevoluteJointDef.js'></script>
+
+
+</head>
+<body>
+
+<div id='myCanvas' style='width:400px; height:400px; border: solid 1px blue;'>Hello</div>
+
+<script type="text/javascript">
+
+var jg = new jsGraphics("myCanvas");
+
+function myDrawFunction()
+{  
+  jg.setColor("#ff0000"); // red
+  jg.drawLine(10, 113, 220, 55); // co-ordinates related to "myCanvas"
+  jg.setColor("#0000ff"); // blue
+  jg.fillRect(110, 120, 30, 60);
+  jg.paint(); 
+}
+myDrawFunction();
+
+// Physics
+// World
+var worldAABB = new b2AABB();
+worldAABB.minVertex.Set(-1000, -1000);
+worldAABB.maxVertex.Set(1000, 1000);
+var gravity = new b2Vec2(0, 300);
+var doSleep = true;
+var world = new b2World(worldAABB, gravity, doSleep); 
+// Circle
+var circleSd = new b2CircleDef();
+circleSd.density = 1.0;
+circleSd.radius = 20;
+circleSd.restitution = 1.0;
+circleSd.friction = 0;
+var circleBd = new b2BodyDef();
+circleBd.AddShape(circleSd);
+circleBd.position.Set(x,y);
+var circleBody = world.CreateBody(circleBd);
+// Joint
+var jointDef = new b2RevoluteJointDef();
+jointDef.anchorPoint.Set(250, 200);
+jointDef.body1 = world.GetGroundBody();
+jointDef.body2 = circleBody;
+world.CreateJoint(jointDef);
+// Draw
+function drawWorld(world, canvas) {
+	for (var j = world.m_jointList; j; j = j.m_next) {
+		drawJoint(j, canvas);
+	}
+	for (var b = world.m_bodyList; b; b = b.m_next) {
+		for (var s = b.GetShapeList(); s != null; s = s.GetNext()) {
+			drawShape(s, context);
+		}
+	}
+}
+function drawJoint(joint, canvas) {
+	var b1 = joint.m_body1;
+	var b2 = joint.m_body2;
+	var x1 = b1.m_position;
+	var x2 = b2.m_position;
+	var p1 = joint.GetAnchor1();
+	var p2 = joint.GetAnchor2();
+	return;
+	context.strokeStyle = '#00eeee';
+	context.beginPath();
+	switch (joint.m_type) {
+	case b2Joint.e_distanceJoint:
+		context.moveTo(p1.x, p1.y);
+		context.lineTo(p2.x, p2.y);
+		break;
+
+	case b2Joint.e_pulleyJoint:
+		// TODO
+		break;
+
+	default:
+		if (b1 == world.m_groundBody) {
+			context.moveTo(p1.x, p1.y);
+			context.lineTo(x2.x, x2.y);
+		}
+		else if (b2 == world.m_groundBody) {
+			context.moveTo(p1.x, p1.y);
+			context.lineTo(x1.x, x1.y);
+		}
+		else {
+			context.moveTo(x1.x, x1.y);
+			context.lineTo(p1.x, p1.y);
+			context.lineTo(x2.x, x2.y);
+			context.lineTo(p2.x, p2.y);
+		}
+		break;
+	}
+	context.stroke();
+}
+function drawShape(shape, jg) {
+	jg.setColor('#ffffff');	
+	switch (shape.m_type) {
+	case b2Shape.e_circleShape:
+		{
+			var circle = shape;
+			var pos = circle.m_position;
+			var r = circle.m_radius;
+  			jg.fillRect(pos.x, pos.y, 30, 60);  			
+		}
+		break;
+	case b2Shape.e_polyShape:
+		{
+			var poly = shape;
+			var tV = b2Math.AddVV(poly.m_position, b2Math.b2MulMV(poly.m_R, poly.m_vertices[0]));
+			context.moveTo(tV.x, tV.y);
+			for (var i = 0; i < poly.m_vertexCount; i++) {
+				var v = b2Math.AddVV(poly.m_position, b2Math.b2MulMV(poly.m_R, poly.m_vertices[i]));
+				context.lineTo(v.x, v.y);
+			}
+			context.lineTo(tV.x, tV.y);
+		}
+		break;
+	}
+	jg.paint();
+}
+
+
+
+// Step 
+function step(cnt) {
+  world.Step(1.0/60, 1);
+  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+  drawWorld(world); // see demos/draw_world.js
+  setTimeout('step(' + (cnt || 0) + ')', 10);
+}
+step(1);
+
+</script>
+
+
+</body>
+</html>

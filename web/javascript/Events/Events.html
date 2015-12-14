@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>JavaScript Events</title>
+</head>
+<body>
+<h1>Events</h1>
+Events occur when the user does something (although they can also be
+'faked' by JavaScript). They can trigger <span
+ style="font-style: italic;">event handlers</span> - JavaScript code
+that responds to the event.<br>
+This page lists the events we have met on the course (I will be updating it as we go).<br>
+<br>
+<h3>onClick</h3>
+Triggered when the user clicks on an element.<br>
+E.g. &lt;a href="#" onClick='alert("You clicked.");' &gt;Click
+Here&lt;/a&gt;<br>
+<a href="#" onclick='alert("You clicked.");'>Click Here</a>
+<br>
+<br>
+<h3>onMouseOver / on MouseOut</h3>
+Triggered when the mouse moves over an element, or leaves it.<br>
+E.g.<br>
+&lt;img src="roseNormal.gif" <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+onMouseOver='this.src="roseHighlight.gif";' <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+onMouseOut='this.src="roseNormal.gif";'&nbsp; &gt;<br>
+
+<img src="roseNormal.gif" 
+  onMouseOver='this.src="roseHighlight.gif";'
+  onMouseOut='this.src="roseNormal.gif";' >
+
+<br>
+<br>
+<h3>onLoad</h3>
+Can be used in the &lt;img&gt; tag or the &lt;body&gt; tags.
+Triggered when the element finishes downloading.
+E.g.<br>
+&lt;img src="roseNormal.gif" onLoad='ready();' &gt;<br>
+<br>
+For a sophisticated example of using this, 
+see <a href="loadingBar.html">Implementing a Loading Bar</a>.
+Be warned that this is quite a complex example.
+  
+
+
+<br>
+<br>
+</body>
+</html>

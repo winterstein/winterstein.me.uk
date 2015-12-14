@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+	<TITLE>Scratch Card</TITLE>
+<script>
+//<!--
+if (Math.floor(Math.random()*3) == 1) {
+   var w = Math.floor(Math.random()*4);
+   var reveal = new Array(w,w,w);
+} else {
+   var reveal = new Array(Math.floor(Math.random()*4),Math.floor(Math.random()*4),Math.floor(Math.random()*4));
+}
+var scratched = new Array(0,0,0);
+
+function click(panel) {
+   document.images["Panel"+panel].src="images/scratch"+reveal[panel]+".gif";
+   scratched[panel] = 1;
+   var count = scratched[0] + scratched[1] + scratched[2];
+   if (count == 3) {
+      if (reveal[0]==reveal[1]) {
+	     if (reveal[1]==reveal[2]) {
+		    Winner();
+		 } else NoWin();
+	  } else NoWin();
+   }   
+}
+
+function Winner() {
+   document.images["text"].src="images/winner.gif";
+   document.images["prize"].src="images/prize"+reveal[1]+".gif";
+   alert("You're a winner with Leader Scratch!\n"
+	   + "To collect your prize, simply quote this number\n"
+	   + "when you next place an order for over £10,000\n"
+	   + "of Morning Fist merchandise:\n     534678");
+}
+
+function NoWin() {
+   document.images["text"].src="images/loser.gif";
+}
+
+//-->
+</script>
+</HEAD>
+
+<!--
+<body onUnload="spawntopfivewindow();" 
+>
+<script language="Javascript" src="http://www.fortunecity.com/js/adscript.global.new.js">
+</script>
+
+<script language="Javascript">
+<!-- hide
+
+DefineDefaultVars();
+
+
+DisplayFCAdBanner();
+
+// -->
+</script>
+
+
+<script language="Javascript" src="http://www.fortunecity.com/js/fctrack.js">
+</script>
+
+<!-- -->
+
+<BODY>
+<noscript>
+
+
+</noscript>
+<table width="100%" cellspacing="0" cellpadding="0" border=0>
+<tr>
+    <td rowspan=2><img src="images/lscratch.gif" width=100 height=100 border=0></td>
+<td>
+<a href="javascript:click(0);"><img src="images/prescratch.gif" name="Panel0" width=50 height=50 border=0></a>
+</td><td>
+<a href="javascript:click(1);"><img src="images/prescratch.gif" name="Panel1" width=50 height=50 border=0></a>
+</td><td>
+<a href="javascript:click(2);"><img src="images/prescratch.gif" name="Panel2" width=50 height=50 border=0></a>
+</td>
+<td rowspan=2>
+<img name="prize" src="images/preprize.gif" width=100 height=100>
+</td>
+</tr>
+<tr>
+    <td colspan=3><img name="text" src="images/reveal.gif" width=170 height=30></td>
+</tr>
+</table>
+
+
+
+<script language="Javascript">
+<!--hide
+
+var my_clientip = '194.82.103.37';
+
+setonclickmethods();
+setvisitorcookie(my_clientip);
+DisplayBRM(1);
+//-->
+</script>
+
+
+</BODY>
+</HTML>

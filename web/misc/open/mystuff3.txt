@@ -1,0 +1,238 @@
+                name                |                                                                                                                                                                                                                                                contents                                                                                                                                                                                                                                                 
+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Contact us                         | Contact details for this site will be added soon.
+                                    : 
+                                    : In the meantime, please contact site-developers <a href='http://www.winterwell.com/company/contact.php'>Winterwell</a> for all enquiries.
+ About Platypus Innovation          | Welcome to our new blog-site Platypus Innovation.\r
+                                    : \r
+                                    : > The platypus caused consternation, shattered existing categories. It's existence was undeniable, but how should taxonomic theory be adapted to accommodate this uncomfortable fact?\r
+                                    : \r
+                                    : This blog is also hard to classify. It loosely follows the interests and activities of Winterwell Associates, but it also includes personal material. Topics are likely to range from business affairs to new media via abstract mathematics.\r
+                                    : \r
+                                    : One purpose of this site is to test out some of Winterwell's web technology. This site is run using our in-house system, which has some rather unique features, though you're unlikely to encounter them during normal browsing. You might encounter a bug though. If you do, please report it to me at <script>email('daniel','winterwell.com');</script>.\r
+                                    : \r
+                                    : Where will this blog go? From humble acorns, great oaks grow. But what if we've planted peanuts by mistake? Or genetically modified acorns that will turn into Evil Oaks? Only time will tell.
+ Terms of Use                       | ## 1.   Introduction\r
+                                    : \r
+                                    : These terms of use govern your use of our website; by using our website, you accept these terms of use in full.   If you disagree with these terms of use or any part of these terms of use, you must not use our website. \r
+                                    : \r
+                                    : ## 2.   Licence to use website\r
+                                    : \r
+                                    : Unless otherwise stated, we or our licensors own the intellectual property rights in the website and material on the website.  Subject to the licence below, all these intellectual property rights are reserved.\r
+                                    : \r
+                                    : You may view, download for caching purposes only, and print pages or other content from the website for your own personal use, subject to the restrictions set out below and elsewhere in these terms of use.  \r
+                                    : \r
+                                    : You must not:\r
+                                    : \r
+                                    : (a)     republish material from this website (including republication on another website);\r
+                                    : \r
+                                    : (b)     sell, rent or sub-license material from the website;\r
+                                    : \r
+                                    : (c)     show any material from the website in public;\r
+                                    : \r
+                                    : (d)     reproduce, duplicate, copy or otherwise exploit material on our website for a commercial purpose;\r
+                                    : \r
+                                    : (e)     edit or otherwise modify any material on the website; or\r
+                                    : \r
+                                    : (f)     redistribute material from this website except for content specifically and expressly made available for redistribution. Where content is made available for redistribution, that redistribution may be subject to conditions.\r
+                                    : \r
+                                    : ### License to use Creative Commons material\r
+                                    : \r
+                                    : This website contains material licensed under a creative commons license. All such material is marked, either by an explicit statement or by an attribution of the form "cc [The Licensor]". You have rights to reuse such content, subject\r
+                                    : to restrictions as set by the licensor. Please contact the licensor for details. \r
+                                    : \r
+                                    : ## 3.   Acceptable use\r
+                                    : \r
+                                    : You must not use our website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity.\r
+                                    : \r
+                                    : You must not use our website to copy, store, host, transmit, send, use, publish or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software.\r
+                                    : \r
+                                    : You must not conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to our website without our express written consent.\r
+                                    : \r
+                                    : You must not use our website to transmit or send unsolicited commercial communications.\r
+                                    : \r
+                                    : You must not use our website for any purposes related to marketing without our express written consent.  \r
+                                    : \r
+                                    : ## 4.   Restricted access\r
+                                    : \r
+                                    : Access to certain areas of our website is restricted.  We reserve the right to restrict access to other areas of our website, or indeed our whole website, at our discretion.\r
+                                    : \r
+                                    : If we provide you with a user ID and password to enable you to access restricted areas of our website or other content or services, you must ensure that that user ID and password is kept confidential.  \r
+                                    : \r
+                                    : We may disable your user ID and password in our sole discretion without notice or explanation.\r
+                                    : \r
+                                    : ## 5.   User generated content6\r
+                                    : \r
+                                    : In these terms of use, "your user content" means material (including without limitation text, images, audio material, video material and audio-visual material) that you submit to our website, for whatever purpose.\r
+                                    : \r
+                                    : You grant to us a worldwide, irrevocable, non-exclusive, royalty-free licence to use, reproduce, adapt, publish, translate and distribute your user content in any existing or future media.  You also grant to us the right to sub-license these rights, and the right to bring an action for infringement of these rights.\r
+                                    : \r
+                                    : Your user content must not be illegal or unlawful, must not infringe any third party's legal rights, and must not be capable of giving rise to legal action whether against you or us or a third party (in each case under any applicable law).  \r
+                                    : \r
+                                    : You must not submit any user content to the website that is or has ever been the subject of any threatened or actual legal proceedings or other similar complaint.\r
+                                    : \r
+                                    : We reserve the right to edit or remove any material submitted to our website, or stored on our servers, or hosted or published upon our website.\r
+                                    : \r
+                                    : Notwithstanding our rights under these terms of use in relation to user content, we do not undertake to monitor the submission of such content to, or the publication of such content on, our website.\r
+                                    : \r
+                                    : ## 6.   Limited warranties\r
+                                    : \r
+                                    : Whilst we endeavour to ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we commit to ensuring that the website remains available or that the material on the website is kept up-to-date.\r
+                                    : \r
+                                    : To the maximum extent permitted by applicable law we exclude all representations, warranties and conditions relating to this website and the use of this website (including, without limitation, any warranties implied by law of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill).\r
+                                    : \r
+                                    : ## 7.   Limitations of liability\r
+                                    : \r
+                                    : Nothing in these terms of use (or elsewhere on our website) will exclude or limit our liability for fraud, for death or personal injury caused by our negligence, or for any other liability which cannot be excluded or limited under applicable law.\r
+                                    : \r
+                                    : Subject to this, our liability to you in relation to the use of our website or under or in connection with these terms of use, whether in contract, tort (including negligence) or otherwise, will be limited as follows:\r
+                                    : \r
+                                    : (a)     to the extent that the website and the information and services on the website are provided free-of-charge, we will not be liable for any loss or damage of any nature;\r
+                                    : \r
+                                    : (b)     we will not be liable for any consequential, indirect or special loss or damage;\r
+                                    : \r
+                                    : (c)     we will not be liable for any loss of profit, income, revenue, anticipated savings, contracts, business, goodwill, reputation, data, or information;\r
+                                    : \r
+                                    : (d)     we will not be liable for any loss or damage arising out of any event or events beyond our reasonable control;\r
+                                    : \r
+                                    : (e)     our maximum liability in relation to any event or series of related events will be limited to £1,000.\r
+                                    : \r
+                                    : ## 8.   Indemnity\r
+                                    : \r
+                                    : You hereby indemnify us and undertake to keep us indemnified against any losses, damages, costs, liabilities and expenses (including without limitation legal expenses and any amounts paid by us to a third party in settlement of a claim or dispute on the advice of our legal advisers) incurred or suffered by us arising out of any breach by you of any provision of these terms of use[, or arising out of any claim that you have breached any provision of these terms of use].10\r
+                                    : \r
+                                    : ## 9.   Breaches of these terms of use\r
+                                    : \r
+                                    : Without prejudice to our other rights under these terms of use, if you breach these terms of use in any way, we may take such action as we deem appropriate to deal with the breach, including suspending your access to the website, prohibiting you from accessing the website, blocking computers using your IP address from accessing the website, contacting your internet service provider to request that they block your access to the website and/or bringing court proceedings against you.\r
+                                    : \r
+                                    : ## 10.  Variation\r
+                                    : \r
+                                    : We may revise these terms of use from time-to-time.  Revised terms of use will apply to the use of our website from the date of the publication of the revised terms of use on our website.  Please check this page regularly to ensure you are familiar with the current version.\r
+                                    : \r
+                                    : ## 11.  Assignment\r
+                                    : \r
+                                    : We may transfer, sub-contract or otherwise deal with our rights and/or obligations under these terms of use without notifying you or obtaining your consent.\r
+                                    : \r
+                                    : You may not transfer, sub-contract or otherwise deal with your rights and/or obligations under these terms of use.  \r
+                                    : \r
+                                    : ## 12.  Severability\r
+                                    : \r
+                                    : If a provision of these terms of use is determined by any court or other competent authority to be unlawful and/or unenforceable, the other provisions will continue in effect.  If any unlawful and/or unenforceable provision would be lawful or enforceable if part of it were deleted, that part will be deemed to be deleted, and the rest of the provision will continue in effect. \r
+                                    : \r
+                                    : The failure by us to enforce at any time or for any period any one or more of\r
+                                    : the clauses set out here shall not be a waiver of them or of the right at any\r
+                                    : time subsequently to enforce all terms and conditions of this agreement.\r
+                                    : \r
+                                    : ## 13.  Exclusion of third party rights\r
+                                    : \r
+                                    : These terms of use are for the benefit of you and us, and are not intended to benefit any third party or be enforceable by any third party.  The exercise of our and your rights in relation to these terms of use is not subject to the consent of any third party.\r
+                                    : \r
+                                    : ## 14.  Law and jurisdiction\r
+                                    : \r
+                                    : These terms of use will be governed by and construed in accordance with Scottish law, and any disputes relating to these terms of use will be subject to the jurisdiction of the courts of Scotland.\r
+                                    : \r
+                                    : ## 15.  Our details\r
+                                    : \r
+                                    : The full name of our company is Winterwell Associates Ltd. "Platypus Innovation" is a trading name.  \r
+                                    : \r
+                                    : We are registered in Scotland under registration number SC342991.  \r
+                                    : \r
+                                    : Our registered address is 3F3 123 Nicolson Street, Edinburgh, EH8 9ER.  \r
+                                    : \r
+                                    : You can contact us by email to <script>email("info","winterwellassociates.com");</script>.\r
+                                    : \r
+                                    : \r
+                                    : <hr>\r
+                                    : \r
+                                    : These website terms of use are based on a template\r
+                                    : created by <http://www.website-contracts.co.uk/>.\r
+                                    : \r
+                                    : 
+ How to add an image to a blog post | You include images using html. E.g.
+                                    : 
+                                    : <code><img src="myImage.jpg" align="right"></code>
+                                    : 
+                                    : If the image has a stable url somewhere else then you can hot-link to it. 
+                                    : Otherwise you should upload a copy as follows:
+                                    : 
+                                    : 1. Go to [assets](/assetManager)
+                                    : 2. Upload the image you want to use. *PLEASE RESIZE IT FIRST!* 
+                                    : You are allowed to upload up to 10mb, which would be a bad idea!
+                                    : 3. Now go to the text editor for your blog post. You should see a thumbnail of your image at the bottom of the page.
+                                    :  4. Drag and drop your image into the text editor. That will insert the source url, but not an image
+                                    : tag. You need to convert the url into an `img` tag, adding width, height and other settings if you like.
+                                    : It's good practice to add alt and title attributes (alt is for blind people and whilst the image loads, 
+                                    : title is shown on mouseover - usually they should be the same). E.g. convert
+                                    : 
+                                    : `http://everyoneisplaying.com/static/uploads/1/0073555delmee__p8882863010604442581.jpg`
+                                    : 
+                                    : into
+                                    : 
+                                    : <code>
+                                    : <img src="http://everyoneisplaying.com/static/uploads/1/0073555delmee__p8882863010604442581.jpg"
+                                    : width="200" alt="Labyrinth by Paul Delmee" title="Labyrinth by Paul Delmee">
+                                    : </code>
+                                    : 
+                                    : Hm: a bit painful that - even worse than Wordpress's image upload. Hopefully you can live with it for now - we'd prefer to focus on improving outward-facing functionality. Let me know if it gets annoying.
+                                    : 
+ How to add an image to a blog post | You include images using html. E.g.
+                                    : 
+                                    : <code><img src="myImage.jpg" align="right"></code>
+                                    : 
+                                    : If the image has a stable url somewhere else then you can hot-link to it. 
+                                    : Otherwise you should upload a copy as follows:
+                                    : 
+                                    : 1. Go to [assets](/assetManager)
+                                    : 2. Upload the image you want to use. *PLEASE RESIZE IT FIRST!* 
+                                    : You are allowed to upload up to 10mb, which would be a bad idea!
+                                    : 3. Now go to the text editor for your blog post. You should see a thumbnail of your image at the bottom of the page.
+                                    :  4. Drag and drop your image into the text editor. That will insert the source url, but not an image
+                                    : tag. You need to convert the url into an `img` tag, adding width, height and other settings if you like.
+                                    : It's good practice to add alt and title attributes (alt is for blind people and whilst the image loads, 
+                                    : title is shown on mouseover - usually they should be the same). E.g. convert
+                                    : 
+                                    : `http://everyoneisplaying.com/static/uploads/1/0073555delmee__p8882863010604442581.jpg`
+                                    : 
+                                    : into
+                                    : 
+                                    : <code>
+                                    : <img src="http://everyoneisplaying.com/static/uploads/1/0073555delmee__p8882863010604442581.jpg"
+                                    : width="200" alt="Labyrinth by Paul Delmee" title="Labyrinth by Paul Delmee">
+                                    : </code>
+                                    : 
+                                    : Hm: a bit painful that - even worse than Wordpress's image upload. Hopefully you can live with it for now - we'd prefer to focus on improving outward-facing functionality. Let me know if it gets annoying.
+                                    : 
+ How to make blog posts             | To post:
+                                    : 
+                                    :  - login (duh)
+                                    :  - go to "write" in the nav bar
+                                    :  - this should lead you to an editor which is hopefully clear enough to use (please feel free to suggest improvements - we are also putting in support for posting-by-email).
+                                    :  - enter your post and hit publish
+                                    : 
+                                    : Great - the post now exists and can be viewed, but it isn't listed on the front page. To do that:
+                                    : 
+                                    :  - go to "settings" in the nav bar and set the editor controls to "some extra features"
+                                    :  - now go to your post, which you can find via your profile, and at the bottom you should find an "edit" button.
+                                    :  - This takes you back to the editor but with a few more controls
+                                    :  - In the "tags" field, enter a comma-separated list of tags including "group:frontpage"
+                                    :  - You can also set the description - which is the blurb that will be shown on the front page. It defaults to grabbing the 1st paragraph of the post.
+                                    :  - now save, and the post should now be listed on the front page.
+                                    : 
+ How to make blog posts             | To post:
+                                    : 
+                                    :  - login (duh)
+                                    :  - go to "write" in the nav bar
+                                    :  - this should lead you to an editor which is hopefully clear enough to use (please feel free to suggest improvements - we are also putting in support for posting-by-email).
+                                    :  - enter your post and hit publish
+                                    : 
+                                    : Great - the post now exists and can be viewed, but it isn't listed on the front page. To do that:
+                                    : 
+                                    :  - go to "settings" in the nav bar and set the editor controls to "some extra features"
+                                    :  - now go to your post, which you can find via your profile, and at the bottom you should find an "edit" button.
+                                    :  - This takes you back to the editor but with a few more controls
+                                    :  - In the "tags" field, enter a comma-separated list of tags including "group:frontpage"
+                                    :  - You can also set the description - which is the blurb that will be shown on the front page. It defaults to grabbing the 1st paragraph of the post.
+                                    :  - now save, and the post should now be listed on the front page.
+                                    : 
+(7 rows)
+

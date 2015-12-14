@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250"> 
+  <title>Happy Holidays</title>
+  <style>
+    img.chick { position:absolute; top:150; width:50; height:70; }
+    img.ice { position:absolute; top:148; overflow:hidden;
+          clip:rect(100 auto auto auto); width:105; height:75; }
+    </style>
+  </head>
+  <body>
+  
+<div>
+ <!-- soundManager appends "hidden" Flash to the first DIV on the page. -->
+</div>
+
+<script>
+function isMozilla() {
+    var agent = navigator.userAgent.toLowerCase() + "";
+    major = parseInt(navigator.appVersion);
+    var isGood = agent.indexOf('mozilla') != -1 && major >= 5;
+    isGood = isGood && agent.indexOf('msie') == -1;
+    return isGood;
+}
+
+if (!isMozilla()) {
+    document.write("<p id='IEwarning' style='z-index:1000; padding:5; margin:5; position:absolute; top:0; left:0; border-style:solid; border-width:1; border-color:red; background-color:#ffbbbb;'>This game has only been tested on Mozilla FireFox v1.5.");
+    document.write(" It may not work on your browser. However you can <a href='http://www.mozilla.com/firefox/'>download");
+    document.write(" the latest version of Mozilla for free</a>, and it is ");
+    document.write(" safer and better than Internet Explorer. ");
+    document.write(" &nbsp;&nbsp;&nbsp; [<a href='#' onClick='");
+    document.write('document.getElementById("IEwarning").style.visibility="hidden"; return false;');
+    document.write("'><font size='-1'>hide this warning</font></a>]</p>");
+    setTimeout("document.getElementById('IEwarning').style.visibility='hidden';", 5000);    
+}
+
+</script>
+
+<script src="penguinScript.js"></script>
+
+<img src="bg.jpg" width="810" height="510" 
+    style="position:absolute; top:20; left:20;" />
+
+<img id="IDimgDeadChick" src="deadChick.png" height="100" 
+    style="position:absolute; top:0; left:0; visibility:hidden;">
+    
+<img src="iceShelf.png" style="position:absolute; left:20; top:215;
+    width:350;">
+
+<img id="IDimgChick1" src="chick.png" class="chick" style="left:50;">
+<img id="IDimgIce1" src="ice.png" class="ice" style="left:30;" />
+            
+<img id="IDimgChick2" src="chick.png" class="chick" style="left:125;">
+<img id="IDimgIce2" src="ice.png" class="ice" style="left:105;">
+        
+<img id="IDimgChick3" src="chick.png" class="chick" style="left:200;">
+<img id="IDimgIce3" src="ice.png" class="ice" style="left:180;">
+
+
+<img id="IDimgFish1" src="fish.png" style="position:absolute; top:0; left:0; visibility:hidden;">
+<img id="IDimgFish2" src="angelfish.png" style="position:absolute; top:0; left:0; visibility:hidden;">
+<img id="IDimgFish3" src="goldfish.png" style="position:absolute; top:0; left:0; visibility:hidden;">
+<img id="IDimgFish4" src="stripefish.png" style="position:absolute; top:0; left:0; visibility:hidden;">
+<img id="IDimgFish5" src="fish.png" style="position:absolute; top:0; left:0; visibility:hidden;">
+
+
+<img id="IDimgPenguinV" src="penguin.png" 
+    style="position:absolute; top:0; left:0;">
+<img id="IDimgPenguinH" src="penguinHorizontal.png" width="0" height="0"
+    style="position:absolute; top:0; left:0; visibility:hidden;">
+<img id="IDimgPenguinHL" src="penguinHorizontalL.png" width="0" height="0"
+    style="position:absolute; top:0; left:0; visibility:hidden;">
+<img id="IDimgPenguinL" src="penguinL.png" width="0" height="0"
+    style="position:absolute; top:0; left:0; visibility:hidden;">
+    
+<img id="IDimgSkeleton" src="skeletonFull.png" width="80" height="40"
+    style="position:absolute; top:40; left:700;">
+<img id="IDimgStarving" src="skeletonHidden.png" width="80" height="40"
+    style="position:absolute; top:40; left:700;
+    clip:rect(auto 20 auto auto);">
+
+<div id="IDdivTemp" style="position:absolute; left:700; width:80; 
+        top:90;
+        border-style:solid; border-color:blue; color:blue; 
+        -moz-border-radius:5;
+background-color: #aaaadd;">
+        <center>
+    <img src="thermometer.png" alt="It's cold" style="margin:10;"/>
+    </center>
+<form>
+<input id="IDtempDisplay" type="text" size="3" 
+    style="border-style:none; color:blue; text-align:right;
+            background: transparent;"
+    value="-50" /><sup>o</sup>
+</form>
+</div>
+
+
+<div style="position:absolute; left:300; top:100;">
+<form>
+<input id="IDdisplayMsg" type="text" size="40" value="hm"
+style="border-style:solid; border-width:2;
+visibility:hidden; color:black;
+font-size:large; text-align:center;
+margin-top:10; padding-bottom:10;
+background-color: white;">
+</form>
+</div>
+
+<!-- Frame -->
+<div style="background-color:white; position:absolute; left:825;
+    top:0; width:100; height:550; border-style:none;">
+    </div>
+<div style="background-color:white; position:absolute; left:0;
+    top:0; width:20; height:550; border-style:none;">
+    </div>
+<div style="position:absolute; top:20; left:20;
+    width:800; height:500;
+    border-style:solid; border-width:5; 
+    -moz-border-radius:5; border-color:blue;
+    background:transparent;"> </div>
+
+
+
+<img id="IDimgJumpOutBox" src="fish.png" border="1"
+style="position:absolute; top:275; left:510; visibility:hidden;" width="50" height="20" >
+<img id="IDimgJumpInBox" src="fish.png" border="1"
+style="position:absolute; top:150; left:370; visibility:hidden;" width="50" height="20" >
+
+<img id="IDimgJumpInButton" src="jumpInButton.png"
+onClick="jumpIn();"
+style="position:absolute; top:170; left:385; visibility:hidden;" >    
+<img id="IDimgJumpOutButton" src="jumpOutButton.png"
+onClick="jumpOut();"
+style="position:absolute; top:200; left:420; visibility:hidden;" >    
+            
+<script>
+// Detect if the browser is IE or not.
+// If it is not IE, we assume that the browser is NS.
+var IE = document.all?true:false
+// If NS -- that is, !IE -- then set up for mouse capture
+if (!IE && document.captureEvents) document.captureEvents(Event.MOUSEMOVE)
+// Set-up to use getMouseXY function onMouseMove
+document.onmousemove = setMousePosn;
+</script>
+<script>
+
+
+// Personalise
+sName = getURLVariable("Name");
+if (!sName) sName="";
+document.title += " "+sName;
+nDifficulty = getURLVariable("Difficulty");
+if (!nDifficulty) nDifficulty = 1;
+
+
+aFishFiles = ["goldfish", "angelfish", "fish", "stripeFish"];
+function makeFish(imgFish) {
+    var nFish = Math.floor(aFishFiles.length*Math.random());
+    var nSpeed = 1 + nFish*3;
+    var x = 0;
+    if (Math.random() > 0.5) {
+        imgFish.dx = nSpeed;
+        imgFish.src = aFishFiles[nFish] + ".png";
+    } else {
+        imgFish.dx = -nSpeed;
+        imgFish.src = aFishFiles[nFish] + "L.png";
+        x = nSCREEN_WTH - imgFish.width;
+    }
+    var y = nWATER_LEVEL + Math.floor(Math.random()*(nSCREEN_HEIGHT-nWATER_LEVEL-imgFish.height));
+    setXY(imgFish, x, y);   
+    imgFish.style.visibility = "visible";
+}
+
+// Variables
+
+nSCREEN_WTH = 800;
+nSCREEN_HEIGHT = 500;
+//??window.setSize width = nSCREEN_WTH;
+nLAND_HEIGHT = 215;
+nWATER_LEVEL = 270;
+nPENGUIN_WATER_SPEED = 12;
+nPENGUIN_LAND_SPEED = 5;
+
+// Timings
+nMOVE_INTERVAL = 50;
+if (nDifficulty == "hard") {
+    nSTARVE_INTERVAL = 150;
+    nICE_INTERVAL = 200;
+} else {
+    nSTARVE_INTERVAL = 200;
+    nICE_INTERVAL = 250;
+}
+nTEMP_INTERVAL = 4000;
+
+imgPenguin = document.getElementById("IDimgPenguinV");
+
+//nTargetX = 100; nTargetY = 100;
+//nPenguinX = 0; nPenguinY = 0;
+var bAlive; 
+var bAllDead;
+var bUnderwater;
+var nFoodLevel;
+imgStarving =       document.getElementById("IDimgStarving");
+imgJumpInButton =   document.getElementById("IDimgJumpInButton");
+imgJumpOutButton =  document.getElementById("IDimgJumpOutButton");
+imgJumpInBox =      document.getElementById("IDimgJumpInBox");
+imgJumpOutBox =     document.getElementById("IDimgJumpOutBox");
+
+var nTemp;
+var dTemp;
+
+imgIce1 =  document.getElementById("IDimgIce1");
+var nIceLevel;
+var nFoodLevel;
+var nIcingChick; // Chick currently freezing up
+imgDeadChick = document.getElementById("IDimgDeadChick");
+
+// fish
+nFISH_SPEED = 10;
+aImgFish = [1, 2, 3, 4];
+
+for(i=0; i<4; i++) {
+    var j = i + 1;
+    var imgFish = document.getElementById("IDimgFish"+j);
+    aImgFish[i] = imgFish; 
+    makeFish(imgFish);
+}
+
+
+// Functions
+
+nMouseX = 0;
+
+function jumpOut() {
+    bUnderwater = false;
+    //playSound("splash");   
+    var y = nLAND_HEIGHT - 174;
+    imgPenguin.src= "penguinL.png";
+    setXY(imgPenguin, 320, y);
+    imgJumpOutButton.style.visibility = "hidden";
+    bCanJump = false;
+    setTimeout("bCanJump = true;", 500); 
+}
+
+function jumpIn() {
+    imgJumpInButton.style.visibility = "hidden";
+    playSound("splash");
+    bUnderwater = true;
+    setXY(imgPenguin, 390, 250);
+    bCanJump = false;
+    setTimeout("bCanJump = true;", 500);
+}
+
+function movePenguin() {
+    if (!nMouseX) {
+        setTimeout("movePenguin();", nMOVE_INTERVAL);
+        return;
+    }
+    if (!bAlive) return;
+    var xy = getXY(imgPenguin);
+    cx = xy[0] + imgPenguin.width/2;
+    cy = xy[1] + imgPenguin.height/2;
+    var sPBase;
+    if (bUnderwater) {
+        sPBase = "penguinHorizontal";
+        nSpeed = nPENGUIN_WATER_SPEED;
+        if (bCanJump && overlap(imgPenguin, imgJumpOutBox)) {
+            imgJumpOutButton.style.visibility = "visible";
+        } else imgJumpOutButton.style.visibility = "hidden";
+    } else {
+        if (bCanJump && overlap(imgPenguin, imgJumpInBox)) {
+            imgJumpInButton.style.visibility = "visible";
+        } else imgJumpInButton.style.visibility = "hidden";
+        sPBase = "penguin";
+        nSpeed = nPENGUIN_LAND_SPEED;    
+    }
+    if (cx > nMouseX) {
+        xy[0] -= Math.min(nSpeed, cx-nMouseX);
+        imgPenguin.src= sPBase+"L.png";
+    }
+    if (cx < nMouseX) {
+        xy[0] += Math.min(nSpeed, nMouseX-cx);
+        if (!bUnderwater && xy[0] > 350) xy[0] = 350;
+        imgPenguin.src= sPBase+".png";
+    }
+    if (bUnderwater) {
+        if (cy > nMouseY) {
+            xy[1] -= Math.min(nSpeed, cy - nMouseY);
+            if (xy[1] < nWATER_LEVEL) xy[1] = nWATER_LEVEL;
+        }
+        if (cy < nMouseY) xy[1] += Math.min(nSpeed, nMouseY-cy);    
+    }
+    setXY(imgPenguin, xy[0], xy[1]);
+    var imgIcingChick = document.getElementById("IDimgChick"+nIcingChick);
+    if (overlap(imgPenguin, imgIcingChick)) {
+        nIceLevel = 0;
+    }
+    setTimeout("movePenguin();", nMOVE_INTERVAL);
+}
+
+
+function chickDead(nChickNum) {    
+    var imgIcingChick = document.getElementById("IDimgChick"+nIcingChick);    
+    var xy = getXY(imgIcingChick);
+    setXY(imgDeadChick, xy[0] - imgDeadChick.width + imgIcingChick.width, 150); 
+    imgDeadChick.style.visibility = "visible";
+    if (nIcingChick < 3) {
+        if (nIcingChick == 1) {
+            displayMsg("A chick died.");
+        } else {
+            displayMsg("A 2nd chick died.");
+        }
+        nIcingChick++;
+        nIceLevel = 0;
+    } else {
+        displayMsgs(["All chicks are dead!","GAME OVER","[Reload page to play again.]"]);        
+        bAllDead = true;
+    }
+    gotoHeaven("IDimgDeadChick");
+}
+
+
+function gotoHeaven(imgId) {
+    img = document.getElementById(imgId);
+    xy = getXY(img);
+    setXY(img, xy[0], xy[1] - 5);
+    if (xy[1] - 5 < 0) {
+        img.style.visibility = "hidden";
+    } else setTimeout("gotoHeaven('"+imgId+"');", 100);
+}
+
+
+nCHICK_HEIGHT = document.getElementById("IDimgChick1").height;
+
+function iceChick() {
+    var nChickNum = nIcingChick
+    var nTop = Math.floor( ((100 - nIceLevel)*nCHICK_HEIGHT) / 100 );
+    imgIce = document.getElementById("IDimgIce"+nChickNum);
+    imgIce.style.clip="rect("+nTop+" auto auto auto)" 
+    nIceLevel++;
+    if (nIceLevel == 80) playSound("meep");
+    if (nIceLevel > 100) chickDead(nChickNum);
+    var mult = 1 - (50.0 + nTemp)/20;
+    var nInterval = Math.floor(nICE_INTERVAL / mult); 
+    if (!bAllDead) setTimeout("iceChick();", nInterval);
+}
+
+
+function starve() {
+    nFoodLevel--;
+    var nRight = Math.floor( (nFoodLevel*imgStarving.width) / 100 );
+    imgStarving.style.clip="rect(auto "+nRight+" auto auto)" 
+    if (nFoodLevel==0) {
+        bAlive = false;
+        var xy = getXY(imgPenguin);
+        var ph = imgPenguin.height;        
+        imgPenguin.src = "deadpenguin.png";
+        var y = xy[1] + (ph - 113);        
+        setXY(imgPenguin, xy[0], y);
+        playSound("die");
+        displayMsgs(["Starved to Death!","GAME OVER","[Reload page to play again.]"]);        
+    }   
+    setTimeout("starve();", nSTARVE_INTERVAL);
+}
+
+function moveFish() {
+    for(i=0; i<aImgFish.length; i++) {
+        var imgFish = aImgFish[i];
+        var xy = getXY(imgFish);
+        newX = xy[0] + imgFish.dx;
+        if (bAlive && overlap(imgFish, imgPenguin)) {
+            playSound("eat");
+            makeFish(imgFish);
+            nFoodLevel += 10;
+            if (nFoodLevel > 100) nFoodLevel = 100;
+        } else {
+            if (newX<0 || newX > nSCREEN_WTH) makeFish(imgFish);
+            else setXY(imgFish, newX, xy[1]);
+        }
+    }
+    setTimeout("moveFish();", nMOVE_INTERVAL);
+}
+</script>
+
+<script type="text/javascript" src="script/soundmanager.js"></script>
+<script type="text/javascript">
+soundManagerInit();
+//setTimeout();
+</script>
+<script>
+startGame();
+</script>
+  </body>
+</html>

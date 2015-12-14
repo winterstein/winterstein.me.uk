@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <title>Lesson 6</title>
+  </head>
+  <body>
+<h1>Lesson 6</h1>
+<h2>.js files</h2>
+Place scripts in their own file:
+<code>
+&lt;script src="MyScripts.js" &gt;&lt;/script&gt;
+</code>
+
+<h2>Open Windows</h2>
+Beware that the browser may block this!<br>
+Use the window.open method:<br>
+<a href="#" onClick='window.open("lesson6.html", "MyNewWindow", "left=10,top=40,width=200,height=400,titlebar=yes,toolbar=no");' >
+<code>
+myWindow = window.open("lesson6.html", "MyNewWindow", "left=10,top=40,width=200,height=400,titlebar=yes,toolbar=no");
+</code>
+</a>
+
+<p>
+<h2>Work with other windows:</h2>
+First we store the popup window in a variable:<br>
+<script>
+myWindow = '';
+</script>
+<a href="#" onClick='
+myWindow = window.open("", "MyNewWindow",
+                       "left=10,top=40,width=200,height=400,titlebar=yes,toolbar=no");
+'><code>
+myWindow = window.open("", "MyNewWindow",
+                       "left=10,top=40,width=200,height=400,titlebar=yes,toolbar=no");
+</code></a>
+<p>
+Now we can check that it opened:
+<code>
+if (!myWindow) alert("Window failed to open!");
+</code>
+<p>
+Work with <i>its</i> document object:<br>
+<a href="#" onClick='
+myWindow.document.write("<html><head><title>We Made This With JavaScript!</title></head><body>");
+myWindow.document.write("<b>We Made This With JavaScript!</b>");
+myWindow.document.write("</body></html>\n\n");
+myWindow.focus();
+'><code>
+myWindow.document.write("<html><head><title>We Made This With JavaScript!</title></head><body>");
+myWindow.document.write("<b>We Made This With JavaScript!</b>");
+myWindow.document.write("</body></html>\n\n");
+</code></a>
+<p>
+move/resize the window:
+<a href="#" onClick="myWindow.moveTo(200,200); myWindow.resizeTo(400,200); myWindow.focus();"><code>
+myWindow.moveTo(200,200); myWindow.resizeTo(400,200);
+</code></a>
+<p>
+Or close it:
+<a href="#" onClick="if (myWindow) myWindow.close();"><code>
+if (myWindow) myWindow.close();
+</code></a>
+Note the 'if' to protect against the case where the window was never created.
+
+
+<h2>Make things move</h2>
+We can move and resize elements using CSS style-sheets and JavaScript.
+First we must give them a position using style:<br>
+&lt;img id="plane" src="aeroplane.gif" style="position:relative; top:0; left:0;" &gt;
+<br>
+This will just stick the image where it would normally go!<br>
+
+But now we can change it with JavaScript:<br>
+<a href='#'
+onClick='aeroplane = document.getElementById("plane");
+aeroplane.style.left = 200;
+return false;'><code>
+aeroplane = document.getElementById('plane');<br>
+aeroplane.style.left = 200;
+</code></a>
+<br>
+<br>
+<img src="landscape.jpg" border="0" />
+<img id="plane" src="aeroplane.gif" border="0" style="position:relative; top:-250; left:10;" />
+<br>
+
+<script>
+var aeroplane = document.getElementById('plane');
+var x = 10;
+function fly() {
+	x = x + 1;
+	// We reset the style properties
+	aeroplane.style.left = x;
+	if (x < 500) {
+	  // Keep going
+		setTimeout("fly()",5);
+	}
+}
+</script>
+<a href="#" onClick='fly(); return false;'>Click to make the plane fly off</a>
+
+
+
+  </body>
+</html>

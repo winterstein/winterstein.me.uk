@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+<title></title>
+<style type="text/css">
+.centered { text-align:center; vertical-align:middle; }
+.box { border-style: solid; border-width:1px; -moz-border-radius:10px; -webkit-border-radius:10px; padding:8px; margin:1px; }
+tr.errorMessage { color:rgb(128,0,0); background-color:rgb(255,128,128); }
+div.errorMessage { border-style: solid; border-width:1px; -moz-border-radius:10px; -webkit-border-radius:10px; padding:8px; margin:1px; color:rgb(128,0,0); background-color:rgb(255,128,128); }
+.collapsibleTitleBar { background-color:rgb(192,192,255); font-weight:bold; width:100%; }
+
+</style>
+</head>
+<body bgcolor='black'>
+
+<script type='text/javascript' language='javascript' charset='utf-8'>
+// <![CDATA[
+function setVisible(element, visible) { 
+if (visible) element.style.visibility = 'visible'; 
+else element.style.visibility = 'hidden'; 
+}
+function setColor(element, colour) { 
+element.style.color = colour; 
+}
+function setBGColor(element, colour) { 
+element.style.backgroundColor = colour; 
+}
+function get(id) { 
+return document.getElementById(id); 
+}
+/*  
+  name - name of the desired cookie
+  Return a string containing the value of specified cookie, or null if cookie does not exist
+*/
+function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  } else begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1) end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+}
+function getInt(style) {
+   return style.substr(0,style.length-2); 
+}
+function setPosition(element, x, y) {
+   element.style.left = x+'px'; element.style.top = y+'px'; 
+}
+function newWidget(widgetCode) {
+   get('internal_ajax_div').innerHTML += widgetCode; }
+function setWaiting(widget) {
+   widget.innerHTML = '<img src="dummy/ajax_backing/spinning_wheel_throbber.gif" class="centered" />'; }
+
+// ]]>
+</script>
+<div id='internal_ajax_div'></div>
+
+<script type='text/javascript' language='javascript' charset='utf-8'>
+// <![CDATA[
+function getMousePosition(e) {
+  if (!isIE) {
+    mouse_x = e.pageX;
+    mouse_y = e.pageY;
+  }
+  if (isIE) {
+    mouse_x = event.clientX + document.body.scrollLeft;
+    mouse_y = event.clientY + document.body.scrollTop;
+  }
+  return true;
+}
+var isIE = document.all?true:false;
+if (!isIE) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = getMousePosition;
+var mouse_x; var mouse_y;
+
+// ]]>
+</script>
+
+<script type='text/javascript' language='javascript' charset='utf-8'>
+// <![CDATA[
+function throwTomato(widget) {	
+	for(i=0; i<5; i++) {
+		var tom = get("tomato"+i);
+		if ( ! tom.life || tom.life==0) {
+			setPosition(tom, mouse_x, mouse_y);
+			setVisible(tom, true);
+			tom.life=10;
+			tom.src='tomato.png';
+			return;
+		}
+	}
+}
+
+function animate() {
+	for(i=0; i<5; i++) {
+		var tom = get("tomato"+i);
+		if (tom.life && tom.life>0) {
+			tom.life -= 1;
+			if (tom.life>3) {
+				setPosition(tom, getInt(tom.style.left) - 5, getInt(tom.style.top) - 5);
+			}
+			if (tom.life==3) {
+				tom.src='splat.png';
+				playSound('splat.swf');
+			}
+			if (tom.life==0) {
+				setVisible(tom, false);
+			}
+		}			
+	}
+	setTimeout("animate();", 70);
+}
+setTimeout("animate();", 1000);
+
+// ]]>
+</script>
+<div id='AjaxWidget0' 
+	class='box' 
+	style="border-width:3px; border-color:red; visibility:hidden; width:525px; top:300px; height:275px; left:190px; position:absolute; " 
+onClick="throwTomato(this);"
+ >
+ <img id='tomato0' src='tomato.png' style='position:absolute; top:0px; left:0px; visibility:hidden;' >
+ <img id='tomato1' src='tomato.png' style='position:absolute; top:0px; left:0px; visibility:hidden;' >
+ <img id='tomato2' src='tomato.png' style='position:absolute; top:0px; left:0px; visibility:hidden;' >
+ <img id='tomato3' src='tomato.png' style='position:absolute; top:0px; left:0px; visibility:hidden;' >
+ <img id='tomato4' src='tomato.png' style='position:absolute; top:0px; left:0px; visibility:hidden;' >
+ </div><script>
+var AjaxWidget0 = get('AjaxWidget0');
+</script>
+
+<center>
+<h1 style='color:pink;'>splat tv</h1>
+
+<i style='color:white;'>Brings the involvement of theatre to internet 
+TV.</i><br>
+</center>
+
+
+<center>
+<button id='buttonOn' onClick='setVisible(AjaxWidget0,true); setVisible(this,false); setVisible(get("buttonOff"),true);'>Activate Interactive TV</button>
+<!-- TODO flash red area -->
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button id='buttonOff' onClick='setVisible(AjaxWidget0,false); setVisible(this,false); setVisible(get("buttonOn"),true);'>Deactivate Interactive TV</button>
+<br>
+</center>
+
+<iframe src='http://bbc.co.uk/iplayer' width="100%" height="800px"></iframe>
+
+
+<!-- Container to hold the embedded swf objects -->
+<div id='swfContainer'></div>
+<script>
+// Call this with the url of the swf file
+function playSound(swfFile) {
+var div = document.getElementById('swfContainer');
+div.innerHTML += "<object width='1' height='1'><param name='movie' value='"+swfFile+"'><embed src='"+swfFile+"' width='1' height='1'></embed></object>";
+}
+</script>
+
+</body>
+</html>

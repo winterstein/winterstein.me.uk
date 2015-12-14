@@ -1,0 +1,211 @@
+<html>
+<head>
+<title>Daniel Winterstein</title>
+<meta http-equiv="description" content="defies description. no really, this page is a mind-blowing experience beyond anything you've ever known. honest.">
+<meta http-equiv="keywords" content="winterstein,humour,artificial intelligence,writing,edinburgh">
+<link rel="shortcut icon" href="/~danielw/favicon.ico" type="image/x-icon">
+<style>
+<!--
+  A:link{text-decoration:none;}
+  A.roll { color:black; }
+  A.roll:hover { color:white; }
+ -->
+</style>
+
+
+</head>
+<body  bgcolor=#ffffec text='#000000' link='#336699' vlink='#336699' alink='#336699'>
+
+<table cellpadding=20 cellspacing=0 width=100% height=100% border=0><tr>
+<td bgcolor="#336699" height="100%" valign="top">
+
+<img src=images/spacer.gif width=50>
+<!-- NAVBAR -->
+<br>
+</td><td width=100%>
+
+<img src="images/dan.png" width="175" height="175" align=right>
+<center><h1>Recondite Writing Company</h1></center><hr size="1" width="50%">
+
+<table><tr><td>
+	<font size=+2>
+	<b>recondite</b> <i>adjective</i><br>
+	<!-- Pronunciation:  <tt>'re-k&amp;n-"dIt, ri-'k&auml;n-</tt><br>
+	Etymology:      Latin <i>reconditus, </i>past participle of <i>recondere </i>to conceal, from
+	<i>re- + condere </i>to store up, from <i>com- + -dere </i>to put<br>
+	date: 1649 -->
+	<font size=+1><b>1</b> <b>:</b> hidden from sight<br>
+	<b>2</b> <b>:</b> difficult or impossible for one of ordinary understanding or knowledge to comprehend <br>
+	<b>3</b> <b>:</b> of, relating to, or dealing with something </font>  little known or obscure
+	</font>
+</td><td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td><td>
+<div style='text-align:center; border: solid rgb(33,66,99) 1px;'>
+Search my website:<br/>
+<!-- SiteSearch Google -->
+<form method="get" action="http://www.google.co.uk/custom" target="_top">
+<table border="0" bgcolor="#ffffec">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+
+</td>
+<td nowrap="nowrap">
+<input type="hidden" name="domains" value="winterstein.me.uk"></input>
+<label for="sbi" style="display: none">Enter your search terms</label>
+<input type="text" name="q" size="28" maxlength="255" value="" id="sbi"></input>
+<label for="sbb" style="display: none">Submit search form</label>
+<input type="submit" name="sa" value="Google Search" id="sbb"></input>
+</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" id="ss0"></input>
+<label for="ss0" title="Search the Web"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="winterstein.me.uk" checked id="ss1"></input>
+<label for="ss1" title="Search winterstein.me.uk"><font size="-1" color="#000000">winterstein.me.uk</font></label></td>
+</tr>
+</table>
+<input type="hidden" name="client" value="pub-6898383636837097"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="ISO-8859-1"></input>
+<input type="hidden" name="oe" value="ISO-8859-1"></input>
+<input type="hidden" name="flav" value="0000"></input>
+<input type="hidden" name="sig" value="iw_KYPPbRyk4NFIX"></input>
+<input type="hidden" name="cof" value="GALT:#336699;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:ffffec;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:72;L:http://www.winterstein.me.uk/images/flag.gif;S:http://winterstein.me.uk;FORID:1"></input>
+<input type="hidden" name="hl" value="en"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+</div>	
+</td></tr>
+</table>
+
+<br><br>
+<p>
+There are many sides to the story of the Recondite Writing Company, and current
+thinking in Marxist Topology Theory is that it can only properly be
+understood in 7 dimensions.  As with anything, the truth is complex and
+convoluted, rarely pure, never simple, often made up on the spot and
+largely still classified.
+<br><br>
+What's known is this: The Company is actually a front operation for
+<i>Daniel Winterstein</i>, an Edinburgh-based mathematician.
+This site is primarily a storehouse for work from various personal projects
+(including ai research, short stories, comedy e-zines, etc.).
+Although it is intended for friends, it is open to everyone.
+<font size=4>
+
+
+<ul>
+
+<!-- <li> <a href="">Game idea generator</a> <i>Stuck for 
+ideas on what mobile game to make? Help is at hand. </i> -->
+<li> <a href="http://www.platypusinnovation.com/profile/Daniel%20Winterstein">My blog</a> at <a href="http://www.platypusinnovation.com/">Platypus Innovation</a></li>
+
+<li> <a href="javascript">JavaScript for Beginners</a> <i>web page for a course I taught at the Edinburgh Uni OLL</i></li>
+<!-- <li> <a href=academic>My research</a> <i>on diagrammatic
+reasoning for mathematical theorem proving.</i> -->
+<!--
+<li> <a>Coding portfolio</a> <i>a selection of my coding endeavours.</i> </li>
+-->
+<li> <a href="http://www.winterwell.com"><img src="http://www.winterwell.com/res/images/badge.png" border="0" title="Winterwell Associates is consultancy that applies advanced techniques from  mathematics, statistics, artificial intelligence, and computer science to solve tough real-world problems. We are based in Edinburgh, Scotland, UK." alt="Winterwell Associates supporter badge"></a>
+<a href=http://www.winterwell.com/>Winterwell Associates</a> 
+<i>an 
+elite operations research firm. A.k.a. my company.</i> <div style='position:absolute; top:0; width:0px; height:0px; display:none; visibility:hidden;'>Previously at ThinkTank Mathematics</div>
+
+<li> <a href=writing/>Short stories & other scribblings</a>
+
+<li> <img src=images/scotsman.gif height=15 border=0> <a href=writing/columns.htm>Science columns from The Scotsman.</a>
+
+<li> Chanukah e-cards: <a href="penguins/index.html?Name=Visitor&">2005</a>, <a href="new/download/glasgow2014.html?Name=Visitor&">2006</a>
+
+<li> <a href="fist"><img src=images/flag.gif height=15 border=0> Morning Fist</a> <i>the voice of the revolution. Note: in dubious taste.</i>
+
+<li> <a href="gallery.html">Some photos</a> <i>being a small random selection of photos, not representative of anything, that I scanned in at the some point for some reason, no longer known.</i>
+
+<li> <a href=q2.htm>Personality Questionnaire</a> <i>discover who you really are</i>
+
+<!-- <li> <a href=test.htm>Web Poll</a> <i>make your voice heard</i> -->
+
+<li> <a href="crosswords">Cryptic crosswords</a>
+
+<!--
+<li> I currently sub-contract all my political opinions to a chinese
+sweatshop who provide an excellent low-cost service.
+
+-->
+<!-- <li> <a href="http://www.dai.ed.ac.uk/groups/aisoc/magazine/">
+<img src=images/mag/aisoclogo.jpg width=20 height=13 border=0>
+Informatics Magazine</a> <i>issue 1&amp;only</i> -->
+
+<li> <a href=reviews>Edinburgh Festival Reviews</a> <i>Enjoy the
+festival vicariously from the comfort of your own city via my job with
+EdinburghGuide.com</i>
+
+<!-- <li> <a href=film>48 Hour Film Challenge</a>
+-->
+
+<li> <a href=people.htm>Fellow Travellers</a>
+
+<li> <a href=misc/happy-birthday.htm>Happy Birthday guitar/flute music</a> <i>An aide memoire for myself which turns out to be the most popular page on this site with 1,000s of hits a month.</i>
+
+</ul>
+</font>
+
+<table><tr><td colspan=2>
+<center><b>Contact Details -
+<script>
+	addr = "danielw" + "&#64;" + "dai.ed.ac.uk"
+	document.write("<a href='mailto:"+addr+"'>"+addr+"</a>");
+</script></b><br/>
+<font size=-1>(please feel free to copy the spam-blocking trick used here)</font><br>
+</center></td></tr>
+<tr><td colspan=2 align=left>
+<a href=refs.htm>How to find me on the web</a> (<i>obviously you know
+how, but you'd be surprised at how some of your fellow web-surfers
+washed up here.)
+</td></tr>
+</table>
+
+
+<hr>
+<a href=fist><img src="images/flag.gif" width=79 height=55 border=0 align="right"></a>
+<font size="-1">The views expressed here are not necessarily those of the <a href=http://www.dai.ed.ac.uk>AI Department</a>, and no guarantee is offerred, explicit or implied, on their validity as the foundations of a sane and just society.</font>
+<br>
+<i>Over 5,000 visitors per month.</i>
+<a href="http://www.winterwell.com"><img src="http://www.winterwellassociates.com/images/badge.png" border="0" title="Winterwell Associates is consultancy that applies advanced techniques from  mathematics, statistics, artificial intelligence, and computer science to solve tough real-world problems. We are based in Edinburgh, Scotland, UK." alt="Winterwell Associates supporter badge"></a>
+
+</td>
+<td  bgcolor="#336699" height=100% valign=bottom>
+<br>
+<img src=images/spacer.gif width=50>
+
+</td>
+</tr>
+</table>
+
+
+
+<!-- spider links -->
+<a href="academic"> </a>
+<a href="http://www.dai.ed.ac.uk/groups/aisoc/magazine/"> </a>
+<a href=misc/logic-engine.htm> </a>
+<a href=misc/debug.js > </a>
+<a href=misc/med.htm > </a>
+<a href=misc> </a>
+<a href=film> </a>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1042278-1";
+urchinTracker();
+</script>
+
+
+</body>
+</html>

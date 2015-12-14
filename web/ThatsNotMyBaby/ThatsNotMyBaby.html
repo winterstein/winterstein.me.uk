@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>That's Not My Baby</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!-- Bootstrap -->
+
+<!--<link href="bootstrap.min.css" rel="stylesheet">-->
+
+<link href="baby.css" rel="stylesheet">
+
+<link rel="icon" type="image/jpg" href="baby.png">
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+-->
+<script src="jquery.min.js"></script>
+<!--<script src="bootstrap.min.js"></script>-->
+
+<!--<script src="http://code.createjs.com/soundjs-0.5.2.min.js"></script>-->
+<script src="turn.min.js"></script>
+
+
+<link rel="canonical" href=""/>
+<meta property="og:url" content=""/>
+<meta itemprop="url" content=""/>
+<meta property="og:site_name" content="That's Not My Baby book"/>
+<meta itemprop="name" content="That's Not My Baby book"/>
+<meta property="og:title" content="That's Not My Baby"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="baby.png"/>
+<meta itemprop="image" content="baby.png"/>
+
+</head>
+<body>
+
+<div id='previous'>
+    <button onclick="$('#magazine').turn('previous');">&lt;</button>
+</div>
+<div id='next'>
+    <button onclick="$('#magazine').turn('next');">&gt;</button>
+</div>
+
+<div id="magazine">
+    <div>
+        <div class='center'>
+            <h1 class="text">That's Not My Baby!</h1>
+            <img src='baby2.jpg' class='cover'>
+            <div class='debug'></div>
+        </div>
+    </div>
+    <div>
+        <div class='center'>
+        	<h2 class="text">That's not my baby;</h2>
+        	<img class='photo' src='libi.jpg'>
+        	<h2 class="text">her hair is too long.</h2>
+        </div>
+    </div>
+    <div>
+        <div class='center'>
+    		<h2 class="text">That's not my baby;</h2>
+        	<img class='photo' src='josh.jpg'>
+        	<h2 class="text">his coat is too yellow.</h2>
+        </div>
+    </div>
+    <div>
+        <div class='center'>
+    		<h2 class="text">That's not my baby;</h2>
+        	<img class='photo' src='adam.jpg'>
+        	<h2 class="text">I'm sure mine's a girl.</h2>
+        </div>
+    </div>
+    <div>
+        <div class='center'>
+    		<h2 class="text">That's my baby!</h2>
+        	<img class='photo' src='neri.jpg'>
+        	<h2 class="text">Her gurgle is so cute.</h2>
+        </div>
+    </div>    
+    <div>
+        <img class='balloons' src='balloons.jpg'>
+        <h1 class="text">Happy Birthday Ilana!</h1>
+        <h1 class="text">Love from Dan, Becca,<br>Joshi &amp; Adam</h1>
+    </div>
+</div>
+
+<script type="text/javascript">
+	var w = $(window).width();
+	var h = $(window).height();
+	$('#magazine').width(w-100);
+    var mh = Math.min(w/2,h-20);
+	$('#magazine').height(mh);
+    var pw = w>h? w/2 : w;
+    //$('.debug').text("w: "+w+" h:"+h+" pw:"+pw);
+	/*$('img.photo').each(function() {
+        var ih = $(this).height();
+        var iw = 800; //$(this).width();
+        var scale = Math.min(h*0.7 / ih, pw*0.8 / iw);
+        scale = Math.max(scale, 0.75);
+        $(this).height(ih*scale);
+        $(this).width(iw*scale);
+    });*/
+	$('#magazine').turn({
+		display: "double",
+		gradients: true, acceleration: true,
+		width:w-100,
+		height:mh
+	});
+</script>
+
+</body>
+</html>

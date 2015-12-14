@@ -1,0 +1,141 @@
+
+<html>
+<head>
+	<title>Tucker Tardis</title>
+
+	<meta http-equiv="refresh" content="60">
+<style>
+
+#main {
+}
+
+
+.quote {
+	position:relative;
+	background:white;
+	border:2px solid #333;
+	border-radius:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:0px;
+	padding-bottom:0px;
+	max-width:350px;
+	font-size:150%;
+	font-family: 'Finger Paint', cursive;
+	left:200px;
+}
+
+#quote0 {
+	top:-700px;
+}
+.side {
+	position:absolute;
+	left:660px;
+	top:180px;		
+}
+#quote1 {
+	top:-660px;
+	left:150px;
+}
+#quote2 {
+	top:-620px;
+}
+#quote3 {
+	top:-590px;
+	left:150px;
+}
+</style>
+ 
+<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id='main'>
+<center>
+
+<h1>Tucker Tardis (F5 for a new quote)</h1>
+
+<img src='tardis_wallpaper.jpg'>
+
+<script>
+var quotes = [
+	"Come the fuck in or fuck the fuck off!",
+
+	"Fuck you, Andy-Pandy, I AM the loop. I want you in there for reason that will not become clear to you for about 200 years so just do it.",
+	
+	["Tell her it all evaporated like cat's piss on a hot tin roof. Ok, twat-weasel? You got that?", "Yes, thank you."],
+
+	"Within your 'purview'? Where do you think you are, some fucking regency costume drama? This is not some fucking Jane fucking Austen novel! Allow me to pop a jaunty little bonnet on your purview and ram it up your shitter with a lubricated horse cock!",
+
+	"'Climbing the mountain of conflict'? You sounded like a Nazi Julie Andrews!",
+
+	"Just fucking do it! Otherwise you'll find yourself in some medieval war zone in the Caucasus with your arse in the air, trying to persuade a group of men in balaclavas that sustained sexual violence is not the fucking way forward!",
+
+	"Don't get sarcastic with me, son. We burned this tight-arsed city to the ground in 1814. And I'm all for doing it again, starting with you, you frat fuck.",
+
+	"You get sarcastic with me again and I will stuff so much cotton wool down your fucking throat it'll come out your arse like the tail on a Playboy bunny.",
+
+	"Yeah, apparently, your fucking master race of highly-gifted toddlers can't quite get the job done between breast feeds and playing with their Power Rangers. So, an actual grown-up has been asked to fucking bail you out.",
+
+	"Of course I know! There's nothing that you know that I don't know. I'm Doctor fucking Know.",
+
+	"When the Opposition's here, you tell them nothing except where the toilets are, and you lie about that.",
+
+	"Have you any idea of the amount of pressure that has been exerted on my skull, huh? It feels like my brain has been fucking emptied into little packets, into fucking crisp packets. Cheese and onion fucking crisp packets that contain my living, breathing fucking brain.",
+
+	"And every corner that I turn there's another threat, Terri. Hacks, hacks, fucking vampire hacks. And they're slaughtering us, Terri. They are fucking slaughtering us and they want my face for a flannel!",
+
+	"And you know what? I used to be the fucking pharaoh, Terri. I used to be the fucking pharaoh. Now I'm fucking floundering in a fucking Nile of shit. But I am going to fashion a paddle out of that shit. Yeah.",
+
+	"You know fuck all about me! I am totally beyond the realms of your fuckin' tousle-haired fuckin' dim-witted compre-fucking-hension.",
+	
+	"I don't just take this fucking job home, you know! I take this job home, it fucking ties me to the bed, and it fuckin' fucks me from arsehole to breakfast! Then it wakes me up in the morning with a cup full of piss slammed in my face, slaps me about the chops to make sure I'm awake enough so it can kick me in the fucking bollocks!",
+
+	"This is a fucking husk, I am a fucking host for this fucking job. Do you want this job? Yes? You do fucking want this job? Then you're gonna have to swallow this whole fucking life and let it grow inside you like a parasite, getting bigger and bigger and bigger until it fucking eats your insides alive and it stares out of your eyes and tells you what to do.",
+
+//	"Look, people really like it when you go just a bit early! You know, steely jawed, faraway look in your eyes! Before they get to the point when they sitting round in pubs and say 'Oh, that fucker's got to go!', you surprise them! 'Blimey, he's gone! I didn't expect that!'",
+
+	"I'm gonna have to fucking snap the thumb and forefinger off of every single person I see who I think resembles the kind of wanker that would be walking around in this day and fucking age with a name like fucking Tim!",
+
+	"Get over here. Now. Might be advisable to wear brown trousers and a shirt the colour of blood.",
+
+	["I will personally fucking eviscerate you.", "Right...", "I mean, I don't have your education, I dunno what it means, but I will start by ripping your cock off and I'll busk it from there, ok?"],
+
+	"Christ on a bendy-bus. Don't be such a fucking faff arse.",
+
+	"I just realised that we're on the same boat, yeah? I mean, obvioulsy, I'm up on the bridge with the binoculars and the Richard Gere gear on, you're down in the engine room trying not to get bum-raped by a bunch of big lads with shovels, but, essentially, it's the same boat.",
+
+	"Feet off the furniture you Oxbridge twat, you're not on a punt now.",
+
+	"...about as much use as a marzipan dildo."
+	];
+
+var qi = Math.floor(Math.random()*quotes.length);
+var quote = quotes[qi];
+
+if (typeof quote == "string") {
+	quote = [quote];	
+}
+
+var balloons = [];
+
+for(var i=0; i<quote.length; i++) {
+	document.write("<div id='quote"+i+"' class='quote'><img src='side_left.png' style='position:relative;top:25px;left:-200px;'><div style='width:100%;position:relative;top:-40px;'>"+quote[i]+"</div></div>");
+}
+
+</script>
+
+</center>
+
+<p>The Tardis, with random quotes from Malcolm Tucker.</p>
+
+<!-- <img class='side' src='side_left.png'> -->
+
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <title></title>
+  </head>
+  <body>
+  <h2>Loading Bar</h2>
+  
+  <br/><br/><br/><br/><br/><br/>
+  This page demonstrates one way to implement a loading bar.
+ This page will load a bunch of large images, so it takes some time.
+ <p>
+ We create a form element as a way of communicating with the user 
+ that is less annoying than alert():
+ <form action="#" >
+ Loading: <input id="loadingDisplay" type="text" value="0%" />
+ </form>
+ </p>
+ <p>
+ Also, there is a bar that will tell you how far it's got. The bar is made of div tags. 
+ Divs are html elements that have no meaning whatsoever - except what you choose to give them.
+ Which makes them handy for this kind of thing.
+ <p>
+ Note the use of CSS style-sheets inside the div elements!
+ Also note that this kind of code tends to break if there are any errors - either in the
+ javascript, <i>or</i> in the html!
+</p>
+
+  <!-- This div will start small and grow -->
+  <div id="loadingBar" style="
+    position:absolute; top:52px; left:52px; 
+    height:40px; width:0px;
+    border-width:0;
+    background-color: red;
+        " >  </div>
+        
+  <!-- This div will not change. It sit on top of the other one providing a border. -->
+  <div style="
+    position: absolute; top: 50px; left: 50px; 
+    height:40px; width:300px;
+    border-width: 2; border-style: solid;
+    text-align:center;
+        " >  LOADING... </div>
+
+<br/><br/><br/><br/>
+<hr>
+
+<img src="http://bigred.homelinux.org/~danielw/javascript/Events/roseNormal.gif" >
+<img src="http://bigred.homelinux.org/~danielw/images/butterfly_photo.jpg" >
+<img src="http://bigred.homelinux.org/~danielw/images/70s_girls.jpg" > 
+<img src="http://bigred.homelinux.org/~danielw/images/flats.jpg" > 
+<img src="http://bigred.homelinux.org/~danielw/images/sb_fire.jpg" > 
+<img src="http://bigred.homelinux.org/~danielw/images/earth.jpg" > 
+<img src="http://bigred.homelinux.org/~danielw/images/Hdadgitr.jpg" > 
+<img src="http://bigred.homelinux.org/~danielw/images/Hwjunglestuff.jpg" > 
+<img src="http://bigred.homelinux.org/~danielw/images/grave.jpg" >          
+<img src="http://bigred.homelinux.org/~danielw/images/nhs_poster.jpg" >       
+  
+<script>
+
+// Create a counter
+loadedCounter = 0;
+// Get hold of the loading bar element
+loadingBar = document.getElementById("loadingBar");
+// Get hold of the loading display element
+loadingDisplay = document.getElementById("loadingDisplay");
+
+// We define a function - and store it in a variable!
+updateLoadingBarFn = function updateLoadingBar() {
+    // Increase the counter
+    loadedCounter += 1;
+    
+    // Set the value property of the loadingDisplay element:
+    loadingDisplay.value = (100*loadedCounter / document.images.length) +"%";
+    
+    // Increase the width of the loadingBar element:
+    //   - we can get the style of the element via loadingBar.style
+    //   - so we can get the width via loadingBar.style.width
+    //   - this is a property, which we can just set to be what we want
+    loadingBar.style.width = 300*loadedCounter / document.images.length;        
+    
+    // Are we done yet?
+    // Note the use of a special array here: document.images
+    // This array is created by the browser for every web page it views
+    if (loadedCounter == document.images.length) {
+         alert("Ready!\n(" + loadedCounter + " images loaded)");
+    }
+}
+
+// Set up the onLoad event handlers for *all* images in the document
+// This is a nice flexible alternative to sticking onLoad='' in each image tag
+for (i=0; i<document.images.length; i++)
+{
+  // Use the document.images array to get hold of each image in turn
+  myImg = document.images[i];
+  // Set their onload property to be our update function
+  // Note that the capitalisation in onload is different from the usual convention (onLoad)
+  // There is no good reason for this - it just is.
+  myImg.onload = updateLoadingBarFn;
+}
+
+</script>
+
+  </body>
+</html>

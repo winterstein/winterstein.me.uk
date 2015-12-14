@@ -1,0 +1,379 @@
+#Photo Database
+#Fields: file title prelink link postlink comment people section
+# see imagemaker.pl
+
+./images/saas-fe.jpg	link		Swiss alps		This is a view of the village we stayed in for skiing. Beautiful (and a couple of feet of powder)	travelling
+./images/cleo-on-laptop.jpg	link		Cleo finds a heated seat			Cleo	family
+./images/white-trees.jpg	link		Snow covered trees in Saas Fe				travelling
+
+./images/40-bridge-with-dreamers.jpg	link		Bridge near Aviemore with the Dream Group				Scotland
+./images/panto/panto3.jpg	link		Scenes from Ken's Pantomime				theatre	
+./images/panto/panto2.jpg	link		Scenes from Ken's Pantomime				theatre	
+./images/panto/panto1.jpg	link		Scenes from Ken's Pantomime				theatre
+./images/panto/panto7.jpg	link		Scenes from Ken's Pantomime				theatre	
+./images/panto/panto8.jpg	link		Scenes from Ken's Pantomime				theatre	
+./images/panto/panto9.jpg	link		Scenes from Ken's Pantomime				theatre
+./images/panto/panto10.jpg	link		Scenes from Ken's Pantomime				theatre	
+./images/panto/panto12.jpg	link		Scenes from Ken's Pantomime				theatre	
+./images/panto/panto13.jpg	link		Scenes from Ken's Pantomime				theatre
+./images/panto/panto15.jpg	link		Scenes from Ken's Pantomime				theatre
+./images/panto/panto16.jpg	link		Scenes from Ken's Pantomime				theatre
+./images/panto/panto18.jpg	link		Scenes from Ken's Pantomime				theatre
+./images/nhs_small.jpg	link		Poster for An NHS Christmas				theatre
+
+./images/kkk-full.jpg	link		Chinese picture whispers		From a round of the excellent game <i>Chinese Picture Whispers</i>. Sentences are converted into pictures and vice versa until the original meaning is transformed beyond recognition. Here "Chinese whispers" becomes "The KKK had a disappointing sailing trip".		misc
+
+./images/istanbul/tulips1.jpg	link		Rainbow of Tulips, Istanbul				travels
+./images/istanbul/tulips2.jpg	link		Red Tulips, Istanbul				travels
+./images/istanbul/tulips3.JPG	link		Funky Tulips, Istanbul				travels
+./images/istanbul/hallelujah.jpg	Hallelujah! Dan sees the light, Istanbul		Dan sees the light, Istanbul 				travels
+./images/istanbul/dusk.JPG	link		Dusk in Istanbul 				travels
+./images/istanbul/asia.jpg	link		Mosques on the Asian shore, Istanbul				travels
+./images/istanbul/iznikTiles.JPG	link		Iznik tiles, Istanbul				travels
+./images/istanbul/ayaSofia.JPG	link		Aya Sofia, Istanbul				travels
+./images/istanbul/pidgeonGirl.jpg	link		Girl selling pidgeon food, Istanbul				travels
+./images/istanbul/pidgeons1.jpg	link		Pidgeons, Istanbul				travels
+./images/istanbul/dan.jpg	link		Dan feeding pidgeons, Istanbul			Daniel Winterstein	travels
+./images/istanbul/blueMosque1.jpg	link		Blue Mosque, Istanbul				travels
+#./images/istanbul/pidgeonGirl2.jpg	link		Girl selling pidgeon food, Istanbul				travels
+./images/istanbul/blueMosque2.jpg	link		Blue Mosque, Istanbul				travels
+#./images/istanbul/blueMosque3.jpg	link		Istanbul				travels
+#./images/istanbul/pidgeons2.jpg	link		Istanbul				travels
+#./images/istanbul/blueMosque4.jpg	link		Istanbul				travels
+./images/istanbul/skyline.jpg	link		Istanbul skyline				travels
+#./images/istanbul/blueMosque5.jpg	link		Istanbul				travels
+./images/istanbul/topkapi1.jpg	link		Topkapi Palace, Istanbul				travels
+./images/istanbul/topkapiHaremWindows2.jpg	link		Stained glass windows in the Topkapi harem, Istanbul				travels
+./images/istanbul/brassJunk.jpg	link		Brass lamp shop, Grand Bazaar Istanbul				travels
+#./images/istanbul/topkapi2.jpg	link		Istanbul				travels
+./images/istanbul/cistern1.jpg	link		The Basilica Cistern, Istanbul				travels
+#./images/istanbul/topkapiHaremWindows.jpg	link		Istanbul				travels
+#./images/istanbul/cistern2.jpg	link		Istanbul				travels
+./images/istanbul/cistern3.jpg	link		The Basilica Cistern, Istanbul				travels
+#./images/istanbul/cisternFish.jpg	link		Istanbul				travels
+#./images/istanbul/dan2.jpg	link		Istanbul				travels
+
+./images/mountain/mountainPicnic.jpg	link		Picnic up Ben Somewhere 				scotland
+./images/mountain/paulAlison2.jpg	link		Paul and Alison 			Paul Crook,Alison Pease	scotland
+./images/mountain/yokelDan.jpg	link		Me in the countryside 			Daniel Winterstein	scotland
+./images/mountain/dog.jpg	link		Strewn the bookshop dog 				scotland
+
+./images/brunel.jpg	link		Isambard Kingdom Brunel by the anchor chains of the SS Great Britain		The thing I like about this photo is Brunel's cocky poise, like a bolshy teenager, inspite of being dwarfed by giant industrial machinery. Especially as, given the cameras of the day, he must have had to stand holding that cocky poise for a good few minutes.	Brunel	misc	adverts
+
+./images/JerusalemBecca.jpg	link		Becca and me outside the old city of Jerusalem			Becca,Daniel	travels
+./images/newYearBecca.jpg	link		Becca and me after a few drinks			Becca,Daniel	edinburgh
+./images/ketoki_haldi_small.jpg	link		Ketoki being annointed with turmeric			Ketoki	travels
+./images/ketoki_ali_small.jpg	link		Ketoki &amp; Ali			Ketoki,Ali	travels
+./images/ketoki_manashvi_small.jpg	link		Ketoki &amp; Manashvi at their wedding			Ketoki,Manashvi	travels
+
+./images/mini-photos/austria/salzburg-arch.jpg	link		Salzburg skyline				salzburg
+./images/mini-photos/austria/salzburg-spires.jpg	link		Salzburg spires		church spires pierce the clear blue sky, symbolising christianity's rape of purity or something		salzburg
+./images/mini-photos/austria/salzburg-church.jpg	link		Salzburg church				salzburg
+./images/mini-photos/austria/salzburg-horse.jpg	link		Salzburg tourist transport				salzburg
+./images/mini-photos/austria/salzburg-horse2.jpg	link		Salzburg tourist transporter (2) 				salzburg
+./images/mini-photos/austria/salzburg-river.jpg	link		Salzburg skyline				salzburg
+./images/mini-photos/austria/salzburg-sausage-dom.jpg	link		Sausage sellers at the Salzburg cathedral				salzburg
+
+
+./images/seb_peace.jpg	link		Seb the Peacemaker			Seb Mhatre	edinburgh
+./images/sb_fire.jpg	link		My Lab		South Bridge after the fire				edinburgh
+./images/grave.jpg	link		Decay				misc
+./images/flats.jpg	link		Council Flats, Glasgow				misc,scotland
+./images/dan_handsomeish.jpg	link		Me			Daniel Winterstein	edinburgh
+./images/charlies_angels.jpg	link		Angels			Alison Pease, Fiona McNeill, Isabelle Ting	edinburgh	adverts
+./images/alison_marching.jpg	link		Alison on the march			Alison Pease	edinburgh
+
+
+./images/fiona_70s.jpg	link		Fiona, glamour girl of the 70s			Fiona McNeill	edinburgh	adverts
+./images/70s_girls.jpg	link		70s girls (Alison, Voon, Tingy)			Alison Pease, Fiona McNeill, Isabelle Ting	edinburgh	adverts
+
+./images/mini-photos/fancy-dress/alabaster-seb.jpg	link		Alabaster Seb		A Seb-statue	Seb Mhatre	edinburgh
+./images/mini-photos/fancy-dress/evil-joe.jpg	link		Evil Joe			Joe Halliwell	edinburgh	adverts
+./images/mini-photos/fancy-dress/pirate-dan.jpg	link		Pirate Dan			Daniel Winterstein	edinburgh
+./images/mini-photos/fancy-dress/voodoo-seb.jpg	link		Voodoo Seb		The Voodoo spirit-god Baron Samedi, keeper of the paths to the underworld	Seb Mhatre	edinburgh
+
+./images/mini-photos/ting.jpg	link		Tingy			Mavis Stella Agatha Etc Ting (aka Isabelle)	edinburgh
+./images/mini-photos/tingy.jpg	link		Tingy			Mavis Stella Agatha Etc Ting (aka Isabelle)	edinburgh
+./images/mini-photos/ting_sleeping.jpg	link		Tingy alseep on a train			Mavis Stella Agatha Etc Ting (aka Isabelle)	edinburgh
+./images/mini-photos/ting_smile.jpg	link		Good Ting			Mavis Stella Agatha Etc Ting (aka Isabelle)	edinburgh
+
+./images/mini-photos/fridgeJoe5.jpg	link		The Fridge Joe.		An almost photo-realistic portrait of Joe. 	Joe Halliwell	silly
+./images/mini-photos/fridgeJoe2.jpg	link		The Fridge Joe is angered.			Joe Halliwell	silly
+./images/mini-photos/alison.jpg	link		Alison			Alison Pease	edinburgh
+./images/mini-photos/alison_timm.jpg	link		Alison & Timm			Alison Pease,Timm Zwickel	edinburgh
+./images/mini-photos/dancing_in_sb.jpg	link		Dancing in the lab			Alison Pease,Fiona McNeill	edinburgh
+#./images/mini-photos/paul	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+#./images/mini-photos/pauls_face	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+./images/mini-photos/pauls_inner_goodness_shines_out.jpg	link		Paul's inner goodness shines out			Paul Crook	edinburgh
+./images/mini-photos/sb.jpg	link		South Bridge after the fire				edinburgh
+#./images/mini-photos/timm	link		Timm			Timm Zwickel	new_york
+#./images/mini-photos/timm_alison_marburg	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+#./images/mini-photos/timm_alison_marburg_2	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+
+#./images/mini-photos/timm_n_dan_contemplating_beer.jpg	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+#./images/mini-photos/um_some_paving_stones(german ones).jpg	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+#./images/mini-photos/voon.jpg	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+
+
+
+./images/danielandhisbeer.jpg	link		Me with beer		Edinburgh Festival 2002	Dan Winterstein	edinburgh
+
+./images/gotham.jpg	link		Gotham by night				new_york,travels
+./images/nyscale.jpg	link		Big & Fucking Big				new_york
+./images/nywisteria.jpg	link		Wisteria		Yes, this is New York (the villages of course).		new_york
+./images/park.jpg	link		Riverside Park		Double exposure; look inside the sign to see the park. Harlem, New York.		new_york
+./images/park2.jpg	link		Riverside Park II		More stunning photos of the lovely Harlem park.		new_york
+./images/harlem.jpg	link		The Pride of Harlem				new_york
+./images/danjon.jpg	link		Dan, Jon & Beer			Jon Hibbard, Dan Winterstein	new_york
+
+
+./images/jess_illy.jpg	link		Jess and Ilana in Paraty			Jessica Winterstein, Ilana Winterstein	family,travels
+
+./images/me_jess.jpg	link		Me and Jess in Rio			Daniel Winterstein, Jessica Winterstein	family
+
+
+./images/jelena.jpg	link		Jelena laughs			Jelena Meznaric	edinburgh
+
+./images/butterfly_photo_small.jpg	link		butterfly		A butterfly rests on the boarded up window of D staircase kitchen, Trinity Hall.		misc,cambridge
+
+./images/underwater_dan_small.jpg	link		Me underwater			Daniel Winterstein	travels
+
+#./chris_letter.htm	link		A letter of introduction by Mr Chris Beauchamp				inside_out
+
+
+#./images/cruelty_tofu_small.htm	link		Cruelty Tofu				silly,inside_out
+
+#./images/toad-frog-small.jpg	link		Painted Toad			bofu bofu	inside_out
+
+#./images/sayings_fathers_small.jpg	link		Sayings of the Fathers				inside_out
+
+./images/stone_wave.jpg	link		Stone Erosion		Stone eroded by the sea. Bondi beach, Australia.		misc
+
+./images/secret_garden.jpg	link		(Semi) Secret Garden		This delightful garden is set in a bigger garden on the river east of Hammersmith, but cut off by high walls on all sides. The entrance took me ages to discover.		misc
+
+#./images/treasuremap.jpg	link		Map				inside_out,silly
+
+# ./images/monkey_machine.gif	link		Monkey machine		Monkey machine design for my MSc project. This implementation was eventually abandonned due to the high cost of training monkeys.		silly
+
+./images/Hadult_orangutang.jpg	link		Adult male orang-utang				travels
+
+./images/bluemountains.jpg	link		Blue mountains, New South Wales, Oz				travels
+
+./images/markbridge.jpg	link		Mark disguised as a Gnome		Mar
+k disguised as a gnome. This is on his morning commute into work across Sydney harbour. The bridge is the imaginatively titled Sydney Harbour Bridge.	Mark Watkins	travels
+
+./images/Hdad_doris.jpg	link		A meeting of monkeys			Dad, Doris	travels,family
+
+./images/Dad_in_jungle.jpg	link		Intrepid jungle explorer		Dad in the beautiful-but-leech-infested jungles of Borneo	Dad	travels,family
+
+
+./images/borneo_jungle.jpg	link		Borneo jungle				travels
+
+./images/beach_mark.jpg	link		Handsome Mark		They said it couldn't be done, but they were wrong: a photo of Mark looking kind of handsome. Sydney, July 2001<br>Apparently this is an example of Mark looking <i>devastatingly</i> handsome - according to people better placed than me to judge. Being heterosexual/repressed I only thought that he looked sort of cool. 	Mark Watkins	cambridge,travels
+
+./images/handsomemark.jpg	link		Exposed Mark			Mark Watkins	cambridge
+
+./images/Hdadgitr.jpg	link		Dad playing the guitar		Dad playing bossa-nova. The picture is double exposed with a shot of the jungle vegetation outside the window. Malaysia, June 2001	Dad	family
+
+./images/Hwdunno.jp	link		The Top-spot in Kuching, Malaysia		The Top-spot food court in Kuching, Malaysian Borneo. Restaurant no.5 does a truly delicious chicken with dried chillies.		travels
+
+# ./images/nutters.jpg	link		Tea at several hundred feet		Some nutters having afternoon tea, sitting (without ropes after the initial climbing down) at a table suspended from a cable car above a gorge. Blue mountains, Oz		misc
+
+./images/Hdanmum_illy_pool.jpg	link		Mum and Ilana swimming			Mum, Ilana Winterstein	family
+
+./images/ilanadad.jpg	link		Ilana and Dad			Dad, Ilana Winterstein	family
+
+./images/sunsetzimmer.jpg	link		Sunset over Kuching river		A boat man with his zimmer-frame is silhouetted against the sunset. Kuching, Malaysia.		travels
+
+./images/Hilana_doris.jpg	link		Ilana with baby orang-utang			Ilana Winterstein, Doris the orang-utang	family
+
+./images/ilanakuching.jpg	link		Ilana sunset			Ilana Winterstein	family
+
+./images/sydney.jpg	link		Sydney at night				travels	adverts
+
+./images/Hkuching.jpg	link		Kuching River		The undeveloped bank of Kuching river. The other bank is all high rise buildings.		travels
+
+./images/junglestuff.jpg	link		Me wading through leech infested jungle rivers			Daniel Winterstein	travels,family
+
+./images/water.jpg	link		Water				misc
+
+./images/Hmum_ilana_ghosts.jpg	link		Ghosts		Were we ever there at all? The James Brook, Kuching 2001	Mum, Ilana Winterstein	family
+
+./images/lizard.jpg	link		Me with a lizard			Daniel Winterstein	family
+
+./reviews/nunscape.jpg	link		Nunscape at Manzanillo, by Leonora Carrington				misc
+
+./images/maskedmark.jpg	link		The man behind the mask			Mark Watkins	cambridge
+
+./images/dan_fireball.jpg	Me breathing fire		fireball			Daniel Winterstein	edinburgh
+
+./images/newton.jpg	link		Newton (after Blake)		Paolozzi's sculpture of <a href=blakenewton.htm>William Blake's <i>Newton</i></a><br><i>British Library</i>	Isaac Newton	misc
+
+./images/blakenewton.jpg	William Blake's <i>Newton</i>
+
+./images/junglealison.jpg	link		The intrepid explorer		The intrepid Miss Pease explores Edinburgh Botanical Gardens	Alison Pease	edinburgh
+
+./images/junglepaulali.jpg	link		Paul and Alison		Another day at the office.	Alison Pease, Paul Crook	edinburgh
+
+./images/drummer.jpg	link		Dangerous samba drumming anarchist				mayday
+
+./images/devilsticks.jpg	link		Devil sticks		A protestor plays with devil sticks. Shortly after this photo was taken, the police (armed only with teargas and truncheons) moved forward and stopped this subversive.		mayday
+
+./images/devilsticks2.jpg	link		Devil sticks II				mayday
+
+./images/trafficgarden.jpg	link		Traffic island / garden		The traffic island we turned into a temporary garden.	Sheena, Alex	mayday
+
+./images/maydaycutouts.jpg	link		More dangerous anarchists				mayday
+
+./images/commieflags.jpg	link		Red flags in Oxford Street				mayday
+
+./images/profchaos.jpg	link		Prof Chaos's bicycle		Professor Chaos and his wonderful cycling machine. A <a href=http://www.dai.ed.ac.uk/groups/aisoc/magazine/issue1/hr.html>Heath-Robinson</a> system of chains and crankshafts makes the wings flap and various things spin.		mayday
+
+./images/profchaos2.jpg	link		Prof Chaos's bicyle II				mayday	
+
+./images/loadsapolice.jpg	link		Lots of policemen		6,000 armed police somehow manage to contain 5,000 (almost all peaceful) protesters		mayday
+
+./images/bill_videoing.jpg	link		Riot police		As before, a largely peaceful demonstration is infiltrated by a violent and aggressive faction:<br>"The policing and reporting of yesterday's May Day protests was so excessive as to seem like gross provocation. In their gleaming cockroach ranks, the 6,000 officers looked like they were there to pick a fight, not stop one."<br> - <i>The London Evening Standard</i> showing previously unknown left wing sympathies		mayday
+
+./images/chaos.htm	link		Jokes for Mathematicians			Alison Pease	silly
+
+./images/frozen_monkey.htm	link		Secrets of the Ninja				silly
+
+./images/sebnoi.jpg	link		Polystyrene packed Seb		Seb, packed in polystyrene for safe transportation (picture by Seth - full sequence <a href=http://www.aigeek.com/?>here</a>)	Seb Mhartre	edinburgh
+
+# ./images/sarah_ski.jpg	link		Sarah goes skiing			Sarah Giles	edinburgh,scotland
+
+# ./images/angela_hat.jpg	link		Angela, sort of			Angela	edinburgh
+
+# ./images/flat_ewen.jpg	link		Ewen presides in a den of illicit vice		Ewen presides in a den of illicit vice, Edinburgh circa 2001. Aaron is leaning over to get into the picture.	Aaron,Dan Winterstein,Ewen,Matteo Sarno	edinburgh
+
+./images/skilift.jpg	link		Jamie on a skilift			Jamie	scotland
+
+./images/glencoe.jpg	link		Glencoe				scotland
+
+# ./images/cast.jpg	link		Cast of <i>An NHS Christmas</i>			Stefan Klein,Evie Ferguson,Izabella Jakubas,Dustin Hutchinson,Finn Aberdein	edinburgh
+
+./images/botanical_window.jpg	link		Ivy covered windows		Ivy covered windows; botanical gardens, Edinburgh		misc
+./images/botanical_stairs.jpg	link		Spiral staircase		Spiral staircase; botanical gardens, Edinburgh		misc
+./images/botanical_foliage.jpg	link		Tropical foliage		Tropical foliage at the botanical gardens, Edinburgh. Outside it was snowing when this was taken.		misc
+
+./images/flower2.jpg	link		a flower, Paraty				misc
+
+./images/cold_dan.jpg	link		Me after skiing		Me after skiing in a blizzard (&amp; yes, those are icicles on my eyelashes. It was cold, but then you have to take into account the wind factor, which made it bloody cold.).	Daniel Winterstein	scotland
+
+./images/white.jpg	link		Land &amp; sky: spot the difference if you can				scotland
+
+./images/seb.jpg	link		Seb in his natural environment			Seb	edinburgh
+
+./images/johnpaul.jpg	link		John &amp; Paul 	on another doomed attempt at beating the Peartree pub quiz		John Gair,Paul Crook	edinburgh
+
+./images/paul_climb.jpg	link		Paul risks life &amp; limb climbing the crags		Paul risking life &amp; limb climbing the crags (actually, he's only a foot above the ground here).	Paul Crook	edinburgh
+
+./images/paraty.jpg	link		Paraty from the water		Paraty; a beautiful old colonial town between Rio and Sau Paulo. Seen here when we took a boat out for a day of snorkelling and cocktails on tropical beaches.<br>I need another holiday.		family,misc,travels	adverts
+
+./images/dad_jungle.jpg	link		Dad in the jungle near Paraty			Dad	family
+
+./images/mum_on_boat.jpg	link		Mum on a boat			Mum	family
+
+./images/dad_ilana.jpg	link		Dad &amp; Ilana			Dad,Ilana Winterstein	family
+
+./images/mum_ruth.jpg	link		Mum &amp; Ruth in a tropical garden.	 Paraty, Brazil.		mum,ruth	family
+
+#./images/spy_small.gif	inside out#2		spy satellites		 		inside_out,silly
+
+#./images/titanic_small.gif	inside out#37		sorry				inside_out,silly
+
+#./images/overdose_small.gif	inside out#36		he died smiling				inside_out,silly
+
+#./images/failure.jpg	link		Failure		(inspired by the demotivational posters of <a href=http://www.despair.com>despair.com</a>)		silly
+
+#./images/submarine_col_small.gif	inside out#17		i knew we weren't straight		 		inside_out,silly
+
+#./images/brain101.gif	inside out#12		The Human Brain				inside_out,silly
+
+#./images/yoghurt.gif	inside out#20		Whole Fruit Yoghurts		You're a busy person. You're important. You need the best - and you need it now. At Daisy's Dairy DelightsTM we don't just give you fruit flavouring in your yoghurt, we don't just give you bits of fruit in your yoghurt - we give you the whole fruit in your yoghurt in your yoghurt.<i>available in a range of flavours: raisin, grape, whole nut, cherry, carrot (guaranteed vegetarian by Linda McCartney (deceased)), and new this season - watermelon.</i>		inside_out,silly
+
+#./images/dummy.jpg	link		Directing for Dummies				silly
+
+./images/mum-dad.JPG	link		Mum & Dad	, Edinburgh 2000		Mani Winterstein,Uri Winterstein	family
+
+./images/cross.JPG	link		Church ruins, Isle of Skye				scotland
+
+./images/ruff.JPG	link		ruff			Olly Ruff	
+
+./images/alison-marshmallow.jpg	link		Alison loses a marshmallow fight			Alison Pease	edinburgh
+
+./images/bennevis.jpg	link		Paul & Christian at the top of Ben Nevis		Ben Nevis: Paul & Christian are temporarily the tallest men in Britain.	Paul Crook,Christian	edinburgh,scotland
+
+./images/handstandsud.jpg	link		Timm & Justin practise handstands		Timm & Justin decide Clerk Street would be a good place to practise handstands.	Timm Zwickel,Justin McKay	edinburgh
+
+./images/fiona.jpg	link		Fiona flying			Fiona McNeill	edinburgh
+
+./images/timm-berwick.jpg	link		Timm on Berwick Law			Timm Zwickel	edinburgh
+
+./images/footie1.jpg	link		Football in the meadows			Noel Welsh,Dan Winterstein,Timm Zwickel,Paul Crook	edinburgh
+
+./images/footie2.jpg	link		Football in the meadows II			Alison Pease,Dan Winterstein	edinburgh
+
+
+
+./images/atatclamped.jpg	link		Illegally parked At-At	, Birmingham circa 1960			silly
+
+./images/pootle.jpg	link		Trinity Hall's Finest on the river		<br>(being the novice boat pootle in full racing form. Charlie Withers (stroke) somehow went on to become Men's Captain; I am the handsome no.2 man hiding from the camera)<br>This photo comes courtesy of Jet Photographic, who used it as their online ad for a year)	Charlie Withers, Daniel Winterstein, Olly Ruff	cambridge
+
+#./images/space.jpg
+#./images/earth.jpg
+#./images/earth2.jpg
+#./images/as11_44_6552.jpg
+#./images/earth3.jpg
+
+./images/newyear/john.jpg
+./images/newyear/marknbet.jpg
+./images/newyear/markscale.jpg
+./images/newyear/self.jpg	link		Self Portrait with Infinity			Dan Winterstein	cambridge	
+./images/newyear/dan1.jpg
+./images/newyear/dan2.jpg
+./images/newyear/jon-gwyn.jpg
+./images/newyear/mark.jpg
+
+#./images/newyear/rebecca2.jpg	link		Rebecca with gin			Rebecca Kent	cambridge
+#./images/newyear/rebecca1.jpg	link		Rebecca with gin (2)			Rebecca Kent	cambridge
+
+#./images/Hwrebecca.jpg	link	I suppose there should also be a picture of 	Rebecca not looking completely pissed			Rebecca Kent	cambridge
+
+./images/mtm.jpg	link		Mark to Mothership			Mark Watkins	cambridge,silly
+
+#./images/lakeomud.jpg	link		Lake of mud, Glastonbury '98				misc
+
+./fist/images/schemingchris.jpg	scheming chris		Prof. Karl 'Penny' Hengelhusser nee Hunt			Chris Gorst	cambridge
+
+./fist/images/horn.jpg	link		Diagram of The Leader showing his horn section		Diagram of The Leader showing his horn section. Taken from <a href=../fist><i>The Morning Fist</i></a>.		silly
+
+#./target/earth3.jpg
+#./target/earth2.jpg
+
+./images/jonflies.gif	Jon gliding		Jon about to go up in the world			Jon Hibbard	cambridge
+
+./images/jonwcone.gif	The best minds of my generation looking silly with cones on their heads	 "I saw the best minds of my generation destroyed by madness, starving hysterical naked, dragging themselves through the negro streets at dawn looking for an angry fix, angelheaded hipsters burning for the ancient heavenly connection to the starry dynamo in the machinery of night ..."   Or, in this case,	 the best minds of my generation looking silly with cones on their heads.		<a href=howl.htm>"I saw the best minds of my generation destroyed by madness, starving hysterical naked, dragging themselves through the negro streets at dawn looking for an angry fix, angelheaded hipsters burning for the ancient heavenly connection to the starry dynamo in the machinery of night ..."</a> Or, in this case, the best minds of my generation looking silly with cones on their heads.	Jon Hibbard	cambridge
+
+./images/mark.gif	Sexy Mark		Mark puts on his pulling anorak			Mark Watkins	cambridge
+
+./fist/images/mark.gif
+./fist/images/ben.gif
+
+
+
+#./images/popendarth.htm	link		Pope John Paul II meets with Darth Vader, Lord of Sith		The pope is believed to have gone over to the dark side in 1982 for tax reasons. Many Bothans died to bring us this picture.		silly
+
+#./images/lenscap_small.jpg	link		photo taken using...				inside_out
+
+#./images/god_woz_ere.jpg	inside out#56		Heavenly graffiti				inside_out,silly
+
+
+./images/oz_dawn.jpg	link		Dawn down under		Dawn from Bondi beach, Oz.		travels
+
+./images/aerialmap_x.jpg	link		Aerial photo		Aerial photo of my part of town. cf. <a href=http://uk8.multimap.com/clients/browse.cgi?client=M6&GridE=325608&GridN=672295&width=700&db=ap&addr1=24&addr2=Warrender+Park+Road&addr3=Edinburgh&pc=EH9+1JG&quicksearch=&height=400&image2.x=53&image2.y=8&client=M6>uk8.multimap.com</a>		edinburgh
+
+
+./images/DanAmySandraCliona.jpg	link		Mark's Friends			Me,Amy,Sandra,Cliona	edinburgh
+

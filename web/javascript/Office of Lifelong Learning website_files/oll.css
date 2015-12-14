@@ -1,0 +1,112 @@
+acronym, blockquote, body, caption, center, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, ol, p, td, th, ul, b, i, u, strong, em  {
+	font-family: arial, helvetica, sans-serif;
+}body {
+	color: #000000;
+	background-color: #ffffff;
+	width: 99%;
+	margin: 4px;
+	padding: 0px;
+}h1, h2, h3, h4, h5, .bluetext, .quicklinks  {
+        color: #000066;
+}h1  {
+	font-size : 140%;
+	font-weight : bold;
+}h2  {
+	font-size : 110%;
+	font-weight : bold;
+}h3  {
+	font-size : 105%;
+	font-weight : bold;
+	font-style: italic;
+}h4  {
+	font-size : 100%;
+	font-weight : bold;
+}h5  {
+	font-size : 100%;
+	text-decoration: underline;
+}dt  {
+	font-style: italic;
+}img {
+	border: none;
+}.unibar {
+	text-decoration: none;
+	font-size: 90%;
+	font-weight: bold;
+}.unibar, .leftmenuitem, .leftmenucell  {
+	color: #ffffff;
+	background-color: #000033;
+}.ollbar  {
+	color: #ffffff;
+	background-color: #CC0000;
+	text-decoration: none;
+}.quicklinks  {
+	font-size: 100%;
+	font-weight: normal;
+}.navbarcell, .navbaritem  {
+	color: #000033;
+	background-color: #E4E3E9;
+}.leftmenuitem, .navbaritem  {
+	font-size : 80%;
+	text-decoration: none;
+	font-weight: bold;
+}.indentedparagraph {
+	padding-left: 20px;
+	text-align: left;
+	margin: 0px;
+}.divider  {
+	background-image: url("/system/images/divider.jpg");
+}.clean {
+	text-decoration: none;
+}.smalltext  {
+	font-size: 80%;
+}.redtext, .redtext a {
+	font-size : 120%;
+	color: #CC0000;
+}.red, .red a {
+	color: #CC0000;
+}.blacktext  {
+        color: #000000;
+	background-color: #ffffff;
+}ul.spaced li, ol.spaced li  {
+        padding-bottom: 1em;
+}.full {
+	color: #FF0000;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}.courseformback {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #000033;
+	color: #FFFFFF;
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 24px;
+}.courseborder {
+	border-right-width: thick;
+	border-bottom-width: thick;
+	border-top-style: inset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: inset;
+	border-top-color: #000033;
+	border-right-color: #000033;
+	border-bottom-color: #000033;
+	border-left-color: #000033;
+	border-top-width: thin;
+	border-left-width: thin;
+	position: relative;
+	width: 700px;
+}.bold {
+	font-weight: bold;
+	color: #000000;
+}.td_top {
+	vertical-align: top;
+}.doubleline{
+	line-height: 2.5em;
+}#adds {
+	width: 430px;
+	border-style: solid;
+	border-width: 1px;
+}

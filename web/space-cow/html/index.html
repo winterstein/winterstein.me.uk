@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Space Cow</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!-- Bootstrap -->
+
+<!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">-->
+  
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<link href="../css/space-cow.css" rel="stylesheet">
+
+<link rel="icon" type="image/jpg" href="../img/space_cow.png">
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<!--<script src="../js/skrollr.min.js"></script>-->
+<script src="../js/jQueryRotateCompressed.js"></script>
+<!--<script src="http://code.createjs.com/soundjs-0.5.2.min.js"></script>-->
+<script src="../js/space-cow.js"></script>
+
+
+<link rel="canonical" href=""/>
+<meta property="og:url" content=""/>
+<meta itemprop="url" content=""/>
+<meta property="og:site_name" content="Space Cow"/>
+<meta itemprop="name" content="Space Cow children book"/>
+<meta property="og:title" content="Space Cow"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="../img/space_cow.png"/>
+<meta itemprop="image" content="../img/space_cow.png"/>
+
+</head>
+<body>
+	<div id='skrollr-body'>
+	
+		<div id='LandingScreen'><div class="container">
+			<div class="page-header center-block" id='top' data-bottom-top="foo:1" data-center-center="foo:1" data-emit-events="true">
+				<h1 id="page-title" class="page-title center-block">The Adventures of Space Cow</h1>
+			</div>
+			<audio controls>
+  					<source src="../img/journey.mp3" type="audio/mpeg">
+			</audio>
+			<img class='center-block' src="../img/space_cow.png">
+		</div></div><!-- End Landing Screen -->
+
+
+		<div id='StoryScreen'><div class="Story container">
+
+			<div class='container center-block'><h1 class='center-block'>The Adventures of Space Cow</h1></div>
+
+			<div class='StoryImage'><img id='Cleo' class='StoryImage img-thumbnail' src='../img/cleo-crop.jpg'
+				width="300" data-bottom-top="zoom:0.85;" data-center-center="zoom:1;" data-emit-events="true">
+			</div>
+			<p>Cleo liked to watch the skies.</p>
+			<p> 
+			She liked to see the moon as it shrank (or <em>waned</em> as the 
+			astronomers say) and grew 
+			(or <em>waxed</em> as the astronomers say, though they don't say <em>who</em> waxed the moon, &amp;
+			waxing other things like lemons &amp; cars does not make them grow).
+			She liked to sit in the window and look at rainbows, when the rain drops slice the sunlight into many colours.
+			Most of all she liked to spot shooting stars (<em>meteors</em>) which blaze across the night sky.
+			Like this:   </p>
+
+
+			<div class='StoryImage NightSky'>
+				<div id='Meteor' onclick="doAnimateMeteor(this);">
+					<img id='Meteor' class='NightSky StoryImage' src='../img/sky.jpg'>
+					<img id="meteor" src="../img/meteor.png" class="Sprite" style="top:5px; left:-100px;">				
+				</div>
+			</div>
+
+			<p>Sometimes Cleo would see a meteor shower -- a whole group of meteors like this:</p>
+
+			<div class='StoryImage NightSky'>
+				<div class='btn NightSky' id='MeteorShower' onclick="doAnimateMeteor(this);">
+					<img class='NightSky StoryImage' src='../img/sky.jpg'>
+					<img id="meteorshower" src="../img/meteorshower.png" class="Sprite" style="top:5px; left:-100px;">
+				</div>
+			</div>
+
+			<p>One night she saw a special meteor that went like this:</p>
+
+			<!-- <blockquote>
+			  <p>-8-+</p>
+			</blockquote>-->
+
+			<div class='StoryImage NightSky'>
+				<div id='MeteorSpecial' onclick="doAnimateMeteor(this);">
+					<img class='NightSky StoryImage' src='../img/sky.jpg'>
+					<img id="meteorspecial" src="../img/meteor.png" class="Sprite" style="top:5px; left:-100px;">
+				</div>
+			</div>
+
+			<p>So she went to get Joshi.</p>
+
+			<p>
+			Joshi had seen lots of meteors but they all flew straight. He'd never seen one before that looped the loop.
+			It seemed to come down close by, over by the park near his house.</p>
+
+			<p>So he pulled on his coat &amp; his boots &amp; went to investigate.</p>
+
+			<p>He climbed up the hill &amp; saw the most incredible thing.
+			There was a pale flying saucer, the size of a large car, which shimmered in the moonlight. It stood a metre off the ground on thick stubby metal legs.
+			A door was open in it's side &amp; aramp led down to the ground.
+			In front of the flying saucer &amp; the globe was a cow.</p>
+
+			<p>But not like any cow Joshi had ever seen before.</p>
+
+			<p>This cow was blue &amp; green. She was eating the grass (which is the normal for cows) 
+			&amp; wearing several electronic gadgets &amp; singing to herself (which is not).</p>
+
+			<div class="StoryImage center-block"><img src='../img/space_cow.png' class='StoryImage img-thumbnail'
+				width="600" data-bottom-top="zoom:0.85;" data-center-center="zoom:1;">
+			</div>
+
+			<p>Joshi came closer &amp; this is what the cow sang:</p>
+
+			<blockquote>
+			  <p>The grass you grow here is lovely, <br />
+			  Your meadows are a wonderful laugh, <br />
+			  I wish I could stay &amp; chew the cud, <br />
+			  But for me it's the starry path.</p>
+			</blockquote>
+
+			<p>Then she stopped singing and chewed in silence for a minute. After which she spoke.</p>
+
+			<p>&lt;&lt;Third planet. The grass has a rich taste with a summery tang.
+			There are after-tastes of smoke and industrial flavours.>></p>
+
+			<p>The cow suddenly left off talking, and stared straight at Joshi.   </p>
+
+			<p>"Moo," said the cow, "moo moo." <br />
+			Joshi asked "What kind of a cow are you? Who were you talking to just now about the grass?" <br />
+			"Moo." repeated the cow. <br />
+			"Cow's don't actually say 'moo', they just moo." said Joshi, "It's different." <br />
+			"Blast." said the cow, "I can't get the accent right." <br />
+			Then she smiled and said "Hello Earth Child. I am Space Cow, interstellar food critic, &amp; I travel the stars
+			tasting the grass of different planets." <br />
+			"I write a guide book you know. It's read by many grass-eaters across the Milky Way."   </p>
+
+			<p>Joshi nodded thoughtfully. Adults often say things that make little sense. A thoughtful nod seems to please them. <br />
+			"What is the big ball?" he asked.</p>
+
+			<p>"That is my planet of course." the cow replied.
+			"I get terribly homesick when I'm away from my planet, so I take it with me." <br />
+			"Your planet is very small." Joshi observed. <br />
+			The cow gave a reproachful moo and drew her feet together in a stand-offish manner.
+			Joshi feared he had offended her.</p>
+
+			<p>"It may be small," said the cow, "But I take very good care of it. Better care than you take of your planet."   </p>
+
+			<p>Joshi did not want to offend Space Cow, so he hastily added "It does look lovely. Especially the river."</p>
+
+			<p>Although the planet was no bigger than a normal house, it had a miniature river which ran through a lush grassy meadow
+			("a continent, please" said Space Cow) down to the lake ("the sea" corrected Space Cow) that covered nearly half the planet.
+			There was a small puff of water from the sea, and Joshi spotted a little whale, no bigger than a trout, that had just spouted. The
+			whale rolled lazily over to look at Joshi, winked one tiny eye, and then dove beneath the water.</p>
+
+			<p>"That is the Bonsai Whale." the cow explained, "I picked him up from the ocean ponds of Alpha Centauri."</p>
+
+			<div class="StoryImage center-block"><img src='../img/animals_fish_198784.png' class='StoryImage img-thumbnail'
+				data-bottom-top="width:400px;" data-center-center="width:600px;">
+			</div>
+
+
+			<p>The Bonsai Whale surfaced again. He sang in a deep rich voice:</p>
+
+			<!-- Nav tabs -->
+			<ul id='myTab' class="nav nav-tabs" role="tablist">
+			  <li class="active"><a href="#lq" role="tab" data-toggle="tab">Lobster Quadrille, or</a></li>
+			  <li><a href="#wave" role="tab" data-toggle="tab">One of my own invention?</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <div class="tab-pane active fade in" id="lq">
+				<blockquote>
+				  <p>Will you walk a little faster said the white fish to the snail, <br />
+				  There's a porpoise close behind us and he's treading on my tail, <br />
+				  See how eagerly the monkfish and the whale sharks all advance, <br />
+				  They are waiting by the sea-shore, will you come and join the dance?<br>
+				  <br>
+				  Will you, won't you, will you, won't you, will you join the dance?<br>
+				  Will you, won't you, will you, won't you, won't you join the dance?<br>
+				  <br>
+				  You can really have no notion how delightful it will be,<br>
+				  When they take us all and throw us with the lobsters out to see.<br>
+				  But the snail replied "Too far! Too far!" and gave a look askance,<br>
+				  Said he thanked the white fish kindly, but he would not join the dance.<br>
+				  <br>
+				  Would not, could not, would not, could not, would not join the dance.<br>
+				  Would not, could not, would not, could not, would not join the dance.<br>
+				  <br>
+				  What matters it how far we go, his scaly friend replied,<br>
+				  There is another shore you know upon the other side,<br>
+				  The further off from Britain, the nearer is to France<br>
+				  So be not pale, beloved snail, but come and join the dance!</p>
+				</blockquote>				  	
+			  </div>
+			  <div class="tab-pane fade" id="wave">
+			  	<blockquote>
+				  <p>A Life on the Ocean Wave <br />
+				  A life on the ocean wave, <br />
+				  A-home on the rolling deep! <br />
+				  Oh its the salty brine I crave,<br>
+				  Where the great sea turtles sleep</p>
+				</blockquote>
+			  </div>
+			</div>
+
+			<h2>Local Grass</h2>
+
+			<p>"Hm" said Space Cow with a distant look in her eye, adding a thoughtful "Well." Then she chewed some grass. Finally she said
+			"You must be a local."</p>
+
+			<p>"Yes." said Joshi. He lived just round the corner which was about as local as you could get.   </p>
+
+			<p>"Good." said Space Cow, "Then as a local of the planet, you can help me find the best grass on this planet."   </p>
+
+			<p>"We'll travel in my spaceship." Space Cow continued, taking Joshi's agreement for granted. "Do your parents know where you are?"</p>
+
+			<p>"No" said Joshi.</p>
+
+			<p>So they went back to Joshi's house. Space Cow knocked on the door with one hoof. Joshi's mum answered the door. She looked at the alien cow in surprise.</p>
+
+			<p>"I am Space Cow," said Space Cow, "And I am kidnapping your son for the evening."   </p>
+
+			<p>Joshi's mum continued to look surprised.</p>
+
+			<p>"There." Space Cow smiled, "Come along Joshi." and she trotted off to the spaceship.</p>
+
+
+			<h2>The Spaceship</h2>
+
+			<p>The spaceship was round and silver. Space Cow and Joshi trotted up the ramp. Inside there were no seats, but there was fresh hay
+			on the floor, and a bale of hay which Joshi sat down on.</p>
+
+			<p>The door closed. Space Cow mooed softly to herself and pushed a couple of buttons. 
+			The spaceship rocked to the left, and it rocked to the right. Then it took off in a blaze of light. With a magnificent WHOOOSH! the spaceship
+			flew up into the air. Up up high they went. Joshi could see the whole town spread out below them. The lights of town twinkled in the dusk.</p>
+
+			<p>"Where has good grass on this planet?" Space Cow asked.</p>
+
+			<p>Where had grass? Joshi thought. "The nursery garden" he said.</p>
+
+			<p>"Computer." said Space Cow, "Take us to the nursery garden!"</p>
+
+			<p>The spaceship dipped and flew down to earth. It hovered over the nursery. The silver legs came out and the spaceship touched down lightly
+			on the football pitch. Space Cow's planet also landed with a soft thump.</p>
+
+			<p>Space Cow and Joshi walked out onto the garden. It was evening &amp; there was no-one around. 
+			Space Cow ate a patch of grass, mooing contentedly.</p>
+
+			<p>"Not bad grass." said Space Cow, "Though it tastes a lot like the grass by your house."</p>
+
+			<p>They went back into the spaceship. "Where next?" asked Space Cow.</p>
+
+			<p>Where else had grass? Joshi thought. "My grandparent's garden." he said.</p>
+
+			<p>"Computer." said Space Cow, "Take us to his grandparent's garden!"</p>
+
+			<p>As they came down to land, Joshi said "Careful -- don't mess up Grandma's flower beds."</p>
+
+			<p>Space Cow said the flowers looked delicious, but she would stay on the grass. She chewed a few mouthfuls thoughtfully.</p>
+
+			<p>"Nice grass." said Space Cow as they went back into the spaceship, "Though it <em>also</em> tastes a lot like the grass by your house and the grass at the school."</p>
+
+			<p>The noise of the spaceship disturbed Grandad, who had been doing a crossword puzzle. 
+			He went to the window and drew the curtain -- just in time to see Space Cow trotting up the
+			ramp into her spaceship.</p>
+
+			<p>"Well!" said Grandad, "I've never seen an alien before. And in our garden!"</p>
+
+			<p>"I hope it didn't mess up the pansies." said Grandma.</p>
+
+			<div class="StoryImage center-block"><img src='../img/john.jpg' class='StoryImage img-thumbnail'
+				width="500" data-bottom-top="zoom:0.85;" data-center-center="zoom:1;">
+			</div>
+
+			<h2>Alien Grass</h2>
+
+			<p>"That was all nice grass, but it all tasted the same." said Space Cow.</p>
+
+			<p>"It's grass. What else would grass taste like?" Joshi asked.</p>
+
+			<p>"Oh, lots of things!" said Space Cow, "On my planet, we have plain grass, &amp; banana flavoured grass."</p>
+
+			<p>"But let me show you a really interesting grass..."</p>
+
+			<p>She pushed a lever. The spaceship rocked to the left, and it rocked to the right. Then it took off in a blaze of light. With a magnificent WHOOOSH! the spaceship
+			flew up into the air. Up up high they went -- and they kept on going. Up, up into space. The whole planet lay below them like a beautiful marble.</p>
+
+			<div class='StoryImage NightSky'>
+				<div id='UFO' onclick="doAnimateMeteor(this);">
+					<img class='NightSky StoryImage' src='../img/sky.jpg'>
+					<img id="ufo" src="../img/ufo.png" class="Sprite" style="top:300px; left:225px;">
+				</div>
+			</div>
+
+			<p>"Where are we going?" Joshi asked.</p>
+
+			<p>"To the Tau Ceti star," said Space Cow, "There's a planet there where they grow chocolate grass."</p>
+
+			<p>Faster &amp; faster went the spaceship, and in a just a few minutes they had reached the planet of Tau Ceti Prime.</p>
+
+			<p>They touched down at a very moden looking barn. A Tau Ceti cow came out to meet them. This cow was green &amp; orange. 
+			"Moo!" said the Tau Ceti cow in a friendly way.</p>
+
+			<p>Space Cow pointed at the grass around them. "This" she said, "is the famous chocolate grass of Tau-Ceti." She chewed a bit. "Delicious!" she said.</p>
+
+			<p>Joshi tried to eat a handful of grass. It did taste a bit chocalety, but mostly it tasted of grass. He couldn't eat it. "Fooey!" he said.</p>
+
+			<p>Space Cow gave a thoughtful moo. "Seeing as you're a child, you might do better with some milk from this grass." she said. 
+			Space Cow bustled about the spaceship &amp; produced a small bowl-like object. <br />
+			"This should do for a cup," she said. "It's a spare cap for the fuel tank, but I assure you it's clean." </p>
+
+			<p>The Tau-Ceti cow took the cup &amp; brought it back full of milk.</p>
+
+			<p>Joshi drank some. It tasted just like chocolate brownies.</p>
+
+			<p>Then it was time to go home. They got back into the spaceship &amp; Space Cow flew it back, dropping Joshi off at his house. 
+			His Mum &amp; Dad gave him a big hug. </p>
+
+			<div class="StoryImage center-block"><img src='../img/family.jpg' class='StoryImage img-thumbnail'
+				width="600" data-bottom-top="zoom:0.85;" data-center-center="zoom:1;">
+			</div>
+
+			<!--<div class="StoryImage center-block"><img src='../img/josh-becca-cuddle.jpg' class='StoryImage img-thumbnail'
+				data-bottom-top="width:400px;" data-center-center="width:600px;">
+			</div>-->
+
+			<h2>Epilogue</h2>
+
+			<p>The next morning Joshi wondered if it had all been a dream. He had breakfast as usual. He went to nursery as usual.</p>
+
+			<p>There was a big dent in the playing field though. Such as might be made by a small but well cared for planet.</p>
+		</div></div><!-- End StoryScreen -->
+		
+	</div><!-- end page-main -->
+
+	<p>&nbsp;</p>
+
+	<!-- FOOTER -->
+	<div id='footer'>
+		<a id="link-to-top" href="#" title="Return to the top of the page" class="hideme"><b>&uarr;</b></a>					
+	</div><!-- End FOOTER -->
+</body>
+</html>

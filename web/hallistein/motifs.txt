@@ -1,0 +1,14 @@
+# Game motifs
+
+"Find the others"
+"Learn the sequence"
+"Complete the set"
+"Assemble the X"
+
+Activate cells
+Narrative should have placeholders for active players
+Give hardcore something to do that doesn't involve harassing other players
+
+Pass the marble game
+The longer it stays in play the more it's worth BUT the greater the chance it'll be intercepted by The Enemy
+Dynamic of cutting your losses
