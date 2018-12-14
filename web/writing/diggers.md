@@ -23,6 +23,8 @@ Note: There should be more pauses than have been explicitly written in.
 
 [Sounds of strenuous work. Lights up. UNDERDOG is digging stage right.]
 
+
+
 UNDERDOG: [exhausted] This can't go on much longer. [keeps digging]       
 I've been down this hole so long, I no longer remember how I got here.      
 [pause]      
