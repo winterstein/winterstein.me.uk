@@ -1,34 +1,43 @@
 <html>
+
 <head>
-	<title>Hannukah Card :)</title>	
+	<title>Hannukah Card :)</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 	<style>
-
-body {
-	background-color: #6699ff;
-}
-
+		body {
+			background-color: #6699ff;
+			background-image: url('coral-reef.jpg');
+			background-size: cover;
+		}
+		h1, h2 {
+			text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+			color: orange;
+		}
 	</style>
 </head>
+
 <body>
 
-	<div class='container position-relative'>
+	<div class='container position-relative' style="height:100%">
 
-		<h1 id='mywords'>Hello <span id='namespan'></span></h1>
-		
-		
-	<img id='myimg' src='blue-shark.png' class='position-relative' />
-	
-	<img id='swimmer' src='blue-fish.png' class='position-relative' />
-	<img id='swimmer2' src='red-fish.png' class='position-relative' />
 
-	
+		<h1>Hello <span id='namespan'></span></h1>
+		<h1 id='mywords'></h1>
+<h2>Happy Chanuka</h2>
+<h2>From Joshua</h2>		
+<img id='myimg' src='blue-shark.png' class='position-relative' />
+
+		<img id='swimmer' src='blue-fish.png' class='position-absolute' style="width:128px; right:-250px;top:25%;" />
+		<img id='swimmer2' src='red-fish.png' class='position-absolute' style="width:64px; left:-250px;top:20%;" />
+
+
 		<button id='clickme' class='btn btn-primary'>Click Me!</button>
 
 	</div>
 
 	<script src="shared-card.js"></script>
-    <script src="joshua-card.js"></script>
+	<script src="joshua-card.js"></script>
 
 </body>
+
 </html>
