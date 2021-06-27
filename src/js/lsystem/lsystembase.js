@@ -1,5 +1,6 @@
 
 import * as PIXI from 'pixi.js';
+import { WHITE } from './colors';
 
 window.PIXI = PIXI;
 
@@ -14,15 +15,22 @@ let state = {
 	x:0,y:0,
 	angle:180,	
 	unit:1,
-	color:0xFFFFFF
+	color:{},
+	lineWidth: 4
 };
 
 graphics.lineStyle(5, 0x00FF00, 1);
 
-const setColor = ({red,green,blue}) => {
-	let hex = 0x10000*red + 0x100*green + blue;
-	graphics.lineStyle(3, hex, 1);
-	state.color = {red,green,blue};
+const hex = ({red,green,blue}) => 0x10000*red + 0x100*green + blue;
+
+const setColor = (color) => {
+	let h = hex(color);
+	graphics.lineStyle(state.lineWidth, h, 1);
+	state.color = color;
+};
+const setLineWidth = (width) => {
+	state.lineWidth = width;
+	setColor(state.color);
 };
 
 
@@ -31,21 +39,31 @@ const setColor = ({red,green,blue}) => {
  * @param {*} param0 
  * @returns {!NUmber[]} [x,y] for the end
  */
-const line = ({length}) => {	
+const line = (length) => {	
 	let radians = state.angle * Math.PI / 180;
 	let dy = Math.cos(radians);
 	let dx = Math.sin(radians);
 	let x2 = state.x + dx*length*state.unit;
 	let y2 = state.y + dy*length*state.unit;
-	graphics.lineTo(x2,y2);
+	lineTo(x2,y2);
 	let end = [x2,y2];	
 	state.x = end[0];
 	state.y = end[1];
 	return end;
 };
+export const lineTo = (x,y) => {
+	if (x.length) {
+		y = x[1];
+		x=x[0];
+	}
+	graphics.lineTo(x,y);
+};
 
 const rotate = (angle) => {
 	state.angle = (state.angle + angle ) % 360;	
+};
+export const setRotate = (angle) => {
+	state.angle = angle + (state.dAngle || 0);
 };
 
 const scale = (fraction) => {
@@ -61,6 +79,9 @@ const moveTo = xy => {
 
 const getState = () => Object.assign({}, state);
 
+const startTime = new Date().getTime();
+export const getDT = () => new Date().getTime() - startTime;
+
 const reset = (targetState) => {
 	Object.assign(state, targetState);
 	// reset Pixi
@@ -68,21 +89,26 @@ const reset = (targetState) => {
 	setColor(state.color);
 };
 
+export const beginFill = (color) => {
+	graphics.beginFill(hex(color));
+};
+export const endFill = () => graphics.endFill();
+
 app.stage.addChild(graphics);
 
 export {
-	setColor,
+	setColor, setLineWidth,
 	getState, reset, 
 	moveTo, line,
-	scale, rotate
+	scale, rotate,
+	graphics, app
 };
 
 
 // // Filter
 console.log("app", app);
 
-let underwater = false;
-if (underwater) {
+export const goUnderWater = () => {
 	let displacementSprite = new PIXI.Sprite.from("assets/cloud.jpg");
 	let displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
 	displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
@@ -95,8 +121,8 @@ if (underwater) {
 	const animateRipple = () => {
 		displacementSprite.x += 10;
 		displacementSprite.y += 4;
-		requestAnimationFrame(animate);
+		requestAnimationFrame(animateRipple);
 	};
 
 	animateRipple();
-}
+};

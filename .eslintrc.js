@@ -105,6 +105,7 @@ module.exports = {
 		"no-this-before-super": "warn",
 		"no-trailing-spaces": "off",
 		"no-underscore-dangle": "off",
+		"no-inner-declarations": "warn",
 		"no-unused-vars": "warn",
 		"no-useless-concat": "warn",
 		"no-useless-constructor": "warn",
