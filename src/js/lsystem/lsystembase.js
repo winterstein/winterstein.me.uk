@@ -1,6 +1,8 @@
 
 import * as PIXI from 'pixi.js';
 import { WHITE } from './colors';
+import {assert} from '../base/utils/assert';
+import seedrandom from 'seedrandom';
 
 window.PIXI = PIXI;
 
@@ -15,13 +17,34 @@ let state = {
 	x:0,y:0,
 	angle:180,	
 	unit:1,
-	color:{},
+	color:{red:0,green:0,blue:0},
 	lineWidth: 4
 };
 
+let sr = seedrandom("foo");
+
+export const setRandomSeed = seed => {
+	sr = seedrandom(""+seed);
+};
+
+export const stickyRandom = () => {	
+	return sr();
+};
+
+
+window.stickyRandom = stickyRandom;
+window.seedRandom = seedrandom;
+
+
 graphics.lineStyle(5, 0x00FF00, 1);
 
-const hex = ({red,green,blue}) => 0x10000*red + 0x100*green + blue;
+
+const isNumber = x => typeof(x)==="number";
+
+const hex = ({red,green,blue}) => {
+	assert(isNumber(red)&&isNumber(green)&&isNumber(blue));
+	return 0x10000*red + 0x100*green + blue;
+};
 
 const setColor = (color) => {
 	let h = hex(color);
@@ -60,7 +83,7 @@ export const lineTo = (x,y) => {
 };
 
 const rotate = (angle) => {
-	state.angle = (state.angle + angle ) % 360;	
+	state.angle = (state.angle + angle ) % 360;	// clockwise
 };
 export const setRotate = (angle) => {
 	state.angle = angle + (state.dAngle || 0);
@@ -125,4 +148,31 @@ export const goUnderWater = () => {
 	};
 
 	animateRipple();
+};
+
+export const runLSystem = (drawSceneFn, {animated}) => {
+	if ( ! animated) {
+		drawSceneFn(8);
+		return;
+	}
+
+	goUnderWater();
+
+	let d = 0;	
+	// grow over time
+	setInterval(function() {
+		if (d<8) d++;
+		else return;
+		drawSceneFn(d);
+	}, 250);
+
+	function rippleAngle() {		
+		let dt = getDT();
+		let wibble = 5 * Math.sin(dt/1000);
+		let dAngle = wibble;
+		reset({dAngle});
+		drawSceneFn(d);
+		requestAnimationFrame(rippleAngle);
+	};
+	requestAnimationFrame(rippleAngle);
 };

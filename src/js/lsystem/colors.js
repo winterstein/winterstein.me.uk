@@ -4,6 +4,7 @@
 const rgb = (red,green,blue) => { return {red,green,blue}; };
 
 
+export const PURPLE = rgb(75,0,130);
 export const BLUE = rgb(0,0,255);
 export const SKYBLUE = rgb(135,206,235);
 
