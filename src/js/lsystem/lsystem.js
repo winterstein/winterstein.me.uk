@@ -65,6 +65,58 @@ function kelp(depth=8) {
 };
 
 
+function fern(depth=30, left) {
+	let start = getState();
+	if ( ! depth) return;
+	depth--;
+	
+	// green
+	setColor(GREEN);
+	setLineWidth(2);
+	// draw a line
+	let end = line(20);
+
+	rotate(left? 45 : -45);		
+	fern2(depth);
+	rotate(left? - 45 : 45);		
+	// split and draw a smaller plant
+	scale(0.9);	
+	fern(depth, ! left);
+
+	// reset the position to be where we started
+	reset(start);
+};
+
+function fern2(depth) {
+	let start = getState();
+	if ( ! depth) return;
+	depth--;
+	if (depth>10) depth = 10;
+	
+	// green
+	setColor(GREEN);
+	setLineWidth(1);
+	// draw a line
+	let end = line(10);
+
+	setLineWidth(4);
+	rotate(90);			
+	line(10);
+	moveTo(end);
+	rotate(-180);		
+	line(10);
+	rotate(90);
+	moveTo(end);
+
+	// draw a smaller plant
+	scale(0.9);	
+	fern2(depth);
+
+	// reset the position to be where we started
+	reset(start);
+}
+
+
 function bush(depth=6) {
 	let start = getState();
 	if ( ! depth) return;
@@ -165,6 +217,9 @@ function drawScene(d) {
 	// bush
 	moveTo([400,520]);
 	kelp(d);
+
+	moveTo([200,520]);
+	fern(d*2);
 }
 
 
