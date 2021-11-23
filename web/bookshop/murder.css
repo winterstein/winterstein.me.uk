@@ -1,0 +1,53 @@
+
+html {
+    /*max-width:600px;*/
+}
+body {
+    background-color:#FEF1B5;
+    color:#000;
+    /*max-width:600px;*/
+}
+#mainDiv .page {
+	margin-top: 20px;
+	font-family: "Times New Roman", Times, serif;
+	max-width:600px;
+	margin-bottom: 10px;
+}
+input {
+    font-size:14pt;
+    background-color:#FEF1B5;
+    color:#000;
+}
+
+#mainDiv .page h2 {
+	font-size: 20pt;
+	font-family: "Times New Roman", Times, serif;
+}
+strong, b {
+	font-size:110%;
+    color:#600;
+}
+
+p {
+    font-size:14pt;
+}
+
+.answer {
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+button {
+    font-size:14pt;
+	margin-bottom:15px;	
+}
+.credits {
+ display:none;
+}
+.credits a {
+	color:#33a;
+}
+
+.notify {
+	margin-left: 5%;
+    color: #333;
+}

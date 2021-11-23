@@ -1,0 +1,384 @@
+
+<div>
+<div class='part' id='start' next='start2'>
+## The Bookshop Poisoning
+
+<blockquote>A short detective story-game to read, preferably while in a bookshop. The puzzles involve naming books. Playtime: about 10 minutes.</blockquote>
+
+*An excerpt from the diaries of Inspector Watson...*
+
+I have been proud to serve as an Inspector in the Edinburgh police force for much of my life.
+In the year of 1866 there started a series of crimes that taxed our offices to the limit. 
+It was as if some force of macabre creativity had gripped the criminal element and driven it
+to new depths of depravity. There was the Meadows Strangler murders - that series of brutal 
+killings, the later murders conducted merely to obscure the significance of the first victim, an heiress. The 
+Edinburgh public will also remember only too well the gruesome case of the Severed Thumb Pie. 
+But perhaps no case was as strange, as perversely baroque, as the bookshop poisoning.
+
+The dawn light was just coming up shading Westport junction in the grey of old papers. A fine 
+drift of cold mist loitered in the air. The world seemed muted as I walked up to the crime scene.
+</div>
+
+<div class='part' id='start2' next='start3'>
+Westport is a strange area; drinking dens of the lowest sort sit side by side with second-hand bookshops. The former are a regular source of low-level violence; Saturday night creates a predictable stream of punch ups and disorderly drunkards. Unsurprisingly the bookshops play less of a role in police life. Shuttered up by night, they sit as silent neighbours to the rowdy bars. Two versions of Edinburgh had been shuffled together here. Only one usually concerned us, except today it was the dusty confines of Westport bookshop I was headed to. A policeman was posted as guard in the shop door. I nodded my hello & stepped inside. 
+
+The bookshop was small and poky. Shelves laden with books crowded in to create a couple of narrow alleyways
+and small alcoves.
+
+"Inspector," a familiar voice called from around a corner. "I'm glad they sent you. A nasty case this."
+</div>
+
+<div class='part' id='start3' next='rules'>
+Dr Joseph Bell leant against a bookshelf surveying the scene. His sharp eyes danced here and there.
+I was glad to see him. Bell was not officially a policeman, but his sharp mind was well tuned to criminal
+work, and he was often called in on unusual cases. His practice of careful observation and logical inference had unravelled many a mystery. Beside him stood the stockier form of Constable MacPherson.
+
+"A nasty case." Bell repeated. "Take a look."
+
+He directed my gaze into one of the alcoves. It was one of the larger ones, for there was space to fit an armchair, a small book-covered table, and a dead girl.
+
+I examined the body. The obligatory check for vital signs only confirmed what was all too obvious. Her skin was cold & clammy. There was no pulse or breath, and the body was now cold and stiff. 
+Her death had been quick but it had not been painless. Her face was frozen in a tortured rictus of pain. Eyes wide, a scream forever stopped in her throat. This was no natural death. She had been poisoned.
+
+Dr Bell confirmed my suspicions. "Poison." he said, "I checked her mouth, which showed no vomit or smell of laudanum. The tongue had been bitten into, which fits with a range of unpleasant poisons. I checked her arms for needle-marks; there were none."
+
+The girl had strong features and long brown hair. She would have been quite beautiful, I believe, when she smiled.
+Of course I would never see that smile, and I felt a surge of melancholy at the thought. I did not mention this to Bell.
+
+"Time of death?" I asked him
+
+"Her joints move only with stiffness. Rigor mortis is setting in, meaning she died sometime last night. I would say between 10 o'clock in the evening and 2 o'clock in the morning."
+
+She lay on the floor beside an old armchair. No doubt she had been sitting there when the poison struck. A book and a tea cup had been knocked onto the floor. The **book** was a heavy legal tome. 
+I ginergly lifted the cup. The carpet underneath was dry - whatever the cup had contained had been drunk.
+
+I rose and the three of us stood in silence. Nothing moved in that sombre place.
+
+It was the Constable who spoke first. "A suicide I reckon. Young lass, gets herself in trouble, if you know, and does something desperate."
+
+Bell glared at him. He had little patience for those less intelligent than him, which was unfortunate. "Sargeant, did your mother bounce you on the head as a baby? If you remained silent we might think you are simple. But when you speak, you remove all doubt."
+
+"Suicidal people do not settle down for a good read and a nice cup of tea while waiting for the poison to kick in! Now let me think." With that admonition, Bell abrubtly lowered his gaze and fell silent. 
+
+I had learned some tricks from my esteemed colleague. I noted the bags under his eyes. His crisply ironed shirt was creased on one arm, and I feared my friend was once more indulging in that narcotic vice to which he was prey, and which can shroud even the brightest mind. I sighed; He would need my help again.
+    
+</div>
+
+<div class='part' id='rules' next='thescene'>
+## The Rules
+
+You aid the brilliant but erratic Bell by focusing his attention. When Bell sinks into a reverie - such as now - it is incumbent on you to jog him out of it. Long experience of his moods suggests that most conversational gambits will not work. Bell treats comments with contempt, and direct questions with querulous disdain. Subtler methods are required.
+
+You can prompt Bell to investigate a topic by showing him a book title that includes that topic
+For example, a prompt for *sign* could be "The Sign of The Four".
+
+Parts of words are allowed, so a prompt for *car* could be "A Study in S*car*let".
+
+The game does not mind anachronism: modern books will work.
+
+Available topics will be highlighted in bold as you encounter them.
+</div>
+
+<div class='part' id='thescene'>
+## Back to the scene
+
+The **girl** lies dead, a **book** at her feet. Dr Bell stands as if in thought, but his mind may be elsewhere.
+</div>
+
+<div class='part' id='girl'>
+## About the girl
+
+The doctor responded to my prompting.
+
+"The girl. Who is she? If we know that then perhaps we will know why someone hated her, loved her, or feared her enough to commit this **crime**. I think we can rule out the petty motive of greed. The darning on her jumper says that she hasn't much money.
+
+"Questions: How long has she lived in Edinburgh? How did she come to die in a **bookshop**? 
+What was she worried about this morning? And how did the killer know her?"
+
+"Let us start with the obvious. She worked here part-time. She comes from Aberdeenshire. She had an older lover."
+
+Bell noted MacPherson's incredulous look and paused to explain.
+
+"It is a simple matter of deduction and inference from what we can observe."
+
+"We have got to the deductions and the inferences," said
+MacPherson, winking at me. "I find it hard enough to tackle facts, Sir, without flying away after theories."
+
+"You are right," said Bell demurely; "you do find it hard enough to tackle the facts."
+
+"That she works here is obvious. Leaving aside her presence here out of shop hours, 
+it was raining yesterday, yet she has no coat.
+Her top fits with a shop-girl, but the skirt doesn't. So she does not work here everyday, and she dressed 
+in some hurry this morning.
+The tartan of her skirt is such as they weave around Aberdeen. We may reasonably suppose she brought it with her,
+or it is a gift from home. 
+
+Now note the jewelry. The necklace is more than a shop-girl could afford, and it is untarnished -
+this is no heirloom but a recent present. The choice of jewelry is something I have made a particular 
+study of, for it often sheds light on a crime. This style has not been in fashion for some years,
+suggesting an older man. The choice of a necklace - less symbolic than a ring - may also be telling, but
+there we risk letting conjecture carry us too far."
+
+He moved close to the body. With an intent look of concentration, he picked up and examined a couple of the books,
+then turned his attention to the girl's pockets. These yielded an envelope, a receipt and 6 pence in coins. 
+The envelope was empty, but it gave us her name: Heather Buchanan.
+
+</div>
+
+<div class='part' id='book'>
+
+## Book
+
+The book is a heavy legal text. "The Institutions of the Law of Scotland" by James, Viscount of Stair
+It's fairly old, but not an original. 
+I half recognised the title, but I hadn't read it. The Law is for lawyers, not policemen.
+
+![](book2.png)
+
+</div>
+
+<div class='part' id='bookshop'>
+## Bookshop
+The bookshop was a warren of narrow spaces, all lined with bookcases, stacked full
+of books of every description. Venerable old tomes jostle against brash cheap 
+editions of popular novels. A layer of dust lay over many of the shelves.
+</div>
+
+<div class='part' id='crime'>
+## Crime
+
+I waved the book at Bell and asked "What do we know about the crime?"
+
+Bell looked at me blankly. Crime is the milleu he lives in, the air he breathes. 
+The crime is everything that is here and
+everything that is related. The question makes no sense to him.
+
+I tried the Sargeant. "How was this crime reported?"
+
+"From the **shop** Sir, by the other shop girl. She shouted murder until someone ran for us."
+</div>
+
+<div class='part' id='shop'>
+## Other Shop Clerk
+
+"The shop girl, the living one, she's lieing down in the back." said the Sargeant, "Came over all faint Sir."
+
+"Well fetch her man!" Bell demanded, "Is this a police investigation or an outreach group of the Sally Army?"
+
+The other shop girl is pale and skinny. She did indeed look faint, though I judged that this 
+was more from a lack of solid food than from shock. She introduced herself as Amanda Ferguson.
+
+"How well did you know Heather?" asked Bell.
+
+"Not well." Amanda answered, and she looked down for a moment with regret. People are often
+tongue tied in the presence of death. However in Amanda's case this soon gives way to 
+a shrewish spiel.
+
+"She was - well I dinnae want to speak ill of the lass now she's dead, but she 
+thought herself better than she was. Like she was too good to be a clerk.
+She was always reading those books. Books and books. She would sit there and
+read whilst I'd be busy cleaning the shop and the like.
+I tells her, it's no our job to read 'em, we just stack them and sell them."
+
+"Did the shop owner mind?"
+
+"I mentioned it to Mr Green, but he didn't care. He was sweet on her. If sweet is the right word. Keen he was, right keen. You could see from his trousers how he felt."
+
+"Mr Green - he has an eye for the ladies?"
+
+"Well I'd say no, no especially. Just Miss Buchanan."
+
+"Tell us about Mr Green."
+
+"He's no a bad one, as they go. But he has his black moods. There are days when 
+he stomps round the shop like a bear in a cage. Then he'll retire with a bottle
+of the finest and then it's best to stay out of his way."
+
+"Where is he now?"
+
+"I don't know Sir. I expect he's still in bed sleeping it off. He lives in the flat above the shop."
+
+The Sargeant is incredulous. "You mean to say he's here? And he slept through the cry of murder, and the police turning
+up at his own place?"
+
+"Sir." he says to Bell, "This Mr **Green** is surely the guilty party. He's either hiding upstairs afraid to come down, or 
+more likely he's already run for it."
+</div>
+
+<div class='part' id='green'>
+## The Shopkeeper
+
+"Yes, Mr Green. We should speak with him." Bell agreed, "Melancholic, alcoholic and well-read - he & 
+I should get on well."
+
+The Sargeant saluted & stormed off to search for the shopkeeper. Although above the shop, the flat 
+was not directly connected. The upper floors were tenement flats. A separate front door opened onto 
+a stairwell giving access to them. We heard muffled noises of the Sargeant's progress: banging on 
+the door, then a few shouts. A minute later the shopkeeper was thrust through the door and stood
+in front of us.
+
+He wore a motheaten woollen top, a matching beard and a shocked expression. The smell of whisky
+floats off him, confirming the shop girl's talk of drinking.
+
+"I can't believe it." He broke down into sobbing.
+
+We can get little from him. Yes, he was here last night with Miss Buchanan.
+He was drinking scotch and porter, and reading Hume on the History of England.
+He did not see anyone else.
+He doesn't remember going to bed.
+
+He kept reaching out as if to stroke the corpse, then recoiling, his body
+shaking, wracked with tears. 
+Did it mean anything? I have seen both grief and guilt affect men in this way.
+
+"What do you think?" I asked.
+
+Bell tilted his head back thoughtfully. He looked at me through half lidded eyes.
+"You think he is guilty. I see how the combination of motive and opportunity make a persuasive case. But..."
+
+"Poison feels too cold a method for Mr Green's temperment.
+And then there is this. The man is portly. He has perhaps a 50 inch waistline and
+can barely fit through the shop."
+
+"Certainly he could stand to lose a few pounds, but what possible bearing does that have on the case?"
+
+"Because there is a slim pair of trousers hanging behind the desk which are clearly too small for him. I would feel better sending him to the assizes if we knew whose **suit** they're part of."
+</div>
+
+<div class='part' id='suit'>
+## Trousers from a Suit 
+
+I handed the trousers to Bell. He turned them over twice, then rifled the pockets. 
+
+"Ah ha! What is this?" he cried, and produced a handwritten note. He scrutinised it closely then handed it to me.
+
+*May 5th, Harry Black -- Dissolution of Marriage is only by Death. Adultery and Desertion do not annul -- though give cause whereby the Persons injured may annul cf. Stair's 27.*
+
+<!-- 33: 7 cervical, 12 dorsal, 5 lumbar, 5 sacral (fused), 5 coccygeal (fused coccyx) -- body +arch (neural) of pedicles, laminae and supporting processes -->
+
+"It's dated yesterday." I said "This Harry Black must own the trousers -- though why Mr Green has them in his shop is a mystery."
+
+"Harry Black -- Hmph! I've met him." said Bell, "*Professor* **Black**, he is a lecturer in law."
+
+</div>
+
+<div class='part' id='black'>
+## The Professor
+
+"How curious that note was. I feel it explains everything. 
+Let us summon Professor Black and see what he has to say on the matter."
+
+"You see Inspector, the case hinges on the girl's choice of book."
+
+I did not see at all, and I told him so.
+
+"Patience my friend -- we are almost at the **end** of this case."
+</div>
+
+<div class='part' id='end'>
+## Prof Black
+
+The door banged open and a tall man walked in. He wore a fine black coat and gloves.
+His features were of an attractive and refined mould, but his expression was unpleasant. 
+His lip curled upward with a look of disdain.
+
+"Why have I been summoned here?" he demanded.
+
+"leather gloves." said Bell, "But of course."
+
+"What?" barked the man, and examined Bell as if he were cracked. It was a reaction Bell was used to.
+
+"Inspector, this is Professor Black." Bell said, though more by way of description than introduction as
+he carried on speaking. 
+
+"Miss Buchanan." said Bell, "She was your student."
+
+"Don't be daft." replied Black, "Girls cannot study the Law."
+
+Bell nodded, "She would dress as a boy of course, so that she could attend lectures. The trousers you
+see hanging there are hers I believe. And she was something more than a student.
+She was your lover."
+
+"How else could she enrol on your courses? Or hope to graduate?"
+
+"But slipping a girl through enrolment was one thing; getting her a graduation would be harder.
+It would require some quite detailed fraud. Either the risks put you off, or you had simply 
+tired of her. You decided it would be safer & easier just to get rid of her."
+
+"This is preposterous! I will not stay and listen to this gutter drivel. Unless you would care to repeat it in a libel court!" 
+Black scowled and started to turn, but Sargeant MacPherson's hand clapped 
+him on the shoulder and held him in place.
+
+"The book Heather was reading used to be his. He sold it to this shop only a few days ago. 
+Just before that he read the same passage she was reading. Except that he read with an 
+inkwell of poison in one hand. With the other hand, he would dip his finger, then turn the page."
+
+Bell mimed the action. "The leather gloves protected him as he left each page annointed with death."
+
+"And then he murdered her. He did it in broad daylight, from the sanctity of his lectern. He sent the students to read those pages, knowing that Heather Buchanan must rely on the bookshop she worked in for her books."
+
+"You have no proof of this -- this fantasy!" Black snarled.
+
+"We will test your gloves for traces of the poison. There are always traces Professor, and our modern forensic science is quite remarkable at finding them.
+But I think we might settle this quicker: for if I am wrong, then you should have no trouble showing us your copy of the book."
+
+**THE END**
+
+</div>
+
+
+
+<div class='part'>
+## repeats
+
+Bell looks at ?? and speaks. Simultaneously high on drugs and focused on the case, he is probably 
+unaware that he repeats himself.
+
+Dr Bell's may have the most remarkable, the most highly tuned mind of
+anyone in the force. But it is also currently a dis-connected mind, looping and spinning
+on itself. An engine with no traction.
+
+Bell tosses ?? aside.
+</div>
+
+<div class='part' id='notes'>
+## Background Notes
+
+ - 1854? 1861? Sherlock Holmes would have been born (inferred from various stray comments).
+ - 1858: Elizabeth Blackwell becomes the first female UK doctor, but this is through a non-repeatable 
+legal loophole (Blackwell was educated in the USA. The 1858 Medical Act recognised doctors with foreign degrees who had been working in Britain before 1858).
+ - 1869: Sophia Jex-Blake and 6 other students are allowed to attend medical lectures at Edinburgh School of Medicine. 
+ - 1873: The University refuses to grant the women degrees and rules that they should not have been admitted in the first place. Jex-Blake will eventually qualify as a doctor outside of the UK.
+ - 1877: Arthur Conan-Doyle works for Dr Joseph Bell, who he will later base Serlock Holmes on.
+ - 1886: The Edinburgh School of Medicine for Women was founded by Dr Sophia Jex-Blake.
+ - 1887: First Sherlock Holmes story, A Study in Scarlet, is published in 
+ - 1892: Scottish universities allow the education of women.
+
+</div>
+
+<div class='part' id=junk'>
+## Junk
+
+Bell nodded vaguely. "A seminal suggestion" he mumbled. I gestured to the Sargeant.
+
+## Notes by irregulars
+Ah, this is from the library. As I thought!
+Bell scribbled another note & gave it to the boy with a shilling.
+Take this to the university. For Professor Black.
+
+
+Our murderer is a particularly cold blooded man.
+He laid a clever trap for his victim. That was his mistake - to be too clever.
+A more straightforward method would have been harder to narrow down. It is the
+simple everyday crime, devoid of identifying features, which is the hardest to solve. 
+As it is, the killer has as good as signed his name to the deed.
+
+
+But we will need evidence. The superintendent?? will be difficult, not to mention
+the judge. They will want a simple man's proof, and we must provide one. 
+
+We must link the killer to the victim.
+We are unlikely to get a confession from this one.
+But there must be evidence, or there would have been no need to kill her.
+</div>
+</div>

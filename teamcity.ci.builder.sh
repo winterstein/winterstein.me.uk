@@ -126,14 +126,14 @@ function check_maven_exists {
     fi
 }
 
-# Dependency Check Function - nodejs is at version 12.x - This Function's Version is 0.01
+# Dependency Check Function - nodejs is at version 14.x - This Function's Version is 0.02
 function check_nodejs_version {
     BUILD_PROCESS_NAME='verifying nodejs version'
-    BUILD_STEP='verifying that nodejs is at version 12.x.x'
+    BUILD_STEP='verifying that nodejs is at version 14.x.x'
     if [[ $PROJECT_USES_NPM = 'yes' ]]; then
         for server in ${TARGET_SERVERS[@]}; do
-            if [[ $(ssh winterwell@$server 'node -v | grep "v12"') = '' ]]; then
-                printf "Either nodejs is not installed, or it is not at version 12.x.x\n"
+            if [[ $(ssh winterwell@$server 'node -v | grep "v14"') = '' ]]; then
+                printf "Either nodejs is not installed, or it is not at version 14.x.x\n"
                 send_alert_email
                 exit 0
             fi
@@ -199,12 +199,12 @@ function cleanup_wwappbasejs_repo {
     fi
 }
 
-# Cleanup the repos nested inside of bobwarehouse  - This Function's Version is 1.00
+# Cleanup the repos nested inside of bobwarehouse  - This Function's Version is 1.10
 function cleanup_bobwarehouse_repos {
     if [[ $PROJECT_USES_BOB = 'yes' ]]; then
 	    for server in ${TARGET_SERVERS[@]}; do
 		    printf "\nEnsuring that the repos inside of bobwarehouse are up-to-date...\n"
-        	ssh winterwell@$server "for repo in $BOBWAREHOUSE_PATH/*/; do cd \$repo; git gc --prune=now; git pull origin master; git reset --hard FETCH_HEAD; done"
+        	ssh winterwell@$server "for repo in $BOBWAREHOUSE_PATH/*/; do cd \$repo; git gc --prune=now; git pull origin master; git reset --hard FETCH_HEAD; git checkout $BRANCH; done"
         done
     fi
 }
