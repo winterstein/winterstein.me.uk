@@ -24,7 +24,7 @@ server {
 
 
 	location / {
-			try_files $uri $uri/ @backend;
+			try_files $uri $uri/;
 			add_header 'Access-Control-Allow-Origin' "$http_origin";
 			add_header 'Access-Control-Allow-Credentials' 'true';
 			add_header 'Cache-Control' 'no-cache';
