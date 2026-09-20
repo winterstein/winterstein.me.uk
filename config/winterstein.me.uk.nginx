@@ -21,7 +21,9 @@ server {
 
     expires $expires;
 
-
+	location = /card {
+			return 301 /repressed-nature/index.html;
+	}
 
 	location / {
 			try_files $uri $uri/ =404;
