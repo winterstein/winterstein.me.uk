@@ -21,7 +21,7 @@ server {
 
     expires $expires;
 
-	location = /card {
+	location = /cards {
 			return 301 /repressed-nature/index.html;
 	}
 
